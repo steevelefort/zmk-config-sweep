@@ -322,7 +322,7 @@
         NumSquare {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&hml LGUI N1  &hml RALT N2  &hml LCTRL N3  &f_hml LEFT_SHIFT N4    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                         &trans  &trans    &trans  &trans
             >;
