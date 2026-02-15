@@ -321,10 +321,10 @@
 
         NumSquare {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&hml LGUI N1  &hml RALT N2  &hml LCTRL N3  &f_hml LEFT_SHIFT N4    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&trans        &kp F7        &kp F8            &kp F9                &kp F10    &trans  &trans  &trans  &trans  &trans
+&hml LGUI N1  &hml RALT F4  &hml LCTRL F5     &f_hml LEFT_SHIFT F6  &kp F11    &trans  &trans  &trans  &trans  &trans
+&trans        &kp F1        &hml LEFT_ALT F2  &kp F3                &kp F12    &trans  &trans  &trans  &trans  &trans
+                                              &trans                &trans     &trans
             >;
         };
     };
