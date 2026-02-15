@@ -327,6 +327,15 @@
                                               &trans                &trans     &kp KP_DOT    &kp N0
             >;
         };
+
+        CallumRight {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans                            &trans                      &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &cal_r LEFT_SHIFT LEFT_SHIFT  &cal_r LEFT_CONTROL LEFT_CONTROL  &cal_r RIGHT_ALT RIGHT_ALT  &cal_r LEFT_GUI LEFT_GUI
+&trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans                            &trans                      &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
