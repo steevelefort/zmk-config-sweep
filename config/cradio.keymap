@@ -276,7 +276,7 @@
 &kp Q        &kp W        &kp E         &kp R           &kp T        &kp Y                &kp U           &kp I            &kp O        &kp P
 &hml LGUI A  &hml RALT S  &hml LCTRL D  &f_hml LSHFT F  &kp G        &kp H                &f_hmr RSHFT J  &hmr RCTRL K     &hmr RALT L  &hmr RGUI SEMICOLON
 &kp Z        &kp X        &hml LALT C   &hrl 4 V        &kp B        &kp N                &kp M           &hmr LALT COMMA  &kp DOT      &kp FSLH
-                                        &lt 1 SPACE     &lt 5 TAB    &mt RIGHT_ALT ENTER  &lt 6 BSPC
+                                        &lt 1 SPACE     &lt 2 TAB    &mt RIGHT_ALT ENTER  &lt 6 BSPC
             >;
         };
 
@@ -285,7 +285,7 @@
             bindings = <
 &trans                    &trans                      &trans             &trans                        &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp PRINTSCREEN
 &cal_l LEFT_GUI LEFT_GUI  &cal_l RIGHT_ALT RIGHT_ALT  &hml LCTRL ESCAPE  &cal_l LEFT_SHIFT LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPS
-&trans                    &trans                      &trans             &trans                        &trans    &trans    &trans         &trans        &trans     &trans
+&trans                    &trans                      &trans             &trans                        &trans    &trans    &kp N          &trans        &kp SLASH  &trans
                                                                          &trans                        &trans    &trans    &lt 2 DELETE
             >;
         };
