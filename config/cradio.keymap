@@ -318,6 +318,15 @@
                         &trans  &trans    &mkp RCLK       &mkp LCLK
             >;
         };
+
+        NumSquare {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
