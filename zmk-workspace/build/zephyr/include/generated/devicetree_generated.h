@@ -33,143 +33,146 @@
  *   22  /soc/timer@40009000
  *   23  /sw-pwm
  *   24  /vbatt
- *   25  /behaviors/bootload
- *   26  /behaviors/extpower
- *   27  /behaviors/key_press
- *   28  /macros
- *   29  /macros/open_angle_quote
- *   30  /behaviors/hroa
- *   31  /behaviors/macro_param_1to1
- *   32  /behaviors/macro_param_1to2
- *   33  /behaviors/macro_param_2to1
- *   34  /behaviors/macro_param_2to2
- *   35  /behaviors/macro_pause_for_release
- *   36  /behaviors/macro_press
- *   37  /behaviors/macro_release
- *   38  /behaviors/macro_tap
- *   39  /behaviors/macro_tap_time
- *   40  /behaviors/macro_wait_time
- *   41  /behaviors/rgb_ug
- *   42  /behaviors/studio_unlock
- *   43  /behaviors/sysreset
- *   44  /combos
- *   45  /behaviors/bluetooth
- *   46  /combos/ClrBlutooth
- *   47  /behaviors/mod_tap
- *   48  /combos/Del
- *   49  /behaviors/caps_word
- *   50  /combos/Esc
- *   51  /behaviors/momentary_layer
- *   52  /combos/Media
- *   53  /behaviors/sticky_key
- *   54  /combos/OneShotShiftLeft
- *   55  /combos/OneShotShiftRight
- *   56  /combos/Ralt
- *   57  /combos/fast_bksp
- *   58  /combos/fast_enter
- *   59  /combos/fast_esc
- *   60  /combos/fast_tab
- *   61  /conditional_layers
- *   62  /conditional_layers/MediaLayer
- *   63  /cpus
- *   64  /cpus/cpu@0
- *   65  /cpus/cpu@0/itm@e0000000
- *   66  /keymap
- *   67  /behaviors/Y_capslock
- *   68  /behaviors/f_hml
- *   69  /behaviors/f_hmr
- *   70  /behaviors/hml
- *   71  /behaviors/hmr
- *   72  /behaviors/hrl
- *   73  /behaviors/layer_tap
- *   74  /keymap/default_layer
- *   75  /behaviors/transparent
- *   76  /keymap/mouse_layer
- *   77  /keymap/nav_layer
- *   78  /keymap/num_layer
- *   79  /keymap/sym_layer
- *   80  /leds
- *   81  /leds/led_0
- *   82  /macros/Vim_change_window
- *   83  /macros/closed_angle_quote
- *   84  /macros/vim_decrease_y
- *   85  /macros/vim_increase_x
- *   86  /macros/vim_increase_y
- *   87  /macros/vim_reduce_x
- *   88  /pin-controller
- *   89  /pin-controller/i2c0_default
- *   90  /pin-controller/i2c0_default/group1
- *   91  /pin-controller/i2c0_sleep
- *   92  /pin-controller/i2c0_sleep/group1
- *   93  /pin-controller/spi1_default
- *   94  /pin-controller/spi1_default/group1
- *   95  /pin-controller/spi1_sleep
- *   96  /pin-controller/spi1_sleep/group1
- *   97  /pin-controller/uart0_default
- *   98  /pin-controller/uart0_default/group1
- *   99  /pin-controller/uart0_default/group2
- *   100 /pin-controller/uart0_sleep
- *   101 /pin-controller/uart0_sleep/group1
- *   102 /soc/acl@4001e000
- *   103 /soc/adc@40007000
- *   104 /soc/ccm@4000f000
- *   105 /soc/clock@40000000
- *   106 /soc/comparator@40013000
- *   107 /soc/crypto@5002a000
- *   108 /soc/ecb@4000e000
- *   109 /soc/egu@40014000
- *   110 /soc/egu@40015000
- *   111 /soc/egu@40016000
- *   112 /soc/egu@40017000
- *   113 /soc/egu@40018000
- *   114 /soc/egu@40019000
- *   115 /soc/ficr@10000000
- *   116 /soc/gpiote@40006000
- *   117 /soc/i2c@40003000
- *   118 /soc/i2c@40004000
- *   119 /soc/i2s@40025000
- *   120 /soc/memory@20000000
- *   121 /soc/mwu@40020000
- *   122 /soc/nfct@40005000
- *   123 /soc/pdm@4001d000
- *   124 /soc/ppi@4001f000
- *   125 /soc/pwm@4001c000
- *   126 /soc/pwm@40021000
- *   127 /soc/pwm@40022000
- *   128 /soc/pwm@4002d000
- *   129 /soc/qdec@40012000
- *   130 /soc/qspi@40029000
- *   131 /soc/random@4000d000
- *   132 /soc/rtc@4000b000
- *   133 /soc/rtc@40011000
- *   134 /soc/rtc@40024000
- *   135 /soc/spi@40003000
- *   136 /soc/spi@40004000
- *   137 /soc/spi@40023000
- *   138 /soc/spi@4002f000
- *   139 /soc/temp@4000c000
- *   140 /soc/timer@40008000
- *   141 /soc/timer@4000a000
- *   142 /soc/timer@4001a000
- *   143 /soc/timer@4001b000
- *   144 /soc/timer@e000e010
- *   145 /soc/uart@40002000
- *   146 /soc/uart@40028000
- *   147 /soc/uicr@10001000
- *   148 /soc/usbd@40027000
- *   149 /soc/watchdog@40010000
- *   150 /soc/flash-controller@4001e000
- *   151 /soc/flash-controller@4001e000/flash@0
- *   152 /soc/flash-controller@4001e000/flash@0/partitions
- *   153 /soc/flash-controller@4001e000/flash@0/partitions/partition@0
- *   154 /soc/flash-controller@4001e000/flash@0/partitions/partition@26000
- *   155 /soc/flash-controller@4001e000/flash@0/partitions/partition@ec000
- *   156 /soc/flash-controller@4001e000/flash@0/partitions/partition@f4000
- *   157 /soc/power@40000000
- *   158 /soc/power@40000000/gpregret1@4000051c
- *   159 /soc/power@40000000/gpregret2@40000520
- *   160 /soc/radio@40001000
- *   161 /soc/radio@40001000/ieee802154
+ *   25  /behaviors/key_press
+ *   26  /behaviors/Y_capslock
+ *   27  /behaviors/bootload
+ *   28  /behaviors/extpower
+ *   29  /macros
+ *   30  /macros/open_angle_quote
+ *   31  /behaviors/hroa
+ *   32  /behaviors/macro_param_1to1
+ *   33  /behaviors/macro_param_1to2
+ *   34  /behaviors/macro_param_2to1
+ *   35  /behaviors/macro_param_2to2
+ *   36  /behaviors/macro_pause_for_release
+ *   37  /behaviors/macro_press
+ *   38  /behaviors/macro_release
+ *   39  /behaviors/macro_tap
+ *   40  /behaviors/macro_tap_time
+ *   41  /behaviors/macro_wait_time
+ *   42  /behaviors/rgb_ug
+ *   43  /behaviors/studio_unlock
+ *   44  /behaviors/sysreset
+ *   45  /combos
+ *   46  /behaviors/bluetooth
+ *   47  /combos/ClrBlutooth
+ *   48  /behaviors/mod_tap
+ *   49  /combos/Del
+ *   50  /behaviors/caps_word
+ *   51  /combos/Esc
+ *   52  /behaviors/momentary_layer
+ *   53  /combos/Media
+ *   54  /combos/Ralt
+ *   55  /combos/fast_bksp
+ *   56  /combos/fast_enter
+ *   57  /combos/fast_esc
+ *   58  /combos/fast_tab
+ *   59  /conditional_layers
+ *   60  /conditional_layers/MediaLayer
+ *   61  /cpus
+ *   62  /cpus/cpu@0
+ *   63  /cpus/cpu@0/itm@e0000000
+ *   64  /keymap
+ *   65  /behaviors/sticky_key
+ *   66  /behaviors/cal_l
+ *   67  /behaviors/transparent
+ *   68  /keymap/CallumLeft
+ *   69  /behaviors/cal_r
+ *   70  /keymap/CallumRight
+ *   71  /behaviors/f_hml
+ *   72  /behaviors/hml
+ *   73  /keymap/NumSquare
+ *   74  /behaviors/f_hmr
+ *   75  /behaviors/hmr
+ *   76  /behaviors/hrl
+ *   77  /behaviors/layer_tap
+ *   78  /keymap/default_layer
+ *   79  /keymap/mouse_layer
+ *   80  /keymap/nav_layer
+ *   81  /keymap/num_layer
+ *   82  /keymap/sym_layer
+ *   83  /leds
+ *   84  /leds/led_0
+ *   85  /macros/Vim_change_window
+ *   86  /macros/closed_angle_quote
+ *   87  /macros/vim_decrease_y
+ *   88  /macros/vim_increase_x
+ *   89  /macros/vim_increase_y
+ *   90  /macros/vim_reduce_x
+ *   91  /pin-controller
+ *   92  /pin-controller/i2c0_default
+ *   93  /pin-controller/i2c0_default/group1
+ *   94  /pin-controller/i2c0_sleep
+ *   95  /pin-controller/i2c0_sleep/group1
+ *   96  /pin-controller/spi1_default
+ *   97  /pin-controller/spi1_default/group1
+ *   98  /pin-controller/spi1_sleep
+ *   99  /pin-controller/spi1_sleep/group1
+ *   100 /pin-controller/uart0_default
+ *   101 /pin-controller/uart0_default/group1
+ *   102 /pin-controller/uart0_default/group2
+ *   103 /pin-controller/uart0_sleep
+ *   104 /pin-controller/uart0_sleep/group1
+ *   105 /soc/acl@4001e000
+ *   106 /soc/adc@40007000
+ *   107 /soc/ccm@4000f000
+ *   108 /soc/clock@40000000
+ *   109 /soc/comparator@40013000
+ *   110 /soc/crypto@5002a000
+ *   111 /soc/ecb@4000e000
+ *   112 /soc/egu@40014000
+ *   113 /soc/egu@40015000
+ *   114 /soc/egu@40016000
+ *   115 /soc/egu@40017000
+ *   116 /soc/egu@40018000
+ *   117 /soc/egu@40019000
+ *   118 /soc/ficr@10000000
+ *   119 /soc/gpiote@40006000
+ *   120 /soc/i2c@40003000
+ *   121 /soc/i2c@40004000
+ *   122 /soc/i2s@40025000
+ *   123 /soc/memory@20000000
+ *   124 /soc/mwu@40020000
+ *   125 /soc/nfct@40005000
+ *   126 /soc/pdm@4001d000
+ *   127 /soc/ppi@4001f000
+ *   128 /soc/pwm@4001c000
+ *   129 /soc/pwm@40021000
+ *   130 /soc/pwm@40022000
+ *   131 /soc/pwm@4002d000
+ *   132 /soc/qdec@40012000
+ *   133 /soc/qspi@40029000
+ *   134 /soc/random@4000d000
+ *   135 /soc/rtc@4000b000
+ *   136 /soc/rtc@40011000
+ *   137 /soc/rtc@40024000
+ *   138 /soc/spi@40003000
+ *   139 /soc/spi@40004000
+ *   140 /soc/spi@40023000
+ *   141 /soc/spi@4002f000
+ *   142 /soc/temp@4000c000
+ *   143 /soc/timer@40008000
+ *   144 /soc/timer@4000a000
+ *   145 /soc/timer@4001a000
+ *   146 /soc/timer@4001b000
+ *   147 /soc/timer@e000e010
+ *   148 /soc/uart@40002000
+ *   149 /soc/uart@40028000
+ *   150 /soc/uicr@10001000
+ *   151 /soc/usbd@40027000
+ *   152 /soc/watchdog@40010000
+ *   153 /soc/flash-controller@4001e000
+ *   154 /soc/flash-controller@4001e000/flash@0
+ *   155 /soc/flash-controller@4001e000/flash@0/partitions
+ *   156 /soc/flash-controller@4001e000/flash@0/partitions/partition@0
+ *   157 /soc/flash-controller@4001e000/flash@0/partitions/partition@26000
+ *   158 /soc/flash-controller@4001e000/flash@0/partitions/partition@ec000
+ *   159 /soc/flash-controller@4001e000/flash@0/partitions/partition@f4000
+ *   160 /soc/power@40000000
+ *   161 /soc/power@40000000/gpregret1@4000051c
+ *   162 /soc/power@40000000/gpregret2@40000520
+ *   163 /soc/radio@40001000
+ *   164 /soc/radio@40001000/ieee802154
  *
  * Definitions derived from these nodes in dependency order are next,
  * followed by /chosen nodes.
@@ -226,13 +229,13 @@
 	20, /* /msc_input_listener */ \
 	23, /* /sw-pwm */ \
 	24, /* /vbatt */ \
-	28, /* /macros */ \
-	44, /* /combos */ \
-	61, /* /conditional_layers */ \
-	63, /* /cpus */ \
-	66, /* /keymap */ \
-	80, /* /leds */ \
-	88, /* /pin-controller */
+	29, /* /macros */ \
+	45, /* /combos */ \
+	59, /* /conditional_layers */ \
+	61, /* /cpus */ \
+	64, /* /keymap */ \
+	83, /* /leds */ \
+	91, /* /pin-controller */
 
 /* Existence and alternate IDs: */
 #define DT_N_EXISTS 1
@@ -305,57 +308,57 @@
 	12, /* /soc/gpio@50000300 */ \
 	21, /* /soc/interrupt-controller@e000e100 */ \
 	22, /* /soc/timer@40009000 */ \
-	102, /* /soc/acl@4001e000 */ \
-	103, /* /soc/adc@40007000 */ \
-	104, /* /soc/ccm@4000f000 */ \
-	105, /* /soc/clock@40000000 */ \
-	106, /* /soc/comparator@40013000 */ \
-	107, /* /soc/crypto@5002a000 */ \
-	108, /* /soc/ecb@4000e000 */ \
-	109, /* /soc/egu@40014000 */ \
-	110, /* /soc/egu@40015000 */ \
-	111, /* /soc/egu@40016000 */ \
-	112, /* /soc/egu@40017000 */ \
-	113, /* /soc/egu@40018000 */ \
-	114, /* /soc/egu@40019000 */ \
-	115, /* /soc/ficr@10000000 */ \
-	116, /* /soc/gpiote@40006000 */ \
-	117, /* /soc/i2c@40003000 */ \
-	118, /* /soc/i2c@40004000 */ \
-	119, /* /soc/i2s@40025000 */ \
-	120, /* /soc/memory@20000000 */ \
-	121, /* /soc/mwu@40020000 */ \
-	122, /* /soc/nfct@40005000 */ \
-	123, /* /soc/pdm@4001d000 */ \
-	124, /* /soc/ppi@4001f000 */ \
-	125, /* /soc/pwm@4001c000 */ \
-	126, /* /soc/pwm@40021000 */ \
-	127, /* /soc/pwm@40022000 */ \
-	128, /* /soc/pwm@4002d000 */ \
-	129, /* /soc/qdec@40012000 */ \
-	130, /* /soc/qspi@40029000 */ \
-	131, /* /soc/random@4000d000 */ \
-	132, /* /soc/rtc@4000b000 */ \
-	133, /* /soc/rtc@40011000 */ \
-	134, /* /soc/rtc@40024000 */ \
-	135, /* /soc/spi@40003000 */ \
-	136, /* /soc/spi@40004000 */ \
-	137, /* /soc/spi@40023000 */ \
-	138, /* /soc/spi@4002f000 */ \
-	139, /* /soc/temp@4000c000 */ \
-	140, /* /soc/timer@40008000 */ \
-	141, /* /soc/timer@4000a000 */ \
-	142, /* /soc/timer@4001a000 */ \
-	143, /* /soc/timer@4001b000 */ \
-	144, /* /soc/timer@e000e010 */ \
-	145, /* /soc/uart@40002000 */ \
-	146, /* /soc/uart@40028000 */ \
-	147, /* /soc/uicr@10001000 */ \
-	148, /* /soc/usbd@40027000 */ \
-	149, /* /soc/watchdog@40010000 */ \
-	150, /* /soc/flash-controller@4001e000 */ \
-	157, /* /soc/power@40000000 */ \
-	160, /* /soc/radio@40001000 */
+	105, /* /soc/acl@4001e000 */ \
+	106, /* /soc/adc@40007000 */ \
+	107, /* /soc/ccm@4000f000 */ \
+	108, /* /soc/clock@40000000 */ \
+	109, /* /soc/comparator@40013000 */ \
+	110, /* /soc/crypto@5002a000 */ \
+	111, /* /soc/ecb@4000e000 */ \
+	112, /* /soc/egu@40014000 */ \
+	113, /* /soc/egu@40015000 */ \
+	114, /* /soc/egu@40016000 */ \
+	115, /* /soc/egu@40017000 */ \
+	116, /* /soc/egu@40018000 */ \
+	117, /* /soc/egu@40019000 */ \
+	118, /* /soc/ficr@10000000 */ \
+	119, /* /soc/gpiote@40006000 */ \
+	120, /* /soc/i2c@40003000 */ \
+	121, /* /soc/i2c@40004000 */ \
+	122, /* /soc/i2s@40025000 */ \
+	123, /* /soc/memory@20000000 */ \
+	124, /* /soc/mwu@40020000 */ \
+	125, /* /soc/nfct@40005000 */ \
+	126, /* /soc/pdm@4001d000 */ \
+	127, /* /soc/ppi@4001f000 */ \
+	128, /* /soc/pwm@4001c000 */ \
+	129, /* /soc/pwm@40021000 */ \
+	130, /* /soc/pwm@40022000 */ \
+	131, /* /soc/pwm@4002d000 */ \
+	132, /* /soc/qdec@40012000 */ \
+	133, /* /soc/qspi@40029000 */ \
+	134, /* /soc/random@4000d000 */ \
+	135, /* /soc/rtc@4000b000 */ \
+	136, /* /soc/rtc@40011000 */ \
+	137, /* /soc/rtc@40024000 */ \
+	138, /* /soc/spi@40003000 */ \
+	139, /* /soc/spi@40004000 */ \
+	140, /* /soc/spi@40023000 */ \
+	141, /* /soc/spi@4002f000 */ \
+	142, /* /soc/temp@4000c000 */ \
+	143, /* /soc/timer@40008000 */ \
+	144, /* /soc/timer@4000a000 */ \
+	145, /* /soc/timer@4001a000 */ \
+	146, /* /soc/timer@4001b000 */ \
+	147, /* /soc/timer@e000e010 */ \
+	148, /* /soc/uart@40002000 */ \
+	149, /* /soc/uart@40028000 */ \
+	150, /* /soc/uicr@10001000 */ \
+	151, /* /soc/usbd@40027000 */ \
+	152, /* /soc/watchdog@40010000 */ \
+	153, /* /soc/flash-controller@4001e000 */ \
+	160, /* /soc/power@40000000 */ \
+	163, /* /soc/radio@40001000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_EXISTS 1
@@ -478,7 +481,7 @@
 #define DT_N_S_soc_S_gpio_50000000_SUPPORTS_ORDS \
 	3, /* /EXT_POWER */ \
 	13, /* /kscan */ \
-	81, /* /leds/led_0 */
+	84, /* /leds/led_0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_gpio_50000000_EXISTS 1
@@ -2515,14 +2518,14 @@
 #define DT_N_S_behaviors_CHILD_IDX 16
 
 /* Helper macros for child nodes of this node. */
-#define DT_N_S_behaviors_FOREACH_CHILD(fn) fn(DT_N_S_behaviors_S_key_press) fn(DT_N_S_behaviors_S_transparent) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_sticky_key) fn(DT_N_S_behaviors_S_momentary_layer) fn(DT_N_S_behaviors_S_sysreset) fn(DT_N_S_behaviors_S_bootload) fn(DT_N_S_behaviors_S_rgb_ug) fn(DT_N_S_behaviors_S_bluetooth) fn(DT_N_S_behaviors_S_extpower) fn(DT_N_S_behaviors_S_caps_word) fn(DT_N_S_behaviors_S_macro_tap) fn(DT_N_S_behaviors_S_macro_press) fn(DT_N_S_behaviors_S_macro_release) fn(DT_N_S_behaviors_S_macro_tap_time) fn(DT_N_S_behaviors_S_macro_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_macro_param_1to1) fn(DT_N_S_behaviors_S_macro_param_1to2) fn(DT_N_S_behaviors_S_macro_param_2to1) fn(DT_N_S_behaviors_S_macro_param_2to2) fn(DT_N_S_behaviors_S_studio_unlock) fn(DT_N_S_behaviors_S_mouse_key_press) fn(DT_N_S_behaviors_S_mouse_move) fn(DT_N_S_behaviors_S_mouse_scroll) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr) fn(DT_N_S_behaviors_S_y_capslock)
-#define DT_N_S_behaviors_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_behaviors_S_key_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_transparent) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mod_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_layer_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sticky_key) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_momentary_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sysreset) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bootload) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_rgb_ug) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bluetooth) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_extpower) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_caps_word) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_release) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap_time) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_wait_time) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_pause_for_release) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_studio_unlock) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_key_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_move) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_scroll) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hml) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hmr) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hroa) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hrl) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hml) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hmr) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_y_capslock)
-#define DT_N_S_behaviors_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__)
-#define DT_N_S_behaviors_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__)
-#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_behaviors_S_key_press) fn(DT_N_S_behaviors_S_transparent) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_sticky_key) fn(DT_N_S_behaviors_S_momentary_layer) fn(DT_N_S_behaviors_S_sysreset) fn(DT_N_S_behaviors_S_bootload) fn(DT_N_S_behaviors_S_rgb_ug) fn(DT_N_S_behaviors_S_bluetooth) fn(DT_N_S_behaviors_S_extpower) fn(DT_N_S_behaviors_S_caps_word) fn(DT_N_S_behaviors_S_macro_tap) fn(DT_N_S_behaviors_S_macro_press) fn(DT_N_S_behaviors_S_macro_release) fn(DT_N_S_behaviors_S_macro_tap_time) fn(DT_N_S_behaviors_S_macro_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_macro_param_1to1) fn(DT_N_S_behaviors_S_macro_param_1to2) fn(DT_N_S_behaviors_S_macro_param_2to1) fn(DT_N_S_behaviors_S_macro_param_2to2) fn(DT_N_S_behaviors_S_studio_unlock) fn(DT_N_S_behaviors_S_mouse_key_press) fn(DT_N_S_behaviors_S_mouse_move) fn(DT_N_S_behaviors_S_mouse_scroll) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr) fn(DT_N_S_behaviors_S_y_capslock)
-#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_behaviors_S_key_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_transparent) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mod_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_layer_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sticky_key) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_momentary_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sysreset) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bootload) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_rgb_ug) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bluetooth) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_extpower) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_caps_word) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_release) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap_time) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_wait_time) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_pause_for_release) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_studio_unlock) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_key_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_move) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_scroll) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hml) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hmr) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hroa) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hrl) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hml) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hmr) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_y_capslock)
-#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__)
-#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__)
+#define DT_N_S_behaviors_FOREACH_CHILD(fn) fn(DT_N_S_behaviors_S_key_press) fn(DT_N_S_behaviors_S_transparent) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_sticky_key) fn(DT_N_S_behaviors_S_momentary_layer) fn(DT_N_S_behaviors_S_sysreset) fn(DT_N_S_behaviors_S_bootload) fn(DT_N_S_behaviors_S_rgb_ug) fn(DT_N_S_behaviors_S_bluetooth) fn(DT_N_S_behaviors_S_extpower) fn(DT_N_S_behaviors_S_caps_word) fn(DT_N_S_behaviors_S_macro_tap) fn(DT_N_S_behaviors_S_macro_press) fn(DT_N_S_behaviors_S_macro_release) fn(DT_N_S_behaviors_S_macro_tap_time) fn(DT_N_S_behaviors_S_macro_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_macro_param_1to1) fn(DT_N_S_behaviors_S_macro_param_1to2) fn(DT_N_S_behaviors_S_macro_param_2to1) fn(DT_N_S_behaviors_S_macro_param_2to2) fn(DT_N_S_behaviors_S_studio_unlock) fn(DT_N_S_behaviors_S_mouse_key_press) fn(DT_N_S_behaviors_S_mouse_move) fn(DT_N_S_behaviors_S_mouse_scroll) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr) fn(DT_N_S_behaviors_S_y_capslock) fn(DT_N_S_behaviors_S_cal_l) fn(DT_N_S_behaviors_S_cal_r)
+#define DT_N_S_behaviors_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_behaviors_S_key_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_transparent) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mod_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_layer_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sticky_key) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_momentary_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sysreset) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bootload) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_rgb_ug) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bluetooth) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_extpower) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_caps_word) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_release) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap_time) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_wait_time) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_pause_for_release) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_studio_unlock) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_key_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_move) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_scroll) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hml) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hmr) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hroa) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hrl) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hml) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hmr) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_y_capslock) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_cal_l) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_cal_r)
+#define DT_N_S_behaviors_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_l, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_r, __VA_ARGS__)
+#define DT_N_S_behaviors_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_cal_l, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_cal_r, __VA_ARGS__)
+#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_behaviors_S_key_press) fn(DT_N_S_behaviors_S_transparent) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_sticky_key) fn(DT_N_S_behaviors_S_momentary_layer) fn(DT_N_S_behaviors_S_sysreset) fn(DT_N_S_behaviors_S_bootload) fn(DT_N_S_behaviors_S_rgb_ug) fn(DT_N_S_behaviors_S_bluetooth) fn(DT_N_S_behaviors_S_extpower) fn(DT_N_S_behaviors_S_caps_word) fn(DT_N_S_behaviors_S_macro_tap) fn(DT_N_S_behaviors_S_macro_press) fn(DT_N_S_behaviors_S_macro_release) fn(DT_N_S_behaviors_S_macro_tap_time) fn(DT_N_S_behaviors_S_macro_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_macro_param_1to1) fn(DT_N_S_behaviors_S_macro_param_1to2) fn(DT_N_S_behaviors_S_macro_param_2to1) fn(DT_N_S_behaviors_S_macro_param_2to2) fn(DT_N_S_behaviors_S_studio_unlock) fn(DT_N_S_behaviors_S_mouse_key_press) fn(DT_N_S_behaviors_S_mouse_move) fn(DT_N_S_behaviors_S_mouse_scroll) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr) fn(DT_N_S_behaviors_S_y_capslock) fn(DT_N_S_behaviors_S_cal_l) fn(DT_N_S_behaviors_S_cal_r)
+#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_behaviors_S_key_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_transparent) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mod_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_layer_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sticky_key) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_momentary_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sysreset) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bootload) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_rgb_ug) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bluetooth) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_extpower) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_caps_word) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_release) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap_time) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_wait_time) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_pause_for_release) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_studio_unlock) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_key_press) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_move) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_scroll) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hml) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hmr) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hroa) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hrl) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hml) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hmr) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_y_capslock) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_cal_l) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_cal_r)
+#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_l, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_r, __VA_ARGS__)
+#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_cal_l, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_behaviors_S_cal_r, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
 #define DT_N_S_behaviors_ORD 14
@@ -2537,36 +2540,38 @@
 	15, /* /behaviors/mouse_key_press */ \
 	17, /* /behaviors/mouse_move */ \
 	19, /* /behaviors/mouse_scroll */ \
-	25, /* /behaviors/bootload */ \
-	26, /* /behaviors/extpower */ \
-	27, /* /behaviors/key_press */ \
-	30, /* /behaviors/hroa */ \
-	31, /* /behaviors/macro_param_1to1 */ \
-	32, /* /behaviors/macro_param_1to2 */ \
-	33, /* /behaviors/macro_param_2to1 */ \
-	34, /* /behaviors/macro_param_2to2 */ \
-	35, /* /behaviors/macro_pause_for_release */ \
-	36, /* /behaviors/macro_press */ \
-	37, /* /behaviors/macro_release */ \
-	38, /* /behaviors/macro_tap */ \
-	39, /* /behaviors/macro_tap_time */ \
-	40, /* /behaviors/macro_wait_time */ \
-	41, /* /behaviors/rgb_ug */ \
-	42, /* /behaviors/studio_unlock */ \
-	43, /* /behaviors/sysreset */ \
-	45, /* /behaviors/bluetooth */ \
-	47, /* /behaviors/mod_tap */ \
-	49, /* /behaviors/caps_word */ \
-	51, /* /behaviors/momentary_layer */ \
-	53, /* /behaviors/sticky_key */ \
-	67, /* /behaviors/Y_capslock */ \
-	68, /* /behaviors/f_hml */ \
-	69, /* /behaviors/f_hmr */ \
-	70, /* /behaviors/hml */ \
-	71, /* /behaviors/hmr */ \
-	72, /* /behaviors/hrl */ \
-	73, /* /behaviors/layer_tap */ \
-	75, /* /behaviors/transparent */
+	25, /* /behaviors/key_press */ \
+	26, /* /behaviors/Y_capslock */ \
+	27, /* /behaviors/bootload */ \
+	28, /* /behaviors/extpower */ \
+	31, /* /behaviors/hroa */ \
+	32, /* /behaviors/macro_param_1to1 */ \
+	33, /* /behaviors/macro_param_1to2 */ \
+	34, /* /behaviors/macro_param_2to1 */ \
+	35, /* /behaviors/macro_param_2to2 */ \
+	36, /* /behaviors/macro_pause_for_release */ \
+	37, /* /behaviors/macro_press */ \
+	38, /* /behaviors/macro_release */ \
+	39, /* /behaviors/macro_tap */ \
+	40, /* /behaviors/macro_tap_time */ \
+	41, /* /behaviors/macro_wait_time */ \
+	42, /* /behaviors/rgb_ug */ \
+	43, /* /behaviors/studio_unlock */ \
+	44, /* /behaviors/sysreset */ \
+	46, /* /behaviors/bluetooth */ \
+	48, /* /behaviors/mod_tap */ \
+	50, /* /behaviors/caps_word */ \
+	52, /* /behaviors/momentary_layer */ \
+	65, /* /behaviors/sticky_key */ \
+	66, /* /behaviors/cal_l */ \
+	67, /* /behaviors/transparent */ \
+	69, /* /behaviors/cal_r */ \
+	71, /* /behaviors/f_hml */ \
+	72, /* /behaviors/hml */ \
+	74, /* /behaviors/f_hmr */ \
+	75, /* /behaviors/hmr */ \
+	76, /* /behaviors/hrl */ \
+	77, /* /behaviors/layer_tap */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_EXISTS 1
@@ -2628,7 +2633,7 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_mouse_key_press_SUPPORTS_ORDS \
 	16, /* /mkp_input_listener */ \
-	76, /* /keymap/mouse_layer */
+	79, /* /keymap/mouse_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_mouse_key_press_EXISTS 1
@@ -2787,7 +2792,7 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_mouse_move_SUPPORTS_ORDS \
 	18, /* /mmv_input_listener */ \
-	76, /* /keymap/mouse_layer */
+	79, /* /keymap/mouse_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_mouse_move_EXISTS 1
@@ -2944,7 +2949,7 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_mouse_scroll_SUPPORTS_ORDS \
 	20, /* /msc_input_listener */ \
-	76, /* /keymap/mouse_layer */
+	79, /* /keymap/mouse_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_mouse_scroll_EXISTS 1
@@ -3101,49 +3106,49 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_interrupt_controller_e000e100_SUPPORTS_ORDS \
 	22, /* /soc/timer@40009000 */ \
-	103, /* /soc/adc@40007000 */ \
-	104, /* /soc/ccm@4000f000 */ \
-	105, /* /soc/clock@40000000 */ \
-	106, /* /soc/comparator@40013000 */ \
-	107, /* /soc/crypto@5002a000 */ \
-	108, /* /soc/ecb@4000e000 */ \
-	109, /* /soc/egu@40014000 */ \
-	110, /* /soc/egu@40015000 */ \
-	111, /* /soc/egu@40016000 */ \
-	112, /* /soc/egu@40017000 */ \
-	113, /* /soc/egu@40018000 */ \
-	114, /* /soc/egu@40019000 */ \
-	116, /* /soc/gpiote@40006000 */ \
-	117, /* /soc/i2c@40003000 */ \
-	118, /* /soc/i2c@40004000 */ \
-	119, /* /soc/i2s@40025000 */ \
-	122, /* /soc/nfct@40005000 */ \
-	123, /* /soc/pdm@4001d000 */ \
-	125, /* /soc/pwm@4001c000 */ \
-	126, /* /soc/pwm@40021000 */ \
-	127, /* /soc/pwm@40022000 */ \
-	128, /* /soc/pwm@4002d000 */ \
-	129, /* /soc/qdec@40012000 */ \
-	130, /* /soc/qspi@40029000 */ \
-	131, /* /soc/random@4000d000 */ \
-	132, /* /soc/rtc@4000b000 */ \
-	133, /* /soc/rtc@40011000 */ \
-	134, /* /soc/rtc@40024000 */ \
-	135, /* /soc/spi@40003000 */ \
-	136, /* /soc/spi@40004000 */ \
-	137, /* /soc/spi@40023000 */ \
-	138, /* /soc/spi@4002f000 */ \
-	139, /* /soc/temp@4000c000 */ \
-	140, /* /soc/timer@40008000 */ \
-	141, /* /soc/timer@4000a000 */ \
-	142, /* /soc/timer@4001a000 */ \
-	143, /* /soc/timer@4001b000 */ \
-	145, /* /soc/uart@40002000 */ \
-	146, /* /soc/uart@40028000 */ \
-	148, /* /soc/usbd@40027000 */ \
-	149, /* /soc/watchdog@40010000 */ \
-	157, /* /soc/power@40000000 */ \
-	160, /* /soc/radio@40001000 */
+	106, /* /soc/adc@40007000 */ \
+	107, /* /soc/ccm@4000f000 */ \
+	108, /* /soc/clock@40000000 */ \
+	109, /* /soc/comparator@40013000 */ \
+	110, /* /soc/crypto@5002a000 */ \
+	111, /* /soc/ecb@4000e000 */ \
+	112, /* /soc/egu@40014000 */ \
+	113, /* /soc/egu@40015000 */ \
+	114, /* /soc/egu@40016000 */ \
+	115, /* /soc/egu@40017000 */ \
+	116, /* /soc/egu@40018000 */ \
+	117, /* /soc/egu@40019000 */ \
+	119, /* /soc/gpiote@40006000 */ \
+	120, /* /soc/i2c@40003000 */ \
+	121, /* /soc/i2c@40004000 */ \
+	122, /* /soc/i2s@40025000 */ \
+	125, /* /soc/nfct@40005000 */ \
+	126, /* /soc/pdm@4001d000 */ \
+	128, /* /soc/pwm@4001c000 */ \
+	129, /* /soc/pwm@40021000 */ \
+	130, /* /soc/pwm@40022000 */ \
+	131, /* /soc/pwm@4002d000 */ \
+	132, /* /soc/qdec@40012000 */ \
+	133, /* /soc/qspi@40029000 */ \
+	134, /* /soc/random@4000d000 */ \
+	135, /* /soc/rtc@4000b000 */ \
+	136, /* /soc/rtc@40011000 */ \
+	137, /* /soc/rtc@40024000 */ \
+	138, /* /soc/spi@40003000 */ \
+	139, /* /soc/spi@40004000 */ \
+	140, /* /soc/spi@40023000 */ \
+	141, /* /soc/spi@4002f000 */ \
+	142, /* /soc/temp@4000c000 */ \
+	143, /* /soc/timer@40008000 */ \
+	144, /* /soc/timer@4000a000 */ \
+	145, /* /soc/timer@4001a000 */ \
+	146, /* /soc/timer@4001b000 */ \
+	148, /* /soc/uart@40002000 */ \
+	149, /* /soc/uart@40028000 */ \
+	151, /* /soc/usbd@40027000 */ \
+	152, /* /soc/watchdog@40010000 */ \
+	160, /* /soc/power@40000000 */ \
+	163, /* /soc/radio@40001000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_interrupt_controller_e000e100_EXISTS 1
@@ -3518,6 +3523,214 @@
 #define DT_N_S_vbatt_P_compatible_EXISTS 1
 
 /*
+ * Devicetree node: /behaviors/key_press
+ *
+ * Node identifier: DT_N_S_behaviors_S_key_press
+ *
+ * Binding (compatible = zmk,behavior-key-press):
+ *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-key-press.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_behaviors_S_key_press_PATH "/behaviors/key_press"
+
+/* Node's name with unit-address: */
+#define DT_N_S_behaviors_S_key_press_FULL_NAME "key_press"
+
+/* Node parent (/behaviors) identifier: */
+#define DT_N_S_behaviors_S_key_press_PARENT DT_N_S_behaviors
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_behaviors_S_key_press_CHILD_IDX 0
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD(fn) 
+#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_behaviors_S_key_press_ORD 25
+#define DT_N_S_behaviors_S_key_press_ORD_STR_SORTABLE 00025
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_behaviors_S_key_press_REQUIRES_ORDS \
+	14, /* /behaviors */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_behaviors_S_key_press_SUPPORTS_ORDS \
+	26, /* /behaviors/Y_capslock */ \
+	30, /* /macros/open_angle_quote */ \
+	31, /* /behaviors/hroa */ \
+	48, /* /behaviors/mod_tap */ \
+	54, /* /combos/Ralt */ \
+	55, /* /combos/fast_bksp */ \
+	56, /* /combos/fast_enter */ \
+	57, /* /combos/fast_esc */ \
+	58, /* /combos/fast_tab */ \
+	65, /* /behaviors/sticky_key */ \
+	66, /* /behaviors/cal_l */ \
+	69, /* /behaviors/cal_r */ \
+	71, /* /behaviors/f_hml */ \
+	72, /* /behaviors/hml */ \
+	73, /* /keymap/NumSquare */ \
+	74, /* /behaviors/f_hmr */ \
+	75, /* /behaviors/hmr */ \
+	76, /* /behaviors/hrl */ \
+	77, /* /behaviors/layer_tap */ \
+	78, /* /keymap/default_layer */ \
+	80, /* /keymap/nav_layer */ \
+	81, /* /keymap/num_layer */ \
+	82, /* /keymap/sym_layer */ \
+	85, /* /macros/Vim_change_window */ \
+	86, /* /macros/closed_angle_quote */ \
+	87, /* /macros/vim_decrease_y */ \
+	88, /* /macros/vim_increase_x */ \
+	89, /* /macros/vim_increase_y */ \
+	90, /* /macros/vim_reduce_x */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_behaviors_S_key_press_EXISTS 1
+#define DT_N_INST_0_zmk_behavior_key_press DT_N_S_behaviors_S_key_press
+#define DT_N_NODELABEL_kp                  DT_N_S_behaviors_S_key_press
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_behaviors_S_key_press_REG_NUM 0
+#define DT_N_S_behaviors_S_key_press_RANGES_NUM 0
+#define DT_N_S_behaviors_S_key_press_FOREACH_RANGE(fn) 
+#define DT_N_S_behaviors_S_key_press_IRQ_NUM 0
+#define DT_N_S_behaviors_S_key_press_COMPAT_MATCHES_zmk_behavior_key_press 1
+#define DT_N_S_behaviors_S_key_press_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_key_press_COMPAT_VENDOR_IDX_0 "ZMK Project"
+#define DT_N_S_behaviors_S_key_press_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_key_press_COMPAT_MODEL_IDX_0 "behavior-key-press"
+#define DT_N_S_behaviors_S_key_press_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_behaviors_S_key_press_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_behaviors_S_key_press_P_display_name "Key Press"
+#define DT_N_S_behaviors_S_key_press_P_display_name_STRING_UNQUOTED Key Press
+#define DT_N_S_behaviors_S_key_press_P_display_name_STRING_TOKEN Key_Press
+#define DT_N_S_behaviors_S_key_press_P_display_name_STRING_UPPER_TOKEN KEY_PRESS
+#define DT_N_S_behaviors_S_key_press_P_display_name_IDX_0 "Key Press"
+#define DT_N_S_behaviors_S_key_press_P_display_name_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_key_press_P_display_name_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_key_press, display_name, 0)
+#define DT_N_S_behaviors_S_key_press_P_display_name_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_key_press, display_name, 0)
+#define DT_N_S_behaviors_S_key_press_P_display_name_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_key_press, display_name, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_key_press_P_display_name_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_key_press, display_name, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_key_press_P_display_name_LEN 1
+#define DT_N_S_behaviors_S_key_press_P_display_name_EXISTS 1
+
+/*
+ * Devicetree node: /behaviors/Y_capslock
+ *
+ * Node identifier: DT_N_S_behaviors_S_y_capslock
+ *
+ * Binding (compatible = zmk,behavior-tap-dance):
+ *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_behaviors_S_y_capslock_PATH "/behaviors/Y_capslock"
+
+/* Node's name with unit-address: */
+#define DT_N_S_behaviors_S_y_capslock_FULL_NAME "Y_capslock"
+
+/* Node parent (/behaviors) identifier: */
+#define DT_N_S_behaviors_S_y_capslock_PARENT DT_N_S_behaviors
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_behaviors_S_y_capslock_CHILD_IDX 32
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD(fn) 
+#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_behaviors_S_y_capslock_ORD 26
+#define DT_N_S_behaviors_S_y_capslock_ORD_STR_SORTABLE 00026
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_behaviors_S_y_capslock_REQUIRES_ORDS \
+	14, /* /behaviors */ \
+	25, /* /behaviors/key_press */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_behaviors_S_y_capslock_SUPPORTS_ORDS /* nothing */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_behaviors_S_y_capslock_EXISTS 1
+#define DT_N_INST_0_zmk_behavior_tap_dance DT_N_S_behaviors_S_y_capslock
+#define DT_N_NODELABEL_y_capslock          DT_N_S_behaviors_S_y_capslock
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_behaviors_S_y_capslock_REG_NUM 0
+#define DT_N_S_behaviors_S_y_capslock_RANGES_NUM 0
+#define DT_N_S_behaviors_S_y_capslock_FOREACH_RANGE(fn) 
+#define DT_N_S_behaviors_S_y_capslock_IRQ_NUM 0
+#define DT_N_S_behaviors_S_y_capslock_COMPAT_MATCHES_zmk_behavior_tap_dance 1
+#define DT_N_S_behaviors_S_y_capslock_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_y_capslock_COMPAT_VENDOR_IDX_0 "ZMK Project"
+#define DT_N_S_behaviors_S_y_capslock_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_y_capslock_COMPAT_MODEL_IDX_0 "behavior-tap-dance"
+#define DT_N_S_behaviors_S_y_capslock_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_behaviors_S_y_capslock_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_0_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_0_VAL_param1 458780
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_0_VAL_param1_EXISTS 1
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_1_EXISTS 1
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_1_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_1_VAL_param1 458809
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_1_VAL_param1_EXISTS 1
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_y_capslock, bindings, 0) \
+	fn(DT_N_S_behaviors_S_y_capslock, bindings, 1)
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_y_capslock, bindings, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_y_capslock, bindings, 1)
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_y_capslock, bindings, 0, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_y_capslock, bindings, 1, __VA_ARGS__)
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_y_capslock, bindings, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_y_capslock, bindings, 1, __VA_ARGS__)
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_LEN 2
+#define DT_N_S_behaviors_S_y_capslock_P_bindings_EXISTS 1
+#define DT_N_S_behaviors_S_y_capslock_P_tapping_term_ms 200
+#define DT_N_S_behaviors_S_y_capslock_P_tapping_term_ms_EXISTS 1
+#define DT_N_S_behaviors_S_y_capslock_P_label "Y_CAPSLOCK"
+#define DT_N_S_behaviors_S_y_capslock_P_label_STRING_UNQUOTED Y_CAPSLOCK
+#define DT_N_S_behaviors_S_y_capslock_P_label_STRING_TOKEN Y_CAPSLOCK
+#define DT_N_S_behaviors_S_y_capslock_P_label_STRING_UPPER_TOKEN Y_CAPSLOCK
+#define DT_N_S_behaviors_S_y_capslock_P_label_IDX_0 "Y_CAPSLOCK"
+#define DT_N_S_behaviors_S_y_capslock_P_label_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_y_capslock_P_label_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_y_capslock, label, 0)
+#define DT_N_S_behaviors_S_y_capslock_P_label_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_y_capslock, label, 0)
+#define DT_N_S_behaviors_S_y_capslock_P_label_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_y_capslock, label, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_y_capslock_P_label_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_y_capslock, label, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_y_capslock_P_label_LEN 1
+#define DT_N_S_behaviors_S_y_capslock_P_label_EXISTS 1
+
+/*
  * Devicetree node: /behaviors/bootload
  *
  * Node identifier: DT_N_S_behaviors_S_bootload
@@ -3552,8 +3765,8 @@
 #define DT_N_S_behaviors_S_bootload_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_bootload_ORD 25
-#define DT_N_S_behaviors_S_bootload_ORD_STR_SORTABLE 00025
+#define DT_N_S_behaviors_S_bootload_ORD 27
+#define DT_N_S_behaviors_S_bootload_ORD_STR_SORTABLE 00027
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_bootload_REQUIRES_ORDS \
@@ -3633,8 +3846,8 @@
 #define DT_N_S_behaviors_S_extpower_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_extpower_ORD 26
-#define DT_N_S_behaviors_S_extpower_ORD_STR_SORTABLE 00026
+#define DT_N_S_behaviors_S_extpower_ORD 28
+#define DT_N_S_behaviors_S_extpower_ORD_STR_SORTABLE 00028
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_extpower_REQUIRES_ORDS \
@@ -3678,111 +3891,6 @@
 #define DT_N_S_behaviors_S_extpower_P_display_name_EXISTS 1
 
 /*
- * Devicetree node: /behaviors/key_press
- *
- * Node identifier: DT_N_S_behaviors_S_key_press
- *
- * Binding (compatible = zmk,behavior-key-press):
- *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-key-press.yaml
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_behaviors_S_key_press_PATH "/behaviors/key_press"
-
-/* Node's name with unit-address: */
-#define DT_N_S_behaviors_S_key_press_FULL_NAME "key_press"
-
-/* Node parent (/behaviors) identifier: */
-#define DT_N_S_behaviors_S_key_press_PARENT DT_N_S_behaviors
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_behaviors_S_key_press_CHILD_IDX 0
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD(fn) 
-#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_key_press_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_key_press_ORD 27
-#define DT_N_S_behaviors_S_key_press_ORD_STR_SORTABLE 00027
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_behaviors_S_key_press_REQUIRES_ORDS \
-	14, /* /behaviors */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_behaviors_S_key_press_SUPPORTS_ORDS \
-	29, /* /macros/open_angle_quote */ \
-	30, /* /behaviors/hroa */ \
-	47, /* /behaviors/mod_tap */ \
-	53, /* /behaviors/sticky_key */ \
-	56, /* /combos/Ralt */ \
-	57, /* /combos/fast_bksp */ \
-	58, /* /combos/fast_enter */ \
-	59, /* /combos/fast_esc */ \
-	60, /* /combos/fast_tab */ \
-	67, /* /behaviors/Y_capslock */ \
-	68, /* /behaviors/f_hml */ \
-	69, /* /behaviors/f_hmr */ \
-	70, /* /behaviors/hml */ \
-	71, /* /behaviors/hmr */ \
-	72, /* /behaviors/hrl */ \
-	73, /* /behaviors/layer_tap */ \
-	74, /* /keymap/default_layer */ \
-	77, /* /keymap/nav_layer */ \
-	78, /* /keymap/num_layer */ \
-	79, /* /keymap/sym_layer */ \
-	82, /* /macros/Vim_change_window */ \
-	83, /* /macros/closed_angle_quote */ \
-	84, /* /macros/vim_decrease_y */ \
-	85, /* /macros/vim_increase_x */ \
-	86, /* /macros/vim_increase_y */ \
-	87, /* /macros/vim_reduce_x */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_behaviors_S_key_press_EXISTS 1
-#define DT_N_INST_0_zmk_behavior_key_press DT_N_S_behaviors_S_key_press
-#define DT_N_NODELABEL_kp                  DT_N_S_behaviors_S_key_press
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_behaviors_S_key_press_REG_NUM 0
-#define DT_N_S_behaviors_S_key_press_RANGES_NUM 0
-#define DT_N_S_behaviors_S_key_press_FOREACH_RANGE(fn) 
-#define DT_N_S_behaviors_S_key_press_IRQ_NUM 0
-#define DT_N_S_behaviors_S_key_press_COMPAT_MATCHES_zmk_behavior_key_press 1
-#define DT_N_S_behaviors_S_key_press_COMPAT_VENDOR_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_key_press_COMPAT_VENDOR_IDX_0 "ZMK Project"
-#define DT_N_S_behaviors_S_key_press_COMPAT_MODEL_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_key_press_COMPAT_MODEL_IDX_0 "behavior-key-press"
-#define DT_N_S_behaviors_S_key_press_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_behaviors_S_key_press_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_behaviors_S_key_press_P_display_name "Key Press"
-#define DT_N_S_behaviors_S_key_press_P_display_name_STRING_UNQUOTED Key Press
-#define DT_N_S_behaviors_S_key_press_P_display_name_STRING_TOKEN Key_Press
-#define DT_N_S_behaviors_S_key_press_P_display_name_STRING_UPPER_TOKEN KEY_PRESS
-#define DT_N_S_behaviors_S_key_press_P_display_name_IDX_0 "Key Press"
-#define DT_N_S_behaviors_S_key_press_P_display_name_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_key_press_P_display_name_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_key_press, display_name, 0)
-#define DT_N_S_behaviors_S_key_press_P_display_name_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_key_press, display_name, 0)
-#define DT_N_S_behaviors_S_key_press_P_display_name_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_key_press, display_name, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_key_press_P_display_name_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_key_press, display_name, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_key_press_P_display_name_LEN 1
-#define DT_N_S_behaviors_S_key_press_P_display_name_EXISTS 1
-
-/*
  * Devicetree node: /macros
  *
  * Node identifier: DT_N_S_macros
@@ -3811,8 +3919,8 @@
 #define DT_N_S_macros_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_macros_S_open_angle_quote, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_macros_S_closed_angle_quote, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_macros_S_vim_change_window, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_macros_S_vim_reduce_x, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_macros_S_vim_increase_x, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_macros_S_vim_decrease_y, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_macros_S_vim_increase_y, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_macros_ORD 28
-#define DT_N_S_macros_ORD_STR_SORTABLE 00028
+#define DT_N_S_macros_ORD 29
+#define DT_N_S_macros_ORD_STR_SORTABLE 00029
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_macros_REQUIRES_ORDS \
@@ -3820,13 +3928,13 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_macros_SUPPORTS_ORDS \
-	29, /* /macros/open_angle_quote */ \
-	82, /* /macros/Vim_change_window */ \
-	83, /* /macros/closed_angle_quote */ \
-	84, /* /macros/vim_decrease_y */ \
-	85, /* /macros/vim_increase_x */ \
-	86, /* /macros/vim_increase_y */ \
-	87, /* /macros/vim_reduce_x */
+	30, /* /macros/open_angle_quote */ \
+	85, /* /macros/Vim_change_window */ \
+	86, /* /macros/closed_angle_quote */ \
+	87, /* /macros/vim_decrease_y */ \
+	88, /* /macros/vim_increase_x */ \
+	89, /* /macros/vim_increase_y */ \
+	90, /* /macros/vim_reduce_x */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_macros_EXISTS 1
@@ -3878,17 +3986,17 @@
 #define DT_N_S_macros_S_open_angle_quote_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_macros_S_open_angle_quote_ORD 29
-#define DT_N_S_macros_S_open_angle_quote_ORD_STR_SORTABLE 00029
+#define DT_N_S_macros_S_open_angle_quote_ORD 30
+#define DT_N_S_macros_S_open_angle_quote_ORD_STR_SORTABLE 00030
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_macros_S_open_angle_quote_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	28, /* /macros */
+	25, /* /behaviors/key_press */ \
+	29, /* /macros */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_macros_S_open_angle_quote_SUPPORTS_ORDS \
-	30, /* /behaviors/hroa */
+	31, /* /behaviors/hroa */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_macros_S_open_angle_quote_EXISTS 1
@@ -3977,14 +4085,14 @@
 #define DT_N_S_behaviors_S_hroa_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_hroa_ORD 30
-#define DT_N_S_behaviors_S_hroa_ORD_STR_SORTABLE 00030
+#define DT_N_S_behaviors_S_hroa_ORD 31
+#define DT_N_S_behaviors_S_hroa_ORD_STR_SORTABLE 00031
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_hroa_REQUIRES_ORDS \
 	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */ \
-	29, /* /macros/open_angle_quote */
+	25, /* /behaviors/key_press */ \
+	30, /* /macros/open_angle_quote */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_hroa_SUPPORTS_ORDS /* nothing */
@@ -4223,8 +4331,8 @@
 #define DT_N_S_behaviors_S_macro_param_1to1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_param_1to1_ORD 31
-#define DT_N_S_behaviors_S_macro_param_1to1_ORD_STR_SORTABLE 00031
+#define DT_N_S_behaviors_S_macro_param_1to1_ORD 32
+#define DT_N_S_behaviors_S_macro_param_1to1_ORD_STR_SORTABLE 00032
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_param_1to1_REQUIRES_ORDS \
@@ -4290,8 +4398,8 @@
 #define DT_N_S_behaviors_S_macro_param_1to2_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_param_1to2_ORD 32
-#define DT_N_S_behaviors_S_macro_param_1to2_ORD_STR_SORTABLE 00032
+#define DT_N_S_behaviors_S_macro_param_1to2_ORD 33
+#define DT_N_S_behaviors_S_macro_param_1to2_ORD_STR_SORTABLE 00033
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_param_1to2_REQUIRES_ORDS \
@@ -4357,8 +4465,8 @@
 #define DT_N_S_behaviors_S_macro_param_2to1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_param_2to1_ORD 33
-#define DT_N_S_behaviors_S_macro_param_2to1_ORD_STR_SORTABLE 00033
+#define DT_N_S_behaviors_S_macro_param_2to1_ORD 34
+#define DT_N_S_behaviors_S_macro_param_2to1_ORD_STR_SORTABLE 00034
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_param_2to1_REQUIRES_ORDS \
@@ -4424,8 +4532,8 @@
 #define DT_N_S_behaviors_S_macro_param_2to2_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_param_2to2_ORD 34
-#define DT_N_S_behaviors_S_macro_param_2to2_ORD_STR_SORTABLE 00034
+#define DT_N_S_behaviors_S_macro_param_2to2_ORD 35
+#define DT_N_S_behaviors_S_macro_param_2to2_ORD_STR_SORTABLE 00035
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_param_2to2_REQUIRES_ORDS \
@@ -4491,8 +4599,8 @@
 #define DT_N_S_behaviors_S_macro_pause_for_release_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_pause_for_release_ORD 35
-#define DT_N_S_behaviors_S_macro_pause_for_release_ORD_STR_SORTABLE 00035
+#define DT_N_S_behaviors_S_macro_pause_for_release_ORD 36
+#define DT_N_S_behaviors_S_macro_pause_for_release_ORD_STR_SORTABLE 00036
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_pause_for_release_REQUIRES_ORDS \
@@ -4558,8 +4666,8 @@
 #define DT_N_S_behaviors_S_macro_press_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_press_ORD 36
-#define DT_N_S_behaviors_S_macro_press_ORD_STR_SORTABLE 00036
+#define DT_N_S_behaviors_S_macro_press_ORD 37
+#define DT_N_S_behaviors_S_macro_press_ORD_STR_SORTABLE 00037
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_press_REQUIRES_ORDS \
@@ -4625,8 +4733,8 @@
 #define DT_N_S_behaviors_S_macro_release_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_release_ORD 37
-#define DT_N_S_behaviors_S_macro_release_ORD_STR_SORTABLE 00037
+#define DT_N_S_behaviors_S_macro_release_ORD 38
+#define DT_N_S_behaviors_S_macro_release_ORD_STR_SORTABLE 00038
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_release_REQUIRES_ORDS \
@@ -4692,8 +4800,8 @@
 #define DT_N_S_behaviors_S_macro_tap_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_tap_ORD 38
-#define DT_N_S_behaviors_S_macro_tap_ORD_STR_SORTABLE 00038
+#define DT_N_S_behaviors_S_macro_tap_ORD 39
+#define DT_N_S_behaviors_S_macro_tap_ORD_STR_SORTABLE 00039
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_tap_REQUIRES_ORDS \
@@ -4759,8 +4867,8 @@
 #define DT_N_S_behaviors_S_macro_tap_time_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_tap_time_ORD 39
-#define DT_N_S_behaviors_S_macro_tap_time_ORD_STR_SORTABLE 00039
+#define DT_N_S_behaviors_S_macro_tap_time_ORD 40
+#define DT_N_S_behaviors_S_macro_tap_time_ORD_STR_SORTABLE 00040
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_tap_time_REQUIRES_ORDS \
@@ -4826,8 +4934,8 @@
 #define DT_N_S_behaviors_S_macro_wait_time_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_macro_wait_time_ORD 40
-#define DT_N_S_behaviors_S_macro_wait_time_ORD_STR_SORTABLE 00040
+#define DT_N_S_behaviors_S_macro_wait_time_ORD 41
+#define DT_N_S_behaviors_S_macro_wait_time_ORD_STR_SORTABLE 00041
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_macro_wait_time_REQUIRES_ORDS \
@@ -4893,8 +5001,8 @@
 #define DT_N_S_behaviors_S_rgb_ug_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_rgb_ug_ORD 41
-#define DT_N_S_behaviors_S_rgb_ug_ORD_STR_SORTABLE 00041
+#define DT_N_S_behaviors_S_rgb_ug_ORD 42
+#define DT_N_S_behaviors_S_rgb_ug_ORD_STR_SORTABLE 00042
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_rgb_ug_REQUIRES_ORDS \
@@ -4972,8 +5080,8 @@
 #define DT_N_S_behaviors_S_studio_unlock_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_studio_unlock_ORD 42
-#define DT_N_S_behaviors_S_studio_unlock_ORD_STR_SORTABLE 00042
+#define DT_N_S_behaviors_S_studio_unlock_ORD 43
+#define DT_N_S_behaviors_S_studio_unlock_ORD_STR_SORTABLE 00043
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_studio_unlock_REQUIRES_ORDS \
@@ -5051,8 +5159,8 @@
 #define DT_N_S_behaviors_S_sysreset_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_sysreset_ORD 43
-#define DT_N_S_behaviors_S_sysreset_ORD_STR_SORTABLE 00043
+#define DT_N_S_behaviors_S_sysreset_ORD 44
+#define DT_N_S_behaviors_S_sysreset_ORD_STR_SORTABLE 00044
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_sysreset_REQUIRES_ORDS \
@@ -5122,18 +5230,18 @@
 #define DT_N_S_combos_CHILD_IDX 20
 
 /* Helper macros for child nodes of this node. */
-#define DT_N_S_combos_FOREACH_CHILD(fn) fn(DT_N_S_combos_S_esc) fn(DT_N_S_combos_S_del) fn(DT_N_S_combos_S_media) fn(DT_N_S_combos_S_ralt) fn(DT_N_S_combos_S_clrblutooth) fn(DT_N_S_combos_S_fast_esc) fn(DT_N_S_combos_S_fast_tab) fn(DT_N_S_combos_S_fast_bksp) fn(DT_N_S_combos_S_fast_enter) fn(DT_N_S_combos_S_oneshotshiftleft) fn(DT_N_S_combos_S_oneshotshiftright)
-#define DT_N_S_combos_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_combos_S_esc) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_del) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_media) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_ralt) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_clrblutooth) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_esc) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_tab) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_bksp) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_enter) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_oneshotshiftleft) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_oneshotshiftright)
-#define DT_N_S_combos_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_combos_S_esc, __VA_ARGS__) fn(DT_N_S_combos_S_del, __VA_ARGS__) fn(DT_N_S_combos_S_media, __VA_ARGS__) fn(DT_N_S_combos_S_ralt, __VA_ARGS__) fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__) fn(DT_N_S_combos_S_oneshotshiftleft, __VA_ARGS__) fn(DT_N_S_combos_S_oneshotshiftright, __VA_ARGS__)
-#define DT_N_S_combos_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_combos_S_esc, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_del, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_media, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_ralt, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_oneshotshiftleft, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_oneshotshiftright, __VA_ARGS__)
-#define DT_N_S_combos_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_combos_S_esc) fn(DT_N_S_combos_S_del) fn(DT_N_S_combos_S_media) fn(DT_N_S_combos_S_ralt) fn(DT_N_S_combos_S_clrblutooth) fn(DT_N_S_combos_S_fast_esc) fn(DT_N_S_combos_S_fast_tab) fn(DT_N_S_combos_S_fast_bksp) fn(DT_N_S_combos_S_fast_enter) fn(DT_N_S_combos_S_oneshotshiftleft) fn(DT_N_S_combos_S_oneshotshiftright)
-#define DT_N_S_combos_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_combos_S_esc) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_del) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_media) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_ralt) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_clrblutooth) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_esc) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_tab) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_bksp) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_enter) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_oneshotshiftleft) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_oneshotshiftright)
-#define DT_N_S_combos_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_combos_S_esc, __VA_ARGS__) fn(DT_N_S_combos_S_del, __VA_ARGS__) fn(DT_N_S_combos_S_media, __VA_ARGS__) fn(DT_N_S_combos_S_ralt, __VA_ARGS__) fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__) fn(DT_N_S_combos_S_oneshotshiftleft, __VA_ARGS__) fn(DT_N_S_combos_S_oneshotshiftright, __VA_ARGS__)
-#define DT_N_S_combos_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_combos_S_esc, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_del, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_media, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_ralt, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_oneshotshiftleft, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_oneshotshiftright, __VA_ARGS__)
+#define DT_N_S_combos_FOREACH_CHILD(fn) fn(DT_N_S_combos_S_esc) fn(DT_N_S_combos_S_del) fn(DT_N_S_combos_S_media) fn(DT_N_S_combos_S_ralt) fn(DT_N_S_combos_S_clrblutooth) fn(DT_N_S_combos_S_fast_esc) fn(DT_N_S_combos_S_fast_tab) fn(DT_N_S_combos_S_fast_bksp) fn(DT_N_S_combos_S_fast_enter)
+#define DT_N_S_combos_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_combos_S_esc) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_del) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_media) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_ralt) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_clrblutooth) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_esc) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_tab) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_bksp) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_enter)
+#define DT_N_S_combos_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_combos_S_esc, __VA_ARGS__) fn(DT_N_S_combos_S_del, __VA_ARGS__) fn(DT_N_S_combos_S_media, __VA_ARGS__) fn(DT_N_S_combos_S_ralt, __VA_ARGS__) fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__)
+#define DT_N_S_combos_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_combos_S_esc, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_del, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_media, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_ralt, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__)
+#define DT_N_S_combos_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_combos_S_esc) fn(DT_N_S_combos_S_del) fn(DT_N_S_combos_S_media) fn(DT_N_S_combos_S_ralt) fn(DT_N_S_combos_S_clrblutooth) fn(DT_N_S_combos_S_fast_esc) fn(DT_N_S_combos_S_fast_tab) fn(DT_N_S_combos_S_fast_bksp) fn(DT_N_S_combos_S_fast_enter)
+#define DT_N_S_combos_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_combos_S_esc) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_del) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_media) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_ralt) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_clrblutooth) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_esc) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_tab) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_bksp) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_enter)
+#define DT_N_S_combos_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_combos_S_esc, __VA_ARGS__) fn(DT_N_S_combos_S_del, __VA_ARGS__) fn(DT_N_S_combos_S_media, __VA_ARGS__) fn(DT_N_S_combos_S_ralt, __VA_ARGS__) fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__)
+#define DT_N_S_combos_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_combos_S_esc, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_del, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_media, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_ralt, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_ORD 44
-#define DT_N_S_combos_ORD_STR_SORTABLE 00044
+#define DT_N_S_combos_ORD 45
+#define DT_N_S_combos_ORD_STR_SORTABLE 00045
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_REQUIRES_ORDS \
@@ -5141,17 +5249,15 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_SUPPORTS_ORDS \
-	46, /* /combos/ClrBlutooth */ \
-	48, /* /combos/Del */ \
-	50, /* /combos/Esc */ \
-	52, /* /combos/Media */ \
-	54, /* /combos/OneShotShiftLeft */ \
-	55, /* /combos/OneShotShiftRight */ \
-	56, /* /combos/Ralt */ \
-	57, /* /combos/fast_bksp */ \
-	58, /* /combos/fast_enter */ \
-	59, /* /combos/fast_esc */ \
-	60, /* /combos/fast_tab */
+	47, /* /combos/ClrBlutooth */ \
+	49, /* /combos/Del */ \
+	51, /* /combos/Esc */ \
+	53, /* /combos/Media */ \
+	54, /* /combos/Ralt */ \
+	55, /* /combos/fast_bksp */ \
+	56, /* /combos/fast_enter */ \
+	57, /* /combos/fast_esc */ \
+	58, /* /combos/fast_tab */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_combos_EXISTS 1
@@ -5221,8 +5327,8 @@
 #define DT_N_S_behaviors_S_bluetooth_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_bluetooth_ORD 45
-#define DT_N_S_behaviors_S_bluetooth_ORD_STR_SORTABLE 00045
+#define DT_N_S_behaviors_S_bluetooth_ORD 46
+#define DT_N_S_behaviors_S_bluetooth_ORD_STR_SORTABLE 00046
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_bluetooth_REQUIRES_ORDS \
@@ -5230,8 +5336,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_bluetooth_SUPPORTS_ORDS \
-	46, /* /combos/ClrBlutooth */ \
-	79, /* /keymap/sym_layer */
+	47, /* /combos/ClrBlutooth */ \
+	82, /* /keymap/sym_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_bluetooth_EXISTS 1
@@ -5299,13 +5405,13 @@
 #define DT_N_S_combos_S_clrblutooth_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_S_clrblutooth_ORD 46
-#define DT_N_S_combos_S_clrblutooth_ORD_STR_SORTABLE 00046
+#define DT_N_S_combos_S_clrblutooth_ORD 47
+#define DT_N_S_combos_S_clrblutooth_ORD_STR_SORTABLE 00047
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_S_clrblutooth_REQUIRES_ORDS \
-	44, /* /combos */ \
-	45, /* /behaviors/bluetooth */
+	45, /* /combos */ \
+	46, /* /behaviors/bluetooth */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_S_clrblutooth_SUPPORTS_ORDS /* nothing */
@@ -5408,18 +5514,17 @@
 #define DT_N_S_behaviors_S_mod_tap_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_mod_tap_ORD 47
-#define DT_N_S_behaviors_S_mod_tap_ORD_STR_SORTABLE 00047
+#define DT_N_S_behaviors_S_mod_tap_ORD 48
+#define DT_N_S_behaviors_S_mod_tap_ORD_STR_SORTABLE 00048
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_mod_tap_REQUIRES_ORDS \
 	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */
+	25, /* /behaviors/key_press */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_mod_tap_SUPPORTS_ORDS \
-	48, /* /combos/Del */ \
-	74, /* /keymap/default_layer */
+	49, /* /combos/Del */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_mod_tap_EXISTS 1
@@ -5542,13 +5647,13 @@
 #define DT_N_S_combos_S_del_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_S_del_ORD 48
-#define DT_N_S_combos_S_del_ORD_STR_SORTABLE 00048
+#define DT_N_S_combos_S_del_ORD 49
+#define DT_N_S_combos_S_del_ORD_STR_SORTABLE 00049
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_S_del_REQUIRES_ORDS \
-	44, /* /combos */ \
-	47, /* /behaviors/mod_tap */
+	45, /* /combos */ \
+	48, /* /behaviors/mod_tap */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_S_del_SUPPORTS_ORDS /* nothing */
@@ -5636,8 +5741,8 @@
 #define DT_N_S_behaviors_S_caps_word_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_caps_word_ORD 49
-#define DT_N_S_behaviors_S_caps_word_ORD_STR_SORTABLE 00049
+#define DT_N_S_behaviors_S_caps_word_ORD 50
+#define DT_N_S_behaviors_S_caps_word_ORD_STR_SORTABLE 00050
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_caps_word_REQUIRES_ORDS \
@@ -5645,7 +5750,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_caps_word_SUPPORTS_ORDS \
-	50, /* /combos/Esc */
+	51, /* /combos/Esc */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_caps_word_EXISTS 1
@@ -5734,13 +5839,13 @@
 #define DT_N_S_combos_S_esc_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_S_esc_ORD 50
-#define DT_N_S_combos_S_esc_ORD_STR_SORTABLE 00050
+#define DT_N_S_combos_S_esc_ORD 51
+#define DT_N_S_combos_S_esc_ORD_STR_SORTABLE 00051
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_S_esc_REQUIRES_ORDS \
-	44, /* /combos */ \
-	49, /* /behaviors/caps_word */
+	45, /* /combos */ \
+	50, /* /behaviors/caps_word */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_S_esc_SUPPORTS_ORDS /* nothing */
@@ -5824,8 +5929,8 @@
 #define DT_N_S_behaviors_S_momentary_layer_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_momentary_layer_ORD 51
-#define DT_N_S_behaviors_S_momentary_layer_ORD_STR_SORTABLE 00051
+#define DT_N_S_behaviors_S_momentary_layer_ORD 52
+#define DT_N_S_behaviors_S_momentary_layer_ORD_STR_SORTABLE 00052
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_momentary_layer_REQUIRES_ORDS \
@@ -5833,9 +5938,9 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_momentary_layer_SUPPORTS_ORDS \
-	52, /* /combos/Media */ \
-	72, /* /behaviors/hrl */ \
-	73, /* /behaviors/layer_tap */
+	53, /* /combos/Media */ \
+	76, /* /behaviors/hrl */ \
+	77, /* /behaviors/layer_tap */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_momentary_layer_EXISTS 1
@@ -5903,13 +6008,13 @@
 #define DT_N_S_combos_S_media_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_S_media_ORD 52
-#define DT_N_S_combos_S_media_ORD_STR_SORTABLE 00052
+#define DT_N_S_combos_S_media_ORD 53
+#define DT_N_S_combos_S_media_ORD_STR_SORTABLE 00053
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_S_media_REQUIRES_ORDS \
-	44, /* /combos */ \
-	51, /* /behaviors/momentary_layer */
+	45, /* /combos */ \
+	52, /* /behaviors/momentary_layer */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_S_media_SUPPORTS_ORDS /* nothing */
@@ -5961,283 +6066,6 @@
 #define DT_N_S_combos_S_media_P_slow_release_EXISTS 1
 
 /*
- * Devicetree node: /behaviors/sticky_key
- *
- * Node identifier: DT_N_S_behaviors_S_sticky_key
- *
- * Binding (compatible = zmk,behavior-sticky-key):
- *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-sticky-key.yaml
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_behaviors_S_sticky_key_PATH "/behaviors/sticky_key"
-
-/* Node's name with unit-address: */
-#define DT_N_S_behaviors_S_sticky_key_FULL_NAME "sticky_key"
-
-/* Node parent (/behaviors) identifier: */
-#define DT_N_S_behaviors_S_sticky_key_PARENT DT_N_S_behaviors
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_behaviors_S_sticky_key_CHILD_IDX 4
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD(fn) 
-#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_sticky_key_ORD 53
-#define DT_N_S_behaviors_S_sticky_key_ORD_STR_SORTABLE 00053
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_behaviors_S_sticky_key_REQUIRES_ORDS \
-	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_behaviors_S_sticky_key_SUPPORTS_ORDS \
-	54, /* /combos/OneShotShiftLeft */ \
-	55, /* /combos/OneShotShiftRight */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_behaviors_S_sticky_key_EXISTS 1
-#define DT_N_INST_0_zmk_behavior_sticky_key DT_N_S_behaviors_S_sticky_key
-#define DT_N_NODELABEL_sk                   DT_N_S_behaviors_S_sticky_key
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_behaviors_S_sticky_key_REG_NUM 0
-#define DT_N_S_behaviors_S_sticky_key_RANGES_NUM 0
-#define DT_N_S_behaviors_S_sticky_key_FOREACH_RANGE(fn) 
-#define DT_N_S_behaviors_S_sticky_key_IRQ_NUM 0
-#define DT_N_S_behaviors_S_sticky_key_COMPAT_MATCHES_zmk_behavior_sticky_key 1
-#define DT_N_S_behaviors_S_sticky_key_COMPAT_VENDOR_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_sticky_key_COMPAT_VENDOR_IDX_0 "ZMK Project"
-#define DT_N_S_behaviors_S_sticky_key_COMPAT_MODEL_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_sticky_key_COMPAT_MODEL_IDX_0 "behavior-sticky-key"
-#define DT_N_S_behaviors_S_sticky_key_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_behaviors_S_sticky_key_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_behaviors_S_sticky_key_P_bindings_IDX_0 DT_N_S_behaviors_S_key_press
-#define DT_N_S_behaviors_S_sticky_key_P_bindings_IDX_0_PH DT_N_S_behaviors_S_key_press
-#define DT_N_S_behaviors_S_sticky_key_P_bindings_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_sticky_key_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_sticky_key, bindings, 0)
-#define DT_N_S_behaviors_S_sticky_key_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_sticky_key, bindings, 0)
-#define DT_N_S_behaviors_S_sticky_key_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_sticky_key, bindings, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_sticky_key_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_sticky_key, bindings, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_sticky_key_P_bindings_LEN 1
-#define DT_N_S_behaviors_S_sticky_key_P_bindings_EXISTS 1
-#define DT_N_S_behaviors_S_sticky_key_P_release_after_ms 1000
-#define DT_N_S_behaviors_S_sticky_key_P_release_after_ms_EXISTS 1
-#define DT_N_S_behaviors_S_sticky_key_P_quick_release 0
-#define DT_N_S_behaviors_S_sticky_key_P_quick_release_EXISTS 1
-#define DT_N_S_behaviors_S_sticky_key_P_lazy 0
-#define DT_N_S_behaviors_S_sticky_key_P_lazy_EXISTS 1
-#define DT_N_S_behaviors_S_sticky_key_P_ignore_modifiers 1
-#define DT_N_S_behaviors_S_sticky_key_P_ignore_modifiers_EXISTS 1
-#define DT_N_S_behaviors_S_sticky_key_P_display_name "Sticky Key"
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_STRING_UNQUOTED Sticky Key
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_STRING_TOKEN Sticky_Key
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_STRING_UPPER_TOKEN STICKY_KEY
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_IDX_0 "Sticky Key"
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_sticky_key, display_name, 0)
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_sticky_key, display_name, 0)
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_sticky_key, display_name, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_sticky_key, display_name, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_LEN 1
-#define DT_N_S_behaviors_S_sticky_key_P_display_name_EXISTS 1
-
-/*
- * Devicetree node: /combos/OneShotShiftLeft
- *
- * Node identifier: DT_N_S_combos_S_oneshotshiftleft
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_combos_S_oneshotshiftleft_PATH "/combos/OneShotShiftLeft"
-
-/* Node's name with unit-address: */
-#define DT_N_S_combos_S_oneshotshiftleft_FULL_NAME "OneShotShiftLeft"
-
-/* Node parent (/combos) identifier: */
-#define DT_N_S_combos_S_oneshotshiftleft_PARENT DT_N_S_combos
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_combos_S_oneshotshiftleft_CHILD_IDX 9
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_combos_S_oneshotshiftleft_FOREACH_CHILD(fn) 
-#define DT_N_S_combos_S_oneshotshiftleft_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_combos_S_oneshotshiftleft_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_combos_S_oneshotshiftleft_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_combos_S_oneshotshiftleft_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_combos_S_oneshotshiftleft_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_combos_S_oneshotshiftleft_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_combos_S_oneshotshiftleft_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's dependency ordinal: */
-#define DT_N_S_combos_S_oneshotshiftleft_ORD 54
-#define DT_N_S_combos_S_oneshotshiftleft_ORD_STR_SORTABLE 00054
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_combos_S_oneshotshiftleft_REQUIRES_ORDS \
-	44, /* /combos */ \
-	53, /* /behaviors/sticky_key */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_combos_S_oneshotshiftleft_SUPPORTS_ORDS /* nothing */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_combos_S_oneshotshiftleft_EXISTS 1
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_combos_S_oneshotshiftleft_REG_NUM 0
-#define DT_N_S_combos_S_oneshotshiftleft_RANGES_NUM 0
-#define DT_N_S_combos_S_oneshotshiftleft_FOREACH_RANGE(fn) 
-#define DT_N_S_combos_S_oneshotshiftleft_IRQ_NUM 0
-#define DT_N_S_combos_S_oneshotshiftleft_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_combos_S_oneshotshiftleft_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_IDX_0_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_IDX_0_PH DT_N_S_behaviors_S_sticky_key
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_IDX_0_VAL_param1 458977
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_IDX_0_VAL_param1_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_combos_S_oneshotshiftleft, bindings, 0)
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_combos_S_oneshotshiftleft, bindings, 0)
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_combos_S_oneshotshiftleft, bindings, 0, __VA_ARGS__)
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_combos_S_oneshotshiftleft, bindings, 0, __VA_ARGS__)
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_LEN 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_bindings_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions {1 /* 0x1 */, 2 /* 0x2 */}
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_IDX_0 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_IDX_0_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_IDX_1 2
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_IDX_1_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_FOREACH_PROP_ELEM(fn) fn(DT_N_S_combos_S_oneshotshiftleft, key_positions, 0) \
-	fn(DT_N_S_combos_S_oneshotshiftleft, key_positions, 1)
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_combos_S_oneshotshiftleft, key_positions, 0) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_combos_S_oneshotshiftleft, key_positions, 1)
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_combos_S_oneshotshiftleft, key_positions, 0, __VA_ARGS__) \
-	fn(DT_N_S_combos_S_oneshotshiftleft, key_positions, 1, __VA_ARGS__)
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_combos_S_oneshotshiftleft, key_positions, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_combos_S_oneshotshiftleft, key_positions, 1, __VA_ARGS__)
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_LEN 2
-#define DT_N_S_combos_S_oneshotshiftleft_P_key_positions_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_timeout_ms 50
-#define DT_N_S_combos_S_oneshotshiftleft_P_timeout_ms_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_require_prior_idle_ms -1
-#define DT_N_S_combos_S_oneshotshiftleft_P_require_prior_idle_ms_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftleft_P_slow_release 0
-#define DT_N_S_combos_S_oneshotshiftleft_P_slow_release_EXISTS 1
-
-/*
- * Devicetree node: /combos/OneShotShiftRight
- *
- * Node identifier: DT_N_S_combos_S_oneshotshiftright
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_combos_S_oneshotshiftright_PATH "/combos/OneShotShiftRight"
-
-/* Node's name with unit-address: */
-#define DT_N_S_combos_S_oneshotshiftright_FULL_NAME "OneShotShiftRight"
-
-/* Node parent (/combos) identifier: */
-#define DT_N_S_combos_S_oneshotshiftright_PARENT DT_N_S_combos
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_combos_S_oneshotshiftright_CHILD_IDX 10
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_combos_S_oneshotshiftright_FOREACH_CHILD(fn) 
-#define DT_N_S_combos_S_oneshotshiftright_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_combos_S_oneshotshiftright_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_combos_S_oneshotshiftright_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_combos_S_oneshotshiftright_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_combos_S_oneshotshiftright_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_combos_S_oneshotshiftright_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_combos_S_oneshotshiftright_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's dependency ordinal: */
-#define DT_N_S_combos_S_oneshotshiftright_ORD 55
-#define DT_N_S_combos_S_oneshotshiftright_ORD_STR_SORTABLE 00055
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_combos_S_oneshotshiftright_REQUIRES_ORDS \
-	44, /* /combos */ \
-	53, /* /behaviors/sticky_key */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_combos_S_oneshotshiftright_SUPPORTS_ORDS /* nothing */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_combos_S_oneshotshiftright_EXISTS 1
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_combos_S_oneshotshiftright_REG_NUM 0
-#define DT_N_S_combos_S_oneshotshiftright_RANGES_NUM 0
-#define DT_N_S_combos_S_oneshotshiftright_FOREACH_RANGE(fn) 
-#define DT_N_S_combos_S_oneshotshiftright_IRQ_NUM 0
-#define DT_N_S_combos_S_oneshotshiftright_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_combos_S_oneshotshiftright_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_IDX_0_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_IDX_0_PH DT_N_S_behaviors_S_sticky_key
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_IDX_0_VAL_param1 458981
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_IDX_0_VAL_param1_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_combos_S_oneshotshiftright, bindings, 0)
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_combos_S_oneshotshiftright, bindings, 0)
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_combos_S_oneshotshiftright, bindings, 0, __VA_ARGS__)
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_combos_S_oneshotshiftright, bindings, 0, __VA_ARGS__)
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_LEN 1
-#define DT_N_S_combos_S_oneshotshiftright_P_bindings_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions {8 /* 0x8 */, 7 /* 0x7 */}
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_IDX_0 8
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_IDX_0_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_IDX_1 7
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_IDX_1_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_FOREACH_PROP_ELEM(fn) fn(DT_N_S_combos_S_oneshotshiftright, key_positions, 0) \
-	fn(DT_N_S_combos_S_oneshotshiftright, key_positions, 1)
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_combos_S_oneshotshiftright, key_positions, 0) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_combos_S_oneshotshiftright, key_positions, 1)
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_combos_S_oneshotshiftright, key_positions, 0, __VA_ARGS__) \
-	fn(DT_N_S_combos_S_oneshotshiftright, key_positions, 1, __VA_ARGS__)
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_combos_S_oneshotshiftright, key_positions, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_combos_S_oneshotshiftright, key_positions, 1, __VA_ARGS__)
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_LEN 2
-#define DT_N_S_combos_S_oneshotshiftright_P_key_positions_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftright_P_timeout_ms 50
-#define DT_N_S_combos_S_oneshotshiftright_P_timeout_ms_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftright_P_require_prior_idle_ms -1
-#define DT_N_S_combos_S_oneshotshiftright_P_require_prior_idle_ms_EXISTS 1
-#define DT_N_S_combos_S_oneshotshiftright_P_slow_release 0
-#define DT_N_S_combos_S_oneshotshiftright_P_slow_release_EXISTS 1
-
-/*
  * Devicetree node: /combos/Ralt
  *
  * Node identifier: DT_N_S_combos_S_ralt
@@ -6269,13 +6097,13 @@
 #define DT_N_S_combos_S_ralt_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_S_ralt_ORD 56
-#define DT_N_S_combos_S_ralt_ORD_STR_SORTABLE 00056
+#define DT_N_S_combos_S_ralt_ORD 54
+#define DT_N_S_combos_S_ralt_ORD_STR_SORTABLE 00054
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_S_ralt_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	44, /* /combos */
+	25, /* /behaviors/key_press */ \
+	45, /* /combos */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_S_ralt_SUPPORTS_ORDS /* nothing */
@@ -6358,13 +6186,13 @@
 #define DT_N_S_combos_S_fast_bksp_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_S_fast_bksp_ORD 57
-#define DT_N_S_combos_S_fast_bksp_ORD_STR_SORTABLE 00057
+#define DT_N_S_combos_S_fast_bksp_ORD 55
+#define DT_N_S_combos_S_fast_bksp_ORD_STR_SORTABLE 00055
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_S_fast_bksp_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	44, /* /combos */
+	25, /* /behaviors/key_press */ \
+	45, /* /combos */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_S_fast_bksp_SUPPORTS_ORDS /* nothing */
@@ -6447,13 +6275,13 @@
 #define DT_N_S_combos_S_fast_enter_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_S_fast_enter_ORD 58
-#define DT_N_S_combos_S_fast_enter_ORD_STR_SORTABLE 00058
+#define DT_N_S_combos_S_fast_enter_ORD 56
+#define DT_N_S_combos_S_fast_enter_ORD_STR_SORTABLE 00056
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_S_fast_enter_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	44, /* /combos */
+	25, /* /behaviors/key_press */ \
+	45, /* /combos */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_S_fast_enter_SUPPORTS_ORDS /* nothing */
@@ -6536,13 +6364,13 @@
 #define DT_N_S_combos_S_fast_esc_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_S_fast_esc_ORD 59
-#define DT_N_S_combos_S_fast_esc_ORD_STR_SORTABLE 00059
+#define DT_N_S_combos_S_fast_esc_ORD 57
+#define DT_N_S_combos_S_fast_esc_ORD_STR_SORTABLE 00057
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_S_fast_esc_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	44, /* /combos */
+	25, /* /behaviors/key_press */ \
+	45, /* /combos */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_S_fast_esc_SUPPORTS_ORDS /* nothing */
@@ -6625,13 +6453,13 @@
 #define DT_N_S_combos_S_fast_tab_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_combos_S_fast_tab_ORD 60
-#define DT_N_S_combos_S_fast_tab_ORD_STR_SORTABLE 00060
+#define DT_N_S_combos_S_fast_tab_ORD 58
+#define DT_N_S_combos_S_fast_tab_ORD_STR_SORTABLE 00058
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_combos_S_fast_tab_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	44, /* /combos */
+	25, /* /behaviors/key_press */ \
+	45, /* /combos */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_combos_S_fast_tab_SUPPORTS_ORDS /* nothing */
@@ -6717,8 +6545,8 @@
 #define DT_N_S_conditional_layers_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_conditional_layers_S_medialayer, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_conditional_layers_ORD 61
-#define DT_N_S_conditional_layers_ORD_STR_SORTABLE 00061
+#define DT_N_S_conditional_layers_ORD 59
+#define DT_N_S_conditional_layers_ORD_STR_SORTABLE 00059
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_conditional_layers_REQUIRES_ORDS \
@@ -6726,7 +6554,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_conditional_layers_SUPPORTS_ORDS \
-	62, /* /conditional_layers/MediaLayer */
+	60, /* /conditional_layers/MediaLayer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_conditional_layers_EXISTS 1
@@ -6793,12 +6621,12 @@
 #define DT_N_S_conditional_layers_S_medialayer_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_conditional_layers_S_medialayer_ORD 62
-#define DT_N_S_conditional_layers_S_medialayer_ORD_STR_SORTABLE 00062
+#define DT_N_S_conditional_layers_S_medialayer_ORD 60
+#define DT_N_S_conditional_layers_S_medialayer_ORD_STR_SORTABLE 00060
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_conditional_layers_S_medialayer_REQUIRES_ORDS \
-	61, /* /conditional_layers */
+	59, /* /conditional_layers */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_conditional_layers_S_medialayer_SUPPORTS_ORDS /* nothing */
@@ -6864,8 +6692,8 @@
 #define DT_N_S_cpus_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_cpus_ORD 63
-#define DT_N_S_cpus_ORD_STR_SORTABLE 00063
+#define DT_N_S_cpus_ORD 61
+#define DT_N_S_cpus_ORD_STR_SORTABLE 00061
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_cpus_REQUIRES_ORDS \
@@ -6873,7 +6701,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_cpus_SUPPORTS_ORDS \
-	64, /* /cpus/cpu@0 */
+	62, /* /cpus/cpu@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_cpus_EXISTS 1
@@ -6925,16 +6753,16 @@
 #define DT_N_S_cpus_S_cpu_0_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_cpus_S_cpu_0_S_itm_e0000000, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_cpus_S_cpu_0_ORD 64
-#define DT_N_S_cpus_S_cpu_0_ORD_STR_SORTABLE 00064
+#define DT_N_S_cpus_S_cpu_0_ORD 62
+#define DT_N_S_cpus_S_cpu_0_ORD_STR_SORTABLE 00062
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_cpus_S_cpu_0_REQUIRES_ORDS \
-	63, /* /cpus */
+	61, /* /cpus */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_cpus_S_cpu_0_SUPPORTS_ORDS \
-	65, /* /cpus/cpu@0/itm@e0000000 */
+	63, /* /cpus/cpu@0/itm@e0000000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_cpus_S_cpu_0_EXISTS 1
@@ -7014,12 +6842,12 @@
 #define DT_N_S_cpus_S_cpu_0_S_itm_e0000000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_cpus_S_cpu_0_S_itm_e0000000_ORD 65
-#define DT_N_S_cpus_S_cpu_0_S_itm_e0000000_ORD_STR_SORTABLE 00065
+#define DT_N_S_cpus_S_cpu_0_S_itm_e0000000_ORD 63
+#define DT_N_S_cpus_S_cpu_0_S_itm_e0000000_ORD_STR_SORTABLE 00063
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_cpus_S_cpu_0_S_itm_e0000000_REQUIRES_ORDS \
-	64, /* /cpus/cpu@0 */
+	62, /* /cpus/cpu@0 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_cpus_S_cpu_0_S_itm_e0000000_SUPPORTS_ORDS /* nothing */
@@ -7098,18 +6926,18 @@
 #define DT_N_S_keymap_CHILD_IDX 22
 
 /* Helper macros for child nodes of this node. */
-#define DT_N_S_keymap_FOREACH_CHILD(fn) fn(DT_N_S_keymap_S_default_layer) fn(DT_N_S_keymap_S_nav_layer) fn(DT_N_S_keymap_S_num_layer) fn(DT_N_S_keymap_S_sym_layer) fn(DT_N_S_keymap_S_mouse_layer)
-#define DT_N_S_keymap_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_keymap_S_default_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_nav_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_num_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_sym_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_mouse_layer)
-#define DT_N_S_keymap_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__)
-#define DT_N_S_keymap_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__)
-#define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_keymap_S_default_layer) fn(DT_N_S_keymap_S_nav_layer) fn(DT_N_S_keymap_S_num_layer) fn(DT_N_S_keymap_S_sym_layer) fn(DT_N_S_keymap_S_mouse_layer)
-#define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_keymap_S_default_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_nav_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_num_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_sym_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_mouse_layer)
-#define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__)
-#define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__)
+#define DT_N_S_keymap_FOREACH_CHILD(fn) fn(DT_N_S_keymap_S_default_layer) fn(DT_N_S_keymap_S_nav_layer) fn(DT_N_S_keymap_S_num_layer) fn(DT_N_S_keymap_S_sym_layer) fn(DT_N_S_keymap_S_mouse_layer) fn(DT_N_S_keymap_S_numsquare) fn(DT_N_S_keymap_S_callumright) fn(DT_N_S_keymap_S_callumleft)
+#define DT_N_S_keymap_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_keymap_S_default_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_nav_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_num_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_sym_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_mouse_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_numsquare) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_callumright) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_callumleft)
+#define DT_N_S_keymap_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_numsquare, __VA_ARGS__) fn(DT_N_S_keymap_S_callumright, __VA_ARGS__) fn(DT_N_S_keymap_S_callumleft, __VA_ARGS__)
+#define DT_N_S_keymap_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_numsquare, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_callumright, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_callumleft, __VA_ARGS__)
+#define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_keymap_S_default_layer) fn(DT_N_S_keymap_S_nav_layer) fn(DT_N_S_keymap_S_num_layer) fn(DT_N_S_keymap_S_sym_layer) fn(DT_N_S_keymap_S_mouse_layer) fn(DT_N_S_keymap_S_numsquare) fn(DT_N_S_keymap_S_callumright) fn(DT_N_S_keymap_S_callumleft)
+#define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_keymap_S_default_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_nav_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_num_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_sym_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_mouse_layer) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_numsquare) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_callumright) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_callumleft)
+#define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_numsquare, __VA_ARGS__) fn(DT_N_S_keymap_S_callumright, __VA_ARGS__) fn(DT_N_S_keymap_S_callumleft, __VA_ARGS__)
+#define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_numsquare, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_callumright, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_keymap_S_callumleft, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_keymap_ORD 66
-#define DT_N_S_keymap_ORD_STR_SORTABLE 00066
+#define DT_N_S_keymap_ORD 64
+#define DT_N_S_keymap_ORD_STR_SORTABLE 00064
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_keymap_REQUIRES_ORDS \
@@ -7117,11 +6945,14 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_keymap_SUPPORTS_ORDS \
-	74, /* /keymap/default_layer */ \
-	76, /* /keymap/mouse_layer */ \
-	77, /* /keymap/nav_layer */ \
-	78, /* /keymap/num_layer */ \
-	79, /* /keymap/sym_layer */
+	68, /* /keymap/CallumLeft */ \
+	70, /* /keymap/CallumRight */ \
+	73, /* /keymap/NumSquare */ \
+	78, /* /keymap/default_layer */ \
+	79, /* /keymap/mouse_layer */ \
+	80, /* /keymap/nav_layer */ \
+	81, /* /keymap/num_layer */ \
+	82, /* /keymap/sym_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_keymap_EXISTS 1
@@ -7157,105 +6988,1246 @@
 #define DT_N_S_keymap_P_compatible_EXISTS 1
 
 /*
- * Devicetree node: /behaviors/Y_capslock
+ * Devicetree node: /behaviors/sticky_key
  *
- * Node identifier: DT_N_S_behaviors_S_y_capslock
+ * Node identifier: DT_N_S_behaviors_S_sticky_key
  *
- * Binding (compatible = zmk,behavior-tap-dance):
- *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml
+ * Binding (compatible = zmk,behavior-sticky-key):
+ *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-sticky-key.yaml
  *
  * (Descriptions have moved to the Devicetree Bindings Index
  * in the documentation.)
  */
 
 /* Node's full path: */
-#define DT_N_S_behaviors_S_y_capslock_PATH "/behaviors/Y_capslock"
+#define DT_N_S_behaviors_S_sticky_key_PATH "/behaviors/sticky_key"
 
 /* Node's name with unit-address: */
-#define DT_N_S_behaviors_S_y_capslock_FULL_NAME "Y_capslock"
+#define DT_N_S_behaviors_S_sticky_key_FULL_NAME "sticky_key"
 
 /* Node parent (/behaviors) identifier: */
-#define DT_N_S_behaviors_S_y_capslock_PARENT DT_N_S_behaviors
+#define DT_N_S_behaviors_S_sticky_key_PARENT DT_N_S_behaviors
 
 /* Node's index in its parent's list of children: */
-#define DT_N_S_behaviors_S_y_capslock_CHILD_IDX 32
+#define DT_N_S_behaviors_S_sticky_key_CHILD_IDX 4
 
 /* Helper macros for child nodes of this node. */
-#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD(fn) 
-#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_y_capslock_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD(fn) 
+#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_sticky_key_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_y_capslock_ORD 67
-#define DT_N_S_behaviors_S_y_capslock_ORD_STR_SORTABLE 00067
+#define DT_N_S_behaviors_S_sticky_key_ORD 65
+#define DT_N_S_behaviors_S_sticky_key_ORD_STR_SORTABLE 00065
 
 /* Ordinals for what this node depends on directly: */
-#define DT_N_S_behaviors_S_y_capslock_REQUIRES_ORDS \
+#define DT_N_S_behaviors_S_sticky_key_REQUIRES_ORDS \
 	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */
+	25, /* /behaviors/key_press */
 
 /* Ordinals for what depends directly on this node: */
-#define DT_N_S_behaviors_S_y_capslock_SUPPORTS_ORDS \
-	74, /* /keymap/default_layer */
+#define DT_N_S_behaviors_S_sticky_key_SUPPORTS_ORDS \
+	66, /* /behaviors/cal_l */ \
+	69, /* /behaviors/cal_r */
 
 /* Existence and alternate IDs: */
-#define DT_N_S_behaviors_S_y_capslock_EXISTS 1
-#define DT_N_INST_0_zmk_behavior_tap_dance DT_N_S_behaviors_S_y_capslock
-#define DT_N_NODELABEL_y_capslock          DT_N_S_behaviors_S_y_capslock
+#define DT_N_S_behaviors_S_sticky_key_EXISTS 1
+#define DT_N_INST_0_zmk_behavior_sticky_key DT_N_S_behaviors_S_sticky_key
+#define DT_N_NODELABEL_sk                   DT_N_S_behaviors_S_sticky_key
 
 /* Macros for properties that are special in the specification: */
-#define DT_N_S_behaviors_S_y_capslock_REG_NUM 0
-#define DT_N_S_behaviors_S_y_capslock_RANGES_NUM 0
-#define DT_N_S_behaviors_S_y_capslock_FOREACH_RANGE(fn) 
-#define DT_N_S_behaviors_S_y_capslock_IRQ_NUM 0
-#define DT_N_S_behaviors_S_y_capslock_COMPAT_MATCHES_zmk_behavior_tap_dance 1
-#define DT_N_S_behaviors_S_y_capslock_COMPAT_VENDOR_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_y_capslock_COMPAT_VENDOR_IDX_0 "ZMK Project"
-#define DT_N_S_behaviors_S_y_capslock_COMPAT_MODEL_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_y_capslock_COMPAT_MODEL_IDX_0 "behavior-tap-dance"
-#define DT_N_S_behaviors_S_y_capslock_STATUS_okay 1
+#define DT_N_S_behaviors_S_sticky_key_REG_NUM 0
+#define DT_N_S_behaviors_S_sticky_key_RANGES_NUM 0
+#define DT_N_S_behaviors_S_sticky_key_FOREACH_RANGE(fn) 
+#define DT_N_S_behaviors_S_sticky_key_IRQ_NUM 0
+#define DT_N_S_behaviors_S_sticky_key_COMPAT_MATCHES_zmk_behavior_sticky_key 1
+#define DT_N_S_behaviors_S_sticky_key_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_COMPAT_VENDOR_IDX_0 "ZMK Project"
+#define DT_N_S_behaviors_S_sticky_key_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_COMPAT_MODEL_IDX_0 "behavior-sticky-key"
+#define DT_N_S_behaviors_S_sticky_key_STATUS_okay 1
 
 /* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_behaviors_S_y_capslock_PINCTRL_NUM 0
+#define DT_N_S_behaviors_S_sticky_key_PINCTRL_NUM 0
 
 /* Generic property macros: */
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_0_PH DT_N_S_behaviors_S_key_press
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_0_VAL_param1 458780
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_0_VAL_param1_EXISTS 1
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_1_EXISTS 1
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_1_PH DT_N_S_behaviors_S_key_press
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_1_VAL_param1 458809
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_IDX_1_VAL_param1_EXISTS 1
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_y_capslock, bindings, 0) \
-	fn(DT_N_S_behaviors_S_y_capslock, bindings, 1)
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_y_capslock, bindings, 0) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_y_capslock, bindings, 1)
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_y_capslock, bindings, 0, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_y_capslock, bindings, 1, __VA_ARGS__)
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_y_capslock, bindings, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_y_capslock, bindings, 1, __VA_ARGS__)
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_LEN 2
-#define DT_N_S_behaviors_S_y_capslock_P_bindings_EXISTS 1
-#define DT_N_S_behaviors_S_y_capslock_P_tapping_term_ms 200
-#define DT_N_S_behaviors_S_y_capslock_P_tapping_term_ms_EXISTS 1
-#define DT_N_S_behaviors_S_y_capslock_P_label "Y_CAPSLOCK"
-#define DT_N_S_behaviors_S_y_capslock_P_label_STRING_UNQUOTED Y_CAPSLOCK
-#define DT_N_S_behaviors_S_y_capslock_P_label_STRING_TOKEN Y_CAPSLOCK
-#define DT_N_S_behaviors_S_y_capslock_P_label_STRING_UPPER_TOKEN Y_CAPSLOCK
-#define DT_N_S_behaviors_S_y_capslock_P_label_IDX_0 "Y_CAPSLOCK"
-#define DT_N_S_behaviors_S_y_capslock_P_label_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_y_capslock_P_label_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_y_capslock, label, 0)
-#define DT_N_S_behaviors_S_y_capslock_P_label_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_y_capslock, label, 0)
-#define DT_N_S_behaviors_S_y_capslock_P_label_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_y_capslock, label, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_y_capslock_P_label_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_y_capslock, label, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_y_capslock_P_label_LEN 1
-#define DT_N_S_behaviors_S_y_capslock_P_label_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_P_bindings_IDX_0 DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_sticky_key_P_bindings_IDX_0_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_sticky_key_P_bindings_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_sticky_key, bindings, 0)
+#define DT_N_S_behaviors_S_sticky_key_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_sticky_key, bindings, 0)
+#define DT_N_S_behaviors_S_sticky_key_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_sticky_key, bindings, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_sticky_key_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_sticky_key, bindings, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_sticky_key_P_bindings_LEN 1
+#define DT_N_S_behaviors_S_sticky_key_P_bindings_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_P_release_after_ms 1000
+#define DT_N_S_behaviors_S_sticky_key_P_release_after_ms_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_P_quick_release 0
+#define DT_N_S_behaviors_S_sticky_key_P_quick_release_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_P_lazy 0
+#define DT_N_S_behaviors_S_sticky_key_P_lazy_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_P_ignore_modifiers 1
+#define DT_N_S_behaviors_S_sticky_key_P_ignore_modifiers_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_P_display_name "Sticky Key"
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_STRING_UNQUOTED Sticky Key
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_STRING_TOKEN Sticky_Key
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_STRING_UPPER_TOKEN STICKY_KEY
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_IDX_0 "Sticky Key"
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_sticky_key, display_name, 0)
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_sticky_key, display_name, 0)
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_sticky_key, display_name, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_sticky_key, display_name, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_LEN 1
+#define DT_N_S_behaviors_S_sticky_key_P_display_name_EXISTS 1
+
+/*
+ * Devicetree node: /behaviors/cal_l
+ *
+ * Node identifier: DT_N_S_behaviors_S_cal_l
+ *
+ * Binding (compatible = zmk,behavior-hold-tap):
+ *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-hold-tap.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_behaviors_S_cal_l_PATH "/behaviors/cal_l"
+
+/* Node's name with unit-address: */
+#define DT_N_S_behaviors_S_cal_l_FULL_NAME "cal_l"
+
+/* Node parent (/behaviors) identifier: */
+#define DT_N_S_behaviors_S_cal_l_PARENT DT_N_S_behaviors
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_behaviors_S_cal_l_CHILD_IDX 33
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_behaviors_S_cal_l_FOREACH_CHILD(fn) 
+#define DT_N_S_behaviors_S_cal_l_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_cal_l_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_cal_l_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_behaviors_S_cal_l_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_behaviors_S_cal_l_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_cal_l_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_cal_l_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_behaviors_S_cal_l_ORD 66
+#define DT_N_S_behaviors_S_cal_l_ORD_STR_SORTABLE 00066
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_behaviors_S_cal_l_REQUIRES_ORDS \
+	14, /* /behaviors */ \
+	25, /* /behaviors/key_press */ \
+	65, /* /behaviors/sticky_key */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_behaviors_S_cal_l_SUPPORTS_ORDS \
+	68, /* /keymap/CallumLeft */ \
+	80, /* /keymap/nav_layer */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_behaviors_S_cal_l_EXISTS 1
+#define DT_N_INST_8_zmk_behavior_hold_tap DT_N_S_behaviors_S_cal_l
+#define DT_N_NODELABEL_cal_l              DT_N_S_behaviors_S_cal_l
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_behaviors_S_cal_l_REG_NUM 0
+#define DT_N_S_behaviors_S_cal_l_RANGES_NUM 0
+#define DT_N_S_behaviors_S_cal_l_FOREACH_RANGE(fn) 
+#define DT_N_S_behaviors_S_cal_l_IRQ_NUM 0
+#define DT_N_S_behaviors_S_cal_l_COMPAT_MATCHES_zmk_behavior_hold_tap 1
+#define DT_N_S_behaviors_S_cal_l_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_COMPAT_VENDOR_IDX_0 "ZMK Project"
+#define DT_N_S_behaviors_S_cal_l_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_COMPAT_MODEL_IDX_0 "behavior-hold-tap"
+#define DT_N_S_behaviors_S_cal_l_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_behaviors_S_cal_l_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_behaviors_S_cal_l_P_bindings_IDX_0 DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_cal_l_P_bindings_IDX_0_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_cal_l_P_bindings_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_bindings_IDX_1 DT_N_S_behaviors_S_sticky_key
+#define DT_N_S_behaviors_S_cal_l_P_bindings_IDX_1_PH DT_N_S_behaviors_S_sticky_key
+#define DT_N_S_behaviors_S_cal_l_P_bindings_IDX_1_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_cal_l, bindings, 0) \
+	fn(DT_N_S_behaviors_S_cal_l, bindings, 1)
+#define DT_N_S_behaviors_S_cal_l_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_cal_l, bindings, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, bindings, 1)
+#define DT_N_S_behaviors_S_cal_l_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_cal_l, bindings, 0, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, bindings, 1, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_l_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_cal_l, bindings, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, bindings, 1, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_l_P_bindings_LEN 2
+#define DT_N_S_behaviors_S_cal_l_P_bindings_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_tapping_term_ms 280
+#define DT_N_S_behaviors_S_cal_l_P_tapping_term_ms_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_quick_tap_ms 175
+#define DT_N_S_behaviors_S_cal_l_P_quick_tap_ms_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_global_quick_tap 0
+#define DT_N_S_behaviors_S_cal_l_P_global_quick_tap_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_require_prior_idle_ms 150
+#define DT_N_S_behaviors_S_cal_l_P_require_prior_idle_ms_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_flavor "balanced"
+#define DT_N_S_behaviors_S_cal_l_P_flavor_STRING_UNQUOTED balanced
+#define DT_N_S_behaviors_S_cal_l_P_flavor_STRING_TOKEN balanced
+#define DT_N_S_behaviors_S_cal_l_P_flavor_STRING_UPPER_TOKEN BALANCED
+#define DT_N_S_behaviors_S_cal_l_P_flavor_IDX_0 "balanced"
+#define DT_N_S_behaviors_S_cal_l_P_flavor_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_flavor_ENUM_IDX 1
+#define DT_N_S_behaviors_S_cal_l_P_flavor_ENUM_VAL_balanced_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_flavor_ENUM_TOKEN balanced
+#define DT_N_S_behaviors_S_cal_l_P_flavor_ENUM_UPPER_TOKEN BALANCED
+#define DT_N_S_behaviors_S_cal_l_P_flavor_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_cal_l, flavor, 0)
+#define DT_N_S_behaviors_S_cal_l_P_flavor_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_cal_l, flavor, 0)
+#define DT_N_S_behaviors_S_cal_l_P_flavor_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_cal_l, flavor, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_l_P_flavor_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_cal_l, flavor, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_l_P_flavor_LEN 1
+#define DT_N_S_behaviors_S_cal_l_P_flavor_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_while_undecided 0
+#define DT_N_S_behaviors_S_cal_l_P_hold_while_undecided_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_while_undecided_linger 0
+#define DT_N_S_behaviors_S_cal_l_P_hold_while_undecided_linger_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_retro_tap 0
+#define DT_N_S_behaviors_S_cal_l_P_retro_tap_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions {5 /* 0x5 */, 6 /* 0x6 */, 7 /* 0x7 */, 8 /* 0x8 */, 9 /* 0x9 */, 15 /* 0xf */, 16 /* 0x10 */, 17 /* 0x11 */, 18 /* 0x12 */, 19 /* 0x13 */, 25 /* 0x19 */, 26 /* 0x1a */, 27 /* 0x1b */, 28 /* 0x1c */, 29 /* 0x1d */, 32 /* 0x20 */, 33 /* 0x21 */, 30 /* 0x1e */, 31 /* 0x1f */}
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_0 5
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_1 6
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_1_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_2 7
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_2_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_3 8
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_3_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_4 9
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_4_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_5 15
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_5_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_6 16
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_6_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_7 17
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_7_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_8 18
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_8_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_9 19
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_9_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_10 25
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_10_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_11 26
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_11_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_12 27
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_12_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_13 28
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_13_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_14 29
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_14_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_15 32
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_15_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_16 33
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_16_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_17 30
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_17_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_18 31
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_IDX_18_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 0) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 1) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 2) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 3) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 4) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 5) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 6) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 7) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 8) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 9) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 10) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 11) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 12) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 13) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 14) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 15) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 16) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 17) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 18)
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 1) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 2) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 3) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 4) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 5) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 6) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 7) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 8) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 9) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 10) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 11) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 12) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 13) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 14) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 15) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 16) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 17) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 18)
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 0, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 1, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 2, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 3, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 4, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 5, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 6, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 7, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 8, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 9, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 10, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 11, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 12, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 13, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 14, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 15, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 16, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 17, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 18, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 7, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 8, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 9, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 10, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 11, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 12, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 13, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 14, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 15, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 16, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 17, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_l, hold_trigger_key_positions, 18, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_LEN 19
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_key_positions_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_on_release 1
+#define DT_N_S_behaviors_S_cal_l_P_hold_trigger_on_release_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_label "CAL_L"
+#define DT_N_S_behaviors_S_cal_l_P_label_STRING_UNQUOTED CAL_L
+#define DT_N_S_behaviors_S_cal_l_P_label_STRING_TOKEN CAL_L
+#define DT_N_S_behaviors_S_cal_l_P_label_STRING_UPPER_TOKEN CAL_L
+#define DT_N_S_behaviors_S_cal_l_P_label_IDX_0 "CAL_L"
+#define DT_N_S_behaviors_S_cal_l_P_label_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_l_P_label_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_cal_l, label, 0)
+#define DT_N_S_behaviors_S_cal_l_P_label_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_cal_l, label, 0)
+#define DT_N_S_behaviors_S_cal_l_P_label_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_cal_l, label, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_l_P_label_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_cal_l, label, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_l_P_label_LEN 1
+#define DT_N_S_behaviors_S_cal_l_P_label_EXISTS 1
+
+/*
+ * Devicetree node: /behaviors/transparent
+ *
+ * Node identifier: DT_N_S_behaviors_S_transparent
+ *
+ * Binding (compatible = zmk,behavior-transparent):
+ *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-transparent.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_behaviors_S_transparent_PATH "/behaviors/transparent"
+
+/* Node's name with unit-address: */
+#define DT_N_S_behaviors_S_transparent_FULL_NAME "transparent"
+
+/* Node parent (/behaviors) identifier: */
+#define DT_N_S_behaviors_S_transparent_PARENT DT_N_S_behaviors
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_behaviors_S_transparent_CHILD_IDX 1
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD(fn) 
+#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_behaviors_S_transparent_ORD 67
+#define DT_N_S_behaviors_S_transparent_ORD_STR_SORTABLE 00067
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_behaviors_S_transparent_REQUIRES_ORDS \
+	14, /* /behaviors */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_behaviors_S_transparent_SUPPORTS_ORDS \
+	68, /* /keymap/CallumLeft */ \
+	70, /* /keymap/CallumRight */ \
+	73, /* /keymap/NumSquare */ \
+	79, /* /keymap/mouse_layer */ \
+	80, /* /keymap/nav_layer */ \
+	81, /* /keymap/num_layer */ \
+	82, /* /keymap/sym_layer */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_behaviors_S_transparent_EXISTS 1
+#define DT_N_INST_0_zmk_behavior_transparent DT_N_S_behaviors_S_transparent
+#define DT_N_NODELABEL_trans                 DT_N_S_behaviors_S_transparent
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_behaviors_S_transparent_REG_NUM 0
+#define DT_N_S_behaviors_S_transparent_RANGES_NUM 0
+#define DT_N_S_behaviors_S_transparent_FOREACH_RANGE(fn) 
+#define DT_N_S_behaviors_S_transparent_IRQ_NUM 0
+#define DT_N_S_behaviors_S_transparent_COMPAT_MATCHES_zmk_behavior_transparent 1
+#define DT_N_S_behaviors_S_transparent_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_transparent_COMPAT_VENDOR_IDX_0 "ZMK Project"
+#define DT_N_S_behaviors_S_transparent_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_transparent_COMPAT_MODEL_IDX_0 "behavior-transparent"
+#define DT_N_S_behaviors_S_transparent_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_behaviors_S_transparent_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_behaviors_S_transparent_P_display_name "Transparent"
+#define DT_N_S_behaviors_S_transparent_P_display_name_STRING_UNQUOTED Transparent
+#define DT_N_S_behaviors_S_transparent_P_display_name_STRING_TOKEN Transparent
+#define DT_N_S_behaviors_S_transparent_P_display_name_STRING_UPPER_TOKEN TRANSPARENT
+#define DT_N_S_behaviors_S_transparent_P_display_name_IDX_0 "Transparent"
+#define DT_N_S_behaviors_S_transparent_P_display_name_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_transparent_P_display_name_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_transparent, display_name, 0)
+#define DT_N_S_behaviors_S_transparent_P_display_name_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_transparent, display_name, 0)
+#define DT_N_S_behaviors_S_transparent_P_display_name_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_transparent, display_name, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_transparent_P_display_name_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_transparent, display_name, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_transparent_P_display_name_LEN 1
+#define DT_N_S_behaviors_S_transparent_P_display_name_EXISTS 1
+
+/*
+ * Devicetree node: /keymap/CallumLeft
+ *
+ * Node identifier: DT_N_S_keymap_S_callumleft
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_keymap_S_callumleft_PATH "/keymap/CallumLeft"
+
+/* Node's name with unit-address: */
+#define DT_N_S_keymap_S_callumleft_FULL_NAME "CallumLeft"
+
+/* Node parent (/keymap) identifier: */
+#define DT_N_S_keymap_S_callumleft_PARENT DT_N_S_keymap
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_keymap_S_callumleft_CHILD_IDX 7
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_keymap_S_callumleft_FOREACH_CHILD(fn) 
+#define DT_N_S_keymap_S_callumleft_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_keymap_S_callumleft_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_keymap_S_callumleft_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_keymap_S_callumleft_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_keymap_S_callumleft_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_keymap_S_callumleft_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_keymap_S_callumleft_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_keymap_S_callumleft_ORD 68
+#define DT_N_S_keymap_S_callumleft_ORD_STR_SORTABLE 00068
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_keymap_S_callumleft_REQUIRES_ORDS \
+	64, /* /keymap */ \
+	66, /* /behaviors/cal_l */ \
+	67, /* /behaviors/transparent */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_keymap_S_callumleft_SUPPORTS_ORDS /* nothing */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_keymap_S_callumleft_EXISTS 1
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_keymap_S_callumleft_REG_NUM 0
+#define DT_N_S_keymap_S_callumleft_RANGES_NUM 0
+#define DT_N_S_keymap_S_callumleft_FOREACH_RANGE(fn) 
+#define DT_N_S_keymap_S_callumleft_IRQ_NUM 0
+#define DT_N_S_keymap_S_callumleft_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_keymap_S_callumleft_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_0_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_0_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_1_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_1_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_2_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_2_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_3_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_3_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_4_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_4_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_5_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_5_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_6_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_6_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_7_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_7_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_8_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_8_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_9_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_9_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_10_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_10_PH DT_N_S_behaviors_S_cal_l
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_10_VAL_param1 458979
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_10_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_10_VAL_param2 458979
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_10_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_11_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_11_PH DT_N_S_behaviors_S_cal_l
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_11_VAL_param1 458982
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_11_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_11_VAL_param2 458982
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_11_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_12_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_12_PH DT_N_S_behaviors_S_cal_l
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_12_VAL_param1 458976
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_12_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_12_VAL_param2 458976
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_12_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_13_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_13_PH DT_N_S_behaviors_S_cal_l
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_13_VAL_param1 458977
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_13_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_13_VAL_param2 458977
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_13_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_14_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_14_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_15_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_15_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_16_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_16_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_17_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_17_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_18_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_18_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_19_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_19_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_20_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_20_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_21_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_21_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_22_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_22_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_23_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_23_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_24_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_24_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_25_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_25_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_26_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_26_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_27_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_27_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_28_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_28_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_29_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_29_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_30_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_30_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_31_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_31_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_32_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_32_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_33_EXISTS 1
+#define DT_N_S_keymap_S_callumleft_P_bindings_IDX_33_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumleft_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_keymap_S_callumleft, bindings, 0) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 1) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 2) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 3) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 4) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 5) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 6) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 7) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 8) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 9) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 10) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 11) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 12) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 13) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 14) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 15) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 16) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 17) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 18) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 19) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 20) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 21) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 22) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 23) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 24) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 25) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 26) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 27) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 28) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 29) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 30) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 31) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 32) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 33)
+#define DT_N_S_keymap_S_callumleft_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_keymap_S_callumleft, bindings, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 1) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 2) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 3) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 4) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 5) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 6) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 7) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 8) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 9) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 10) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 11) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 12) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 13) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 14) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 15) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 16) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 17) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 18) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 19) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 20) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 21) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 22) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 23) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 24) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 25) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 26) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 27) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 28) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 29) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 30) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 31) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 32) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 33)
+#define DT_N_S_keymap_S_callumleft_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_keymap_S_callumleft, bindings, 0, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 1, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 2, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 3, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 4, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 5, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 6, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 7, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 8, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 9, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 10, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 11, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 12, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 13, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 14, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 15, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 16, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 17, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 18, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 19, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 20, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 21, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 22, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 23, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 24, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 25, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 26, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 27, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 28, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 29, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 30, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 31, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 32, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 33, __VA_ARGS__)
+#define DT_N_S_keymap_S_callumleft_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_keymap_S_callumleft, bindings, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 7, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 8, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 9, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 10, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 11, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 12, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 13, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 14, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 15, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 16, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 17, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 18, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 19, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 20, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 21, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 22, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 23, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 24, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 25, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 26, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 27, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 28, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 29, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 30, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 31, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 32, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumleft, bindings, 33, __VA_ARGS__)
+#define DT_N_S_keymap_S_callumleft_P_bindings_LEN 34
+#define DT_N_S_keymap_S_callumleft_P_bindings_EXISTS 1
+
+/*
+ * Devicetree node: /behaviors/cal_r
+ *
+ * Node identifier: DT_N_S_behaviors_S_cal_r
+ *
+ * Binding (compatible = zmk,behavior-hold-tap):
+ *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-hold-tap.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_behaviors_S_cal_r_PATH "/behaviors/cal_r"
+
+/* Node's name with unit-address: */
+#define DT_N_S_behaviors_S_cal_r_FULL_NAME "cal_r"
+
+/* Node parent (/behaviors) identifier: */
+#define DT_N_S_behaviors_S_cal_r_PARENT DT_N_S_behaviors
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_behaviors_S_cal_r_CHILD_IDX 34
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_behaviors_S_cal_r_FOREACH_CHILD(fn) 
+#define DT_N_S_behaviors_S_cal_r_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_cal_r_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_cal_r_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_behaviors_S_cal_r_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_behaviors_S_cal_r_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_cal_r_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_cal_r_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_behaviors_S_cal_r_ORD 69
+#define DT_N_S_behaviors_S_cal_r_ORD_STR_SORTABLE 00069
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_behaviors_S_cal_r_REQUIRES_ORDS \
+	14, /* /behaviors */ \
+	25, /* /behaviors/key_press */ \
+	65, /* /behaviors/sticky_key */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_behaviors_S_cal_r_SUPPORTS_ORDS \
+	70, /* /keymap/CallumRight */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_behaviors_S_cal_r_EXISTS 1
+#define DT_N_INST_9_zmk_behavior_hold_tap DT_N_S_behaviors_S_cal_r
+#define DT_N_NODELABEL_cal_r              DT_N_S_behaviors_S_cal_r
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_behaviors_S_cal_r_REG_NUM 0
+#define DT_N_S_behaviors_S_cal_r_RANGES_NUM 0
+#define DT_N_S_behaviors_S_cal_r_FOREACH_RANGE(fn) 
+#define DT_N_S_behaviors_S_cal_r_IRQ_NUM 0
+#define DT_N_S_behaviors_S_cal_r_COMPAT_MATCHES_zmk_behavior_hold_tap 1
+#define DT_N_S_behaviors_S_cal_r_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_COMPAT_VENDOR_IDX_0 "ZMK Project"
+#define DT_N_S_behaviors_S_cal_r_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_COMPAT_MODEL_IDX_0 "behavior-hold-tap"
+#define DT_N_S_behaviors_S_cal_r_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_behaviors_S_cal_r_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_behaviors_S_cal_r_P_bindings_IDX_0 DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_cal_r_P_bindings_IDX_0_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_cal_r_P_bindings_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_bindings_IDX_1 DT_N_S_behaviors_S_sticky_key
+#define DT_N_S_behaviors_S_cal_r_P_bindings_IDX_1_PH DT_N_S_behaviors_S_sticky_key
+#define DT_N_S_behaviors_S_cal_r_P_bindings_IDX_1_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_cal_r, bindings, 0) \
+	fn(DT_N_S_behaviors_S_cal_r, bindings, 1)
+#define DT_N_S_behaviors_S_cal_r_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_cal_r, bindings, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, bindings, 1)
+#define DT_N_S_behaviors_S_cal_r_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_cal_r, bindings, 0, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, bindings, 1, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_r_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_cal_r, bindings, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, bindings, 1, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_r_P_bindings_LEN 2
+#define DT_N_S_behaviors_S_cal_r_P_bindings_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_tapping_term_ms 280
+#define DT_N_S_behaviors_S_cal_r_P_tapping_term_ms_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_quick_tap_ms 175
+#define DT_N_S_behaviors_S_cal_r_P_quick_tap_ms_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_global_quick_tap 0
+#define DT_N_S_behaviors_S_cal_r_P_global_quick_tap_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_require_prior_idle_ms 150
+#define DT_N_S_behaviors_S_cal_r_P_require_prior_idle_ms_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_flavor "balanced"
+#define DT_N_S_behaviors_S_cal_r_P_flavor_STRING_UNQUOTED balanced
+#define DT_N_S_behaviors_S_cal_r_P_flavor_STRING_TOKEN balanced
+#define DT_N_S_behaviors_S_cal_r_P_flavor_STRING_UPPER_TOKEN BALANCED
+#define DT_N_S_behaviors_S_cal_r_P_flavor_IDX_0 "balanced"
+#define DT_N_S_behaviors_S_cal_r_P_flavor_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_flavor_ENUM_IDX 1
+#define DT_N_S_behaviors_S_cal_r_P_flavor_ENUM_VAL_balanced_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_flavor_ENUM_TOKEN balanced
+#define DT_N_S_behaviors_S_cal_r_P_flavor_ENUM_UPPER_TOKEN BALANCED
+#define DT_N_S_behaviors_S_cal_r_P_flavor_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_cal_r, flavor, 0)
+#define DT_N_S_behaviors_S_cal_r_P_flavor_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_cal_r, flavor, 0)
+#define DT_N_S_behaviors_S_cal_r_P_flavor_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_cal_r, flavor, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_r_P_flavor_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_cal_r, flavor, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_r_P_flavor_LEN 1
+#define DT_N_S_behaviors_S_cal_r_P_flavor_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_while_undecided 0
+#define DT_N_S_behaviors_S_cal_r_P_hold_while_undecided_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_while_undecided_linger 0
+#define DT_N_S_behaviors_S_cal_r_P_hold_while_undecided_linger_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_retro_tap 0
+#define DT_N_S_behaviors_S_cal_r_P_retro_tap_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions {0 /* 0x0 */, 1 /* 0x1 */, 2 /* 0x2 */, 3 /* 0x3 */, 4 /* 0x4 */, 10 /* 0xa */, 11 /* 0xb */, 12 /* 0xc */, 13 /* 0xd */, 14 /* 0xe */, 20 /* 0x14 */, 21 /* 0x15 */, 22 /* 0x16 */, 23 /* 0x17 */, 24 /* 0x18 */, 31 /* 0x1f */, 30 /* 0x1e */, 32 /* 0x20 */, 33 /* 0x21 */}
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_0 0
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_1 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_1_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_2 2
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_2_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_3 3
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_3_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_4 4
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_4_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_5 10
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_5_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_6 11
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_6_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_7 12
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_7_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_8 13
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_8_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_9 14
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_9_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_10 20
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_10_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_11 21
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_11_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_12 22
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_12_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_13 23
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_13_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_14 24
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_14_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_15 31
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_15_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_16 30
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_16_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_17 32
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_17_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_18 33
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_IDX_18_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 0) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 1) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 2) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 3) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 4) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 5) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 6) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 7) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 8) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 9) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 10) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 11) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 12) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 13) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 14) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 15) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 16) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 17) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 18)
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 1) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 2) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 3) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 4) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 5) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 6) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 7) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 8) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 9) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 10) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 11) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 12) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 13) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 14) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 15) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 16) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 17) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 18)
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 0, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 1, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 2, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 3, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 4, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 5, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 6, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 7, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 8, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 9, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 10, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 11, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 12, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 13, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 14, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 15, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 16, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 17, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 18, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 7, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 8, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 9, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 10, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 11, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 12, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 13, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 14, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 15, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 16, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 17, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_cal_r, hold_trigger_key_positions, 18, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_LEN 19
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_key_positions_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_on_release 1
+#define DT_N_S_behaviors_S_cal_r_P_hold_trigger_on_release_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_label "CAL_R"
+#define DT_N_S_behaviors_S_cal_r_P_label_STRING_UNQUOTED CAL_R
+#define DT_N_S_behaviors_S_cal_r_P_label_STRING_TOKEN CAL_R
+#define DT_N_S_behaviors_S_cal_r_P_label_STRING_UPPER_TOKEN CAL_R
+#define DT_N_S_behaviors_S_cal_r_P_label_IDX_0 "CAL_R"
+#define DT_N_S_behaviors_S_cal_r_P_label_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_cal_r_P_label_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_cal_r, label, 0)
+#define DT_N_S_behaviors_S_cal_r_P_label_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_cal_r, label, 0)
+#define DT_N_S_behaviors_S_cal_r_P_label_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_cal_r, label, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_r_P_label_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_cal_r, label, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_cal_r_P_label_LEN 1
+#define DT_N_S_behaviors_S_cal_r_P_label_EXISTS 1
+
+/*
+ * Devicetree node: /keymap/CallumRight
+ *
+ * Node identifier: DT_N_S_keymap_S_callumright
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_keymap_S_callumright_PATH "/keymap/CallumRight"
+
+/* Node's name with unit-address: */
+#define DT_N_S_keymap_S_callumright_FULL_NAME "CallumRight"
+
+/* Node parent (/keymap) identifier: */
+#define DT_N_S_keymap_S_callumright_PARENT DT_N_S_keymap
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_keymap_S_callumright_CHILD_IDX 6
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_keymap_S_callumright_FOREACH_CHILD(fn) 
+#define DT_N_S_keymap_S_callumright_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_keymap_S_callumright_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_keymap_S_callumright_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_keymap_S_callumright_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_keymap_S_callumright_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_keymap_S_callumright_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_keymap_S_callumright_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_keymap_S_callumright_ORD 70
+#define DT_N_S_keymap_S_callumright_ORD_STR_SORTABLE 00070
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_keymap_S_callumright_REQUIRES_ORDS \
+	64, /* /keymap */ \
+	67, /* /behaviors/transparent */ \
+	69, /* /behaviors/cal_r */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_keymap_S_callumright_SUPPORTS_ORDS /* nothing */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_keymap_S_callumright_EXISTS 1
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_keymap_S_callumright_REG_NUM 0
+#define DT_N_S_keymap_S_callumright_RANGES_NUM 0
+#define DT_N_S_keymap_S_callumright_FOREACH_RANGE(fn) 
+#define DT_N_S_keymap_S_callumright_IRQ_NUM 0
+#define DT_N_S_keymap_S_callumright_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_keymap_S_callumright_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_0_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_0_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_1_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_1_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_2_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_2_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_3_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_3_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_4_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_4_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_5_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_5_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_6_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_6_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_7_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_7_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_8_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_8_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_9_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_9_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_10_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_10_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_11_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_11_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_12_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_12_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_13_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_13_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_14_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_14_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_15_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_15_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_16_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_16_PH DT_N_S_behaviors_S_cal_r
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_16_VAL_param1 458977
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_16_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_16_VAL_param2 458977
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_16_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_17_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_17_PH DT_N_S_behaviors_S_cal_r
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_17_VAL_param1 458976
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_17_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_17_VAL_param2 458976
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_17_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_18_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_18_PH DT_N_S_behaviors_S_cal_r
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_18_VAL_param1 458982
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_18_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_18_VAL_param2 458982
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_18_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_19_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_19_PH DT_N_S_behaviors_S_cal_r
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_19_VAL_param1 458979
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_19_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_19_VAL_param2 458979
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_19_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_20_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_20_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_21_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_21_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_22_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_22_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_23_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_23_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_24_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_24_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_25_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_25_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_26_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_26_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_27_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_27_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_28_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_28_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_29_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_29_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_30_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_30_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_31_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_31_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_32_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_32_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_33_EXISTS 1
+#define DT_N_S_keymap_S_callumright_P_bindings_IDX_33_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_callumright_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_keymap_S_callumright, bindings, 0) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 1) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 2) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 3) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 4) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 5) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 6) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 7) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 8) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 9) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 10) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 11) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 12) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 13) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 14) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 15) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 16) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 17) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 18) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 19) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 20) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 21) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 22) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 23) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 24) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 25) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 26) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 27) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 28) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 29) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 30) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 31) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 32) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 33)
+#define DT_N_S_keymap_S_callumright_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_keymap_S_callumright, bindings, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 1) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 2) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 3) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 4) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 5) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 6) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 7) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 8) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 9) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 10) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 11) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 12) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 13) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 14) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 15) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 16) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 17) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 18) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 19) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 20) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 21) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 22) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 23) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 24) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 25) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 26) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 27) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 28) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 29) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 30) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 31) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 32) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 33)
+#define DT_N_S_keymap_S_callumright_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_keymap_S_callumright, bindings, 0, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 1, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 2, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 3, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 4, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 5, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 6, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 7, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 8, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 9, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 10, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 11, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 12, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 13, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 14, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 15, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 16, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 17, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 18, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 19, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 20, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 21, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 22, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 23, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 24, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 25, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 26, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 27, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 28, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 29, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 30, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 31, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 32, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_callumright, bindings, 33, __VA_ARGS__)
+#define DT_N_S_keymap_S_callumright_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_keymap_S_callumright, bindings, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 7, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 8, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 9, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 10, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 11, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 12, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 13, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 14, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 15, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 16, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 17, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 18, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 19, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 20, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 21, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 22, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 23, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 24, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 25, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 26, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 27, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 28, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 29, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 30, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 31, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 32, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_callumright, bindings, 33, __VA_ARGS__)
+#define DT_N_S_keymap_S_callumright_P_bindings_LEN 34
+#define DT_N_S_keymap_S_callumright_P_bindings_EXISTS 1
 
 /*
  * Devicetree node: /behaviors/f_hml
@@ -7292,18 +8264,19 @@
 #define DT_N_S_behaviors_S_f_hml_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_f_hml_ORD 68
-#define DT_N_S_behaviors_S_f_hml_ORD_STR_SORTABLE 00068
+#define DT_N_S_behaviors_S_f_hml_ORD 71
+#define DT_N_S_behaviors_S_f_hml_ORD_STR_SORTABLE 00071
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_f_hml_REQUIRES_ORDS \
 	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */
+	25, /* /behaviors/key_press */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_f_hml_SUPPORTS_ORDS \
-	74, /* /keymap/default_layer */ \
-	78, /* /keymap/num_layer */
+	73, /* /keymap/NumSquare */ \
+	78, /* /keymap/default_layer */ \
+	81, /* /keymap/num_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_f_hml_EXISTS 1
@@ -7505,6 +8478,580 @@
 #define DT_N_S_behaviors_S_f_hml_P_label_EXISTS 1
 
 /*
+ * Devicetree node: /behaviors/hml
+ *
+ * Node identifier: DT_N_S_behaviors_S_hml
+ *
+ * Binding (compatible = zmk,behavior-hold-tap):
+ *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-hold-tap.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_behaviors_S_hml_PATH "/behaviors/hml"
+
+/* Node's name with unit-address: */
+#define DT_N_S_behaviors_S_hml_FULL_NAME "hml"
+
+/* Node parent (/behaviors) identifier: */
+#define DT_N_S_behaviors_S_hml_PARENT DT_N_S_behaviors
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_behaviors_S_hml_CHILD_IDX 26
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_behaviors_S_hml_FOREACH_CHILD(fn) 
+#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_behaviors_S_hml_ORD 72
+#define DT_N_S_behaviors_S_hml_ORD_STR_SORTABLE 00072
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_behaviors_S_hml_REQUIRES_ORDS \
+	14, /* /behaviors */ \
+	25, /* /behaviors/key_press */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_behaviors_S_hml_SUPPORTS_ORDS \
+	73, /* /keymap/NumSquare */ \
+	78, /* /keymap/default_layer */ \
+	80, /* /keymap/nav_layer */ \
+	81, /* /keymap/num_layer */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_behaviors_S_hml_EXISTS 1
+#define DT_N_INST_2_zmk_behavior_hold_tap DT_N_S_behaviors_S_hml
+#define DT_N_NODELABEL_hml                DT_N_S_behaviors_S_hml
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_behaviors_S_hml_REG_NUM 0
+#define DT_N_S_behaviors_S_hml_RANGES_NUM 0
+#define DT_N_S_behaviors_S_hml_FOREACH_RANGE(fn) 
+#define DT_N_S_behaviors_S_hml_IRQ_NUM 0
+#define DT_N_S_behaviors_S_hml_COMPAT_MATCHES_zmk_behavior_hold_tap 1
+#define DT_N_S_behaviors_S_hml_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_hml_COMPAT_VENDOR_IDX_0 "ZMK Project"
+#define DT_N_S_behaviors_S_hml_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_hml_COMPAT_MODEL_IDX_0 "behavior-hold-tap"
+#define DT_N_S_behaviors_S_hml_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_behaviors_S_hml_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_behaviors_S_hml_P_bindings_IDX_0 DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_hml_P_bindings_IDX_0_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_hml_P_bindings_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_bindings_IDX_1 DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_hml_P_bindings_IDX_1_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_behaviors_S_hml_P_bindings_IDX_1_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_hml, bindings, 0) \
+	fn(DT_N_S_behaviors_S_hml, bindings, 1)
+#define DT_N_S_behaviors_S_hml_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_hml, bindings, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, bindings, 1)
+#define DT_N_S_behaviors_S_hml_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_hml, bindings, 0, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, bindings, 1, __VA_ARGS__)
+#define DT_N_S_behaviors_S_hml_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_hml, bindings, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, bindings, 1, __VA_ARGS__)
+#define DT_N_S_behaviors_S_hml_P_bindings_LEN 2
+#define DT_N_S_behaviors_S_hml_P_bindings_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_tapping_term_ms 280
+#define DT_N_S_behaviors_S_hml_P_tapping_term_ms_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_quick_tap_ms 175
+#define DT_N_S_behaviors_S_hml_P_quick_tap_ms_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_global_quick_tap 0
+#define DT_N_S_behaviors_S_hml_P_global_quick_tap_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_require_prior_idle_ms 150
+#define DT_N_S_behaviors_S_hml_P_require_prior_idle_ms_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_flavor "balanced"
+#define DT_N_S_behaviors_S_hml_P_flavor_STRING_UNQUOTED balanced
+#define DT_N_S_behaviors_S_hml_P_flavor_STRING_TOKEN balanced
+#define DT_N_S_behaviors_S_hml_P_flavor_STRING_UPPER_TOKEN BALANCED
+#define DT_N_S_behaviors_S_hml_P_flavor_IDX_0 "balanced"
+#define DT_N_S_behaviors_S_hml_P_flavor_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_flavor_ENUM_IDX 1
+#define DT_N_S_behaviors_S_hml_P_flavor_ENUM_VAL_balanced_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_flavor_ENUM_TOKEN balanced
+#define DT_N_S_behaviors_S_hml_P_flavor_ENUM_UPPER_TOKEN BALANCED
+#define DT_N_S_behaviors_S_hml_P_flavor_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_hml, flavor, 0)
+#define DT_N_S_behaviors_S_hml_P_flavor_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_hml, flavor, 0)
+#define DT_N_S_behaviors_S_hml_P_flavor_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_hml, flavor, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_hml_P_flavor_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_hml, flavor, 0, __VA_ARGS__)
+#define DT_N_S_behaviors_S_hml_P_flavor_LEN 1
+#define DT_N_S_behaviors_S_hml_P_flavor_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_while_undecided 0
+#define DT_N_S_behaviors_S_hml_P_hold_while_undecided_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_while_undecided_linger 0
+#define DT_N_S_behaviors_S_hml_P_hold_while_undecided_linger_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_retro_tap 0
+#define DT_N_S_behaviors_S_hml_P_retro_tap_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions {5 /* 0x5 */, 6 /* 0x6 */, 7 /* 0x7 */, 8 /* 0x8 */, 9 /* 0x9 */, 15 /* 0xf */, 16 /* 0x10 */, 17 /* 0x11 */, 18 /* 0x12 */, 19 /* 0x13 */, 25 /* 0x19 */, 26 /* 0x1a */, 27 /* 0x1b */, 28 /* 0x1c */, 29 /* 0x1d */, 32 /* 0x20 */, 33 /* 0x21 */, 30 /* 0x1e */, 31 /* 0x1f */}
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_0 5
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_0_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_1 6
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_1_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_2 7
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_2_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_3 8
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_3_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_4 9
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_4_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_5 15
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_5_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_6 16
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_6_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_7 17
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_7_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_8 18
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_8_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_9 19
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_9_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_10 25
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_10_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_11 26
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_11_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_12 27
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_12_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_13 28
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_13_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_14 29
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_14_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_15 32
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_15_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_16 33
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_16_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_17 30
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_17_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_18 31
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_18_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 0) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 1) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 2) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 3) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 4) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 5) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 6) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 7) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 8) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 9) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 10) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 11) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 12) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 13) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 14) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 15) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 16) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 17) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 18)
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 1) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 2) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 3) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 4) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 5) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 6) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 7) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 8) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 9) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 10) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 11) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 12) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 13) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 14) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 15) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 16) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 17) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 18)
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 0, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 1, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 2, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 3, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 4, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 5, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 6, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 7, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 8, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 9, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 10, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 11, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 12, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 13, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 14, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 15, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 16, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 17, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 18, __VA_ARGS__)
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 7, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 8, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 9, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 10, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 11, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 12, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 13, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 14, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 15, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 16, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 17, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 18, __VA_ARGS__)
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_LEN 19
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_EXISTS 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_on_release 1
+#define DT_N_S_behaviors_S_hml_P_hold_trigger_on_release_EXISTS 1
+
+/*
+ * Devicetree node: /keymap/NumSquare
+ *
+ * Node identifier: DT_N_S_keymap_S_numsquare
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_keymap_S_numsquare_PATH "/keymap/NumSquare"
+
+/* Node's name with unit-address: */
+#define DT_N_S_keymap_S_numsquare_FULL_NAME "NumSquare"
+
+/* Node parent (/keymap) identifier: */
+#define DT_N_S_keymap_S_numsquare_PARENT DT_N_S_keymap
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_keymap_S_numsquare_CHILD_IDX 5
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_keymap_S_numsquare_FOREACH_CHILD(fn) 
+#define DT_N_S_keymap_S_numsquare_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_keymap_S_numsquare_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_keymap_S_numsquare_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_keymap_S_numsquare_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_keymap_S_numsquare_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_keymap_S_numsquare_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_keymap_S_numsquare_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_keymap_S_numsquare_ORD 73
+#define DT_N_S_keymap_S_numsquare_ORD_STR_SORTABLE 00073
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_keymap_S_numsquare_REQUIRES_ORDS \
+	25, /* /behaviors/key_press */ \
+	64, /* /keymap */ \
+	67, /* /behaviors/transparent */ \
+	71, /* /behaviors/f_hml */ \
+	72, /* /behaviors/hml */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_keymap_S_numsquare_SUPPORTS_ORDS /* nothing */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_keymap_S_numsquare_EXISTS 1
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_keymap_S_numsquare_REG_NUM 0
+#define DT_N_S_keymap_S_numsquare_RANGES_NUM 0
+#define DT_N_S_keymap_S_numsquare_FOREACH_RANGE(fn) 
+#define DT_N_S_keymap_S_numsquare_IRQ_NUM 0
+#define DT_N_S_keymap_S_numsquare_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_keymap_S_numsquare_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_0_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_0_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_1_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_1_VAL_param1 458816
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_1_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_2_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_2_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_2_VAL_param1 458817
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_2_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_3_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_3_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_3_VAL_param1 458818
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_3_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_4_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_4_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_4_VAL_param1 458819
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_4_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_5_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_5_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_5_VAL_param1 458839
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_5_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_6_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_6_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_6_VAL_param1 458788
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_6_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_7_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_7_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_7_VAL_param1 458789
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_7_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_8_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_8_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_8_VAL_param1 458790
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_8_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_9_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_9_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_9_VAL_param1 458837
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_9_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_10_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_10_PH DT_N_S_behaviors_S_hml
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_10_VAL_param1 458979
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_10_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_10_VAL_param2 458782
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_10_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_11_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_11_PH DT_N_S_behaviors_S_hml
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_11_VAL_param1 458982
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_11_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_11_VAL_param2 458813
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_11_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_12_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_12_PH DT_N_S_behaviors_S_hml
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_12_VAL_param1 458976
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_12_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_12_VAL_param2 458814
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_12_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_13_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_13_PH DT_N_S_behaviors_S_f_hml
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_13_VAL_param1 458977
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_13_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_13_VAL_param2 458815
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_13_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_14_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_14_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_14_VAL_param1 458820
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_14_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_15_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_15_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_15_VAL_param1 458838
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_15_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_16_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_16_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_16_VAL_param1 458785
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_16_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_17_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_17_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_17_VAL_param1 458786
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_17_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_18_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_18_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_18_VAL_param1 458787
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_18_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_19_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_19_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_19_VAL_param1 458836
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_19_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_20_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_20_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_21_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_21_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_21_VAL_param1 458810
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_21_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_22_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_22_PH DT_N_S_behaviors_S_hml
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_22_VAL_param1 458978
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_22_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_22_VAL_param2 458811
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_22_VAL_param2_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_23_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_23_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_23_VAL_param1 458812
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_23_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_24_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_24_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_24_VAL_param1 458821
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_24_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_25_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_25_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_25_VAL_param1 458855
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_25_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_26_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_26_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_26_VAL_param1 458782
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_26_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_27_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_27_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_27_VAL_param1 458783
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_27_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_28_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_28_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_28_VAL_param1 458784
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_28_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_29_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_29_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_29_VAL_param1 34013218
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_29_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_30_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_30_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_31_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_31_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_32_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_32_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_32_VAL_param1 458851
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_32_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_33_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_33_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_33_VAL_param1 458791
+#define DT_N_S_keymap_S_numsquare_P_bindings_IDX_33_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_numsquare_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_keymap_S_numsquare, bindings, 0) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 1) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 2) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 3) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 4) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 5) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 6) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 7) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 8) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 9) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 10) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 11) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 12) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 13) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 14) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 15) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 16) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 17) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 18) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 19) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 20) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 21) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 22) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 23) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 24) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 25) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 26) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 27) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 28) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 29) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 30) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 31) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 32) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 33)
+#define DT_N_S_keymap_S_numsquare_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_keymap_S_numsquare, bindings, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 1) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 2) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 3) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 4) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 5) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 6) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 7) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 8) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 9) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 10) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 11) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 12) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 13) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 14) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 15) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 16) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 17) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 18) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 19) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 20) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 21) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 22) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 23) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 24) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 25) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 26) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 27) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 28) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 29) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 30) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 31) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 32) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 33)
+#define DT_N_S_keymap_S_numsquare_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_keymap_S_numsquare, bindings, 0, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 1, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 2, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 3, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 4, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 5, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 6, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 7, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 8, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 9, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 10, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 11, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 12, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 13, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 14, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 15, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 16, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 17, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 18, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 19, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 20, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 21, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 22, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 23, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 24, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 25, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 26, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 27, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 28, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 29, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 30, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 31, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 32, __VA_ARGS__) \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 33, __VA_ARGS__)
+#define DT_N_S_keymap_S_numsquare_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_keymap_S_numsquare, bindings, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 7, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 8, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 9, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 10, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 11, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 12, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 13, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 14, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 15, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 16, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 17, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 18, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 19, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 20, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 21, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 22, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 23, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 24, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 25, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 26, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 27, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 28, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 29, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 30, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 31, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 32, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_keymap_S_numsquare, bindings, 33, __VA_ARGS__)
+#define DT_N_S_keymap_S_numsquare_P_bindings_LEN 34
+#define DT_N_S_keymap_S_numsquare_P_bindings_EXISTS 1
+
+/*
  * Devicetree node: /behaviors/f_hmr
  *
  * Node identifier: DT_N_S_behaviors_S_f_hmr
@@ -7539,18 +9086,18 @@
 #define DT_N_S_behaviors_S_f_hmr_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_f_hmr_ORD 69
-#define DT_N_S_behaviors_S_f_hmr_ORD_STR_SORTABLE 00069
+#define DT_N_S_behaviors_S_f_hmr_ORD 74
+#define DT_N_S_behaviors_S_f_hmr_ORD_STR_SORTABLE 00074
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_f_hmr_REQUIRES_ORDS \
 	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */
+	25, /* /behaviors/key_press */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_f_hmr_SUPPORTS_ORDS \
-	74, /* /keymap/default_layer */ \
-	78, /* /keymap/num_layer */
+	78, /* /keymap/default_layer */ \
+	81, /* /keymap/num_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_f_hmr_EXISTS 1
@@ -7752,242 +9299,6 @@
 #define DT_N_S_behaviors_S_f_hmr_P_label_EXISTS 1
 
 /*
- * Devicetree node: /behaviors/hml
- *
- * Node identifier: DT_N_S_behaviors_S_hml
- *
- * Binding (compatible = zmk,behavior-hold-tap):
- *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-hold-tap.yaml
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_behaviors_S_hml_PATH "/behaviors/hml"
-
-/* Node's name with unit-address: */
-#define DT_N_S_behaviors_S_hml_FULL_NAME "hml"
-
-/* Node parent (/behaviors) identifier: */
-#define DT_N_S_behaviors_S_hml_PARENT DT_N_S_behaviors
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_behaviors_S_hml_CHILD_IDX 26
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_behaviors_S_hml_FOREACH_CHILD(fn) 
-#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_hml_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_hml_ORD 70
-#define DT_N_S_behaviors_S_hml_ORD_STR_SORTABLE 00070
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_behaviors_S_hml_REQUIRES_ORDS \
-	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_behaviors_S_hml_SUPPORTS_ORDS \
-	74, /* /keymap/default_layer */ \
-	77, /* /keymap/nav_layer */ \
-	78, /* /keymap/num_layer */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_behaviors_S_hml_EXISTS 1
-#define DT_N_INST_2_zmk_behavior_hold_tap DT_N_S_behaviors_S_hml
-#define DT_N_NODELABEL_hml                DT_N_S_behaviors_S_hml
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_behaviors_S_hml_REG_NUM 0
-#define DT_N_S_behaviors_S_hml_RANGES_NUM 0
-#define DT_N_S_behaviors_S_hml_FOREACH_RANGE(fn) 
-#define DT_N_S_behaviors_S_hml_IRQ_NUM 0
-#define DT_N_S_behaviors_S_hml_COMPAT_MATCHES_zmk_behavior_hold_tap 1
-#define DT_N_S_behaviors_S_hml_COMPAT_VENDOR_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_hml_COMPAT_VENDOR_IDX_0 "ZMK Project"
-#define DT_N_S_behaviors_S_hml_COMPAT_MODEL_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_hml_COMPAT_MODEL_IDX_0 "behavior-hold-tap"
-#define DT_N_S_behaviors_S_hml_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_behaviors_S_hml_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_behaviors_S_hml_P_bindings_IDX_0 DT_N_S_behaviors_S_key_press
-#define DT_N_S_behaviors_S_hml_P_bindings_IDX_0_PH DT_N_S_behaviors_S_key_press
-#define DT_N_S_behaviors_S_hml_P_bindings_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_bindings_IDX_1 DT_N_S_behaviors_S_key_press
-#define DT_N_S_behaviors_S_hml_P_bindings_IDX_1_PH DT_N_S_behaviors_S_key_press
-#define DT_N_S_behaviors_S_hml_P_bindings_IDX_1_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_bindings_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_hml, bindings, 0) \
-	fn(DT_N_S_behaviors_S_hml, bindings, 1)
-#define DT_N_S_behaviors_S_hml_P_bindings_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_hml, bindings, 0) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, bindings, 1)
-#define DT_N_S_behaviors_S_hml_P_bindings_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_hml, bindings, 0, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, bindings, 1, __VA_ARGS__)
-#define DT_N_S_behaviors_S_hml_P_bindings_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_hml, bindings, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, bindings, 1, __VA_ARGS__)
-#define DT_N_S_behaviors_S_hml_P_bindings_LEN 2
-#define DT_N_S_behaviors_S_hml_P_bindings_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_tapping_term_ms 280
-#define DT_N_S_behaviors_S_hml_P_tapping_term_ms_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_quick_tap_ms 175
-#define DT_N_S_behaviors_S_hml_P_quick_tap_ms_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_global_quick_tap 0
-#define DT_N_S_behaviors_S_hml_P_global_quick_tap_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_require_prior_idle_ms 150
-#define DT_N_S_behaviors_S_hml_P_require_prior_idle_ms_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_flavor "balanced"
-#define DT_N_S_behaviors_S_hml_P_flavor_STRING_UNQUOTED balanced
-#define DT_N_S_behaviors_S_hml_P_flavor_STRING_TOKEN balanced
-#define DT_N_S_behaviors_S_hml_P_flavor_STRING_UPPER_TOKEN BALANCED
-#define DT_N_S_behaviors_S_hml_P_flavor_IDX_0 "balanced"
-#define DT_N_S_behaviors_S_hml_P_flavor_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_flavor_ENUM_IDX 1
-#define DT_N_S_behaviors_S_hml_P_flavor_ENUM_VAL_balanced_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_flavor_ENUM_TOKEN balanced
-#define DT_N_S_behaviors_S_hml_P_flavor_ENUM_UPPER_TOKEN BALANCED
-#define DT_N_S_behaviors_S_hml_P_flavor_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_hml, flavor, 0)
-#define DT_N_S_behaviors_S_hml_P_flavor_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_hml, flavor, 0)
-#define DT_N_S_behaviors_S_hml_P_flavor_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_hml, flavor, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_hml_P_flavor_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_hml, flavor, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_hml_P_flavor_LEN 1
-#define DT_N_S_behaviors_S_hml_P_flavor_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_while_undecided 0
-#define DT_N_S_behaviors_S_hml_P_hold_while_undecided_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_while_undecided_linger 0
-#define DT_N_S_behaviors_S_hml_P_hold_while_undecided_linger_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_retro_tap 0
-#define DT_N_S_behaviors_S_hml_P_retro_tap_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions {5 /* 0x5 */, 6 /* 0x6 */, 7 /* 0x7 */, 8 /* 0x8 */, 9 /* 0x9 */, 15 /* 0xf */, 16 /* 0x10 */, 17 /* 0x11 */, 18 /* 0x12 */, 19 /* 0x13 */, 25 /* 0x19 */, 26 /* 0x1a */, 27 /* 0x1b */, 28 /* 0x1c */, 29 /* 0x1d */, 32 /* 0x20 */, 33 /* 0x21 */, 30 /* 0x1e */, 31 /* 0x1f */}
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_0 5
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_1 6
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_1_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_2 7
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_2_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_3 8
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_3_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_4 9
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_4_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_5 15
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_5_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_6 16
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_6_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_7 17
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_7_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_8 18
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_8_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_9 19
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_9_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_10 25
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_10_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_11 26
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_11_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_12 27
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_12_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_13 28
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_13_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_14 29
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_14_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_15 32
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_15_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_16 33
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_16_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_17 30
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_17_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_18 31
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_IDX_18_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 0) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 1) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 2) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 3) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 4) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 5) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 6) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 7) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 8) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 9) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 10) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 11) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 12) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 13) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 14) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 15) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 16) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 17) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 18)
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 0) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 1) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 2) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 3) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 4) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 5) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 6) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 7) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 8) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 9) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 10) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 11) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 12) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 13) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 14) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 15) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 16) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 17) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 18)
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 0, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 1, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 2, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 3, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 4, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 5, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 6, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 7, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 8, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 9, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 10, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 11, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 12, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 13, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 14, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 15, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 16, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 17, __VA_ARGS__) \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 18, __VA_ARGS__)
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 7, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 8, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 9, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 10, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 11, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 12, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 13, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 14, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 15, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 16, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 17, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_behaviors_S_hml, hold_trigger_key_positions, 18, __VA_ARGS__)
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_LEN 19
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_key_positions_EXISTS 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_on_release 1
-#define DT_N_S_behaviors_S_hml_P_hold_trigger_on_release_EXISTS 1
-
-/*
  * Devicetree node: /behaviors/hmr
  *
  * Node identifier: DT_N_S_behaviors_S_hmr
@@ -8022,18 +9333,18 @@
 #define DT_N_S_behaviors_S_hmr_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_hmr_ORD 71
-#define DT_N_S_behaviors_S_hmr_ORD_STR_SORTABLE 00071
+#define DT_N_S_behaviors_S_hmr_ORD 75
+#define DT_N_S_behaviors_S_hmr_ORD_STR_SORTABLE 00075
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_hmr_REQUIRES_ORDS \
 	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */
+	25, /* /behaviors/key_press */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_hmr_SUPPORTS_ORDS \
-	74, /* /keymap/default_layer */ \
-	78, /* /keymap/num_layer */
+	78, /* /keymap/default_layer */ \
+	81, /* /keymap/num_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_hmr_EXISTS 1
@@ -8257,18 +9568,18 @@
 #define DT_N_S_behaviors_S_hrl_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_hrl_ORD 72
-#define DT_N_S_behaviors_S_hrl_ORD_STR_SORTABLE 00072
+#define DT_N_S_behaviors_S_hrl_ORD 76
+#define DT_N_S_behaviors_S_hrl_ORD_STR_SORTABLE 00076
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_hrl_REQUIRES_ORDS \
 	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */ \
-	51, /* /behaviors/momentary_layer */
+	25, /* /behaviors/key_press */ \
+	52, /* /behaviors/momentary_layer */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_hrl_SUPPORTS_ORDS \
-	74, /* /keymap/default_layer */
+	78, /* /keymap/default_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_hrl_EXISTS 1
@@ -8504,19 +9815,19 @@
 #define DT_N_S_behaviors_S_layer_tap_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_layer_tap_ORD 73
-#define DT_N_S_behaviors_S_layer_tap_ORD_STR_SORTABLE 00073
+#define DT_N_S_behaviors_S_layer_tap_ORD 77
+#define DT_N_S_behaviors_S_layer_tap_ORD_STR_SORTABLE 00077
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_layer_tap_REQUIRES_ORDS \
 	14, /* /behaviors */ \
-	27, /* /behaviors/key_press */ \
-	51, /* /behaviors/momentary_layer */
+	25, /* /behaviors/key_press */ \
+	52, /* /behaviors/momentary_layer */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_layer_tap_SUPPORTS_ORDS \
-	74, /* /keymap/default_layer */ \
-	77, /* /keymap/nav_layer */
+	78, /* /keymap/default_layer */ \
+	80, /* /keymap/nav_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_layer_tap_EXISTS 1
@@ -8639,21 +9950,19 @@
 #define DT_N_S_keymap_S_default_layer_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_keymap_S_default_layer_ORD 74
-#define DT_N_S_keymap_S_default_layer_ORD_STR_SORTABLE 00074
+#define DT_N_S_keymap_S_default_layer_ORD 78
+#define DT_N_S_keymap_S_default_layer_ORD_STR_SORTABLE 00078
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_keymap_S_default_layer_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	47, /* /behaviors/mod_tap */ \
-	66, /* /keymap */ \
-	67, /* /behaviors/Y_capslock */ \
-	68, /* /behaviors/f_hml */ \
-	69, /* /behaviors/f_hmr */ \
-	70, /* /behaviors/hml */ \
-	71, /* /behaviors/hmr */ \
-	72, /* /behaviors/hrl */ \
-	73, /* /behaviors/layer_tap */
+	25, /* /behaviors/key_press */ \
+	64, /* /keymap */ \
+	71, /* /behaviors/f_hml */ \
+	72, /* /behaviors/hml */ \
+	74, /* /behaviors/f_hmr */ \
+	75, /* /behaviors/hmr */ \
+	76, /* /behaviors/hrl */ \
+	77, /* /behaviors/layer_tap */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_keymap_S_default_layer_SUPPORTS_ORDS /* nothing */
@@ -8693,7 +10002,9 @@
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_4_VAL_param1 458775
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_4_VAL_param1_EXISTS 1
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_5_EXISTS 1
-#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_5_PH DT_N_S_behaviors_S_y_capslock
+#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_5_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_5_VAL_param1 458780
+#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_5_VAL_param1_EXISTS 1
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_6_EXISTS 1
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_6_PH DT_N_S_behaviors_S_key_press
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_6_VAL_param1 458776
@@ -8819,14 +10130,14 @@
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_30_VAL_param2 458796
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_30_VAL_param2_EXISTS 1
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_31_EXISTS 1
-#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_31_PH DT_N_S_behaviors_S_mod_tap
-#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_31_VAL_param1 458977
+#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_31_PH DT_N_S_behaviors_S_layer_tap
+#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_31_VAL_param1 7
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_31_VAL_param1_EXISTS 1
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_31_VAL_param2 458795
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_31_VAL_param2_EXISTS 1
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_32_EXISTS 1
-#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_32_PH DT_N_S_behaviors_S_mod_tap
-#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_32_VAL_param1 458982
+#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_32_PH DT_N_S_behaviors_S_layer_tap
+#define DT_N_S_keymap_S_default_layer_P_bindings_IDX_32_VAL_param1 6
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_32_VAL_param1_EXISTS 1
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_32_VAL_param2 458792
 #define DT_N_S_keymap_S_default_layer_P_bindings_IDX_32_VAL_param2_EXISTS 1
@@ -8976,89 +10287,6 @@
 #define DT_N_S_keymap_S_default_layer_P_bindings_EXISTS 1
 
 /*
- * Devicetree node: /behaviors/transparent
- *
- * Node identifier: DT_N_S_behaviors_S_transparent
- *
- * Binding (compatible = zmk,behavior-transparent):
- *   /workspace/zmk/app/dts/bindings/behaviors/zmk,behavior-transparent.yaml
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_behaviors_S_transparent_PATH "/behaviors/transparent"
-
-/* Node's name with unit-address: */
-#define DT_N_S_behaviors_S_transparent_FULL_NAME "transparent"
-
-/* Node parent (/behaviors) identifier: */
-#define DT_N_S_behaviors_S_transparent_PARENT DT_N_S_behaviors
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_behaviors_S_transparent_CHILD_IDX 1
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD(fn) 
-#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_behaviors_S_transparent_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_transparent_ORD 75
-#define DT_N_S_behaviors_S_transparent_ORD_STR_SORTABLE 00075
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_behaviors_S_transparent_REQUIRES_ORDS \
-	14, /* /behaviors */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_behaviors_S_transparent_SUPPORTS_ORDS \
-	76, /* /keymap/mouse_layer */ \
-	77, /* /keymap/nav_layer */ \
-	78, /* /keymap/num_layer */ \
-	79, /* /keymap/sym_layer */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_behaviors_S_transparent_EXISTS 1
-#define DT_N_INST_0_zmk_behavior_transparent DT_N_S_behaviors_S_transparent
-#define DT_N_NODELABEL_trans                 DT_N_S_behaviors_S_transparent
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_behaviors_S_transparent_REG_NUM 0
-#define DT_N_S_behaviors_S_transparent_RANGES_NUM 0
-#define DT_N_S_behaviors_S_transparent_FOREACH_RANGE(fn) 
-#define DT_N_S_behaviors_S_transparent_IRQ_NUM 0
-#define DT_N_S_behaviors_S_transparent_COMPAT_MATCHES_zmk_behavior_transparent 1
-#define DT_N_S_behaviors_S_transparent_COMPAT_VENDOR_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_transparent_COMPAT_VENDOR_IDX_0 "ZMK Project"
-#define DT_N_S_behaviors_S_transparent_COMPAT_MODEL_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_transparent_COMPAT_MODEL_IDX_0 "behavior-transparent"
-#define DT_N_S_behaviors_S_transparent_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_behaviors_S_transparent_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_behaviors_S_transparent_P_display_name "Transparent"
-#define DT_N_S_behaviors_S_transparent_P_display_name_STRING_UNQUOTED Transparent
-#define DT_N_S_behaviors_S_transparent_P_display_name_STRING_TOKEN Transparent
-#define DT_N_S_behaviors_S_transparent_P_display_name_STRING_UPPER_TOKEN TRANSPARENT
-#define DT_N_S_behaviors_S_transparent_P_display_name_IDX_0 "Transparent"
-#define DT_N_S_behaviors_S_transparent_P_display_name_IDX_0_EXISTS 1
-#define DT_N_S_behaviors_S_transparent_P_display_name_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_transparent, display_name, 0)
-#define DT_N_S_behaviors_S_transparent_P_display_name_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_behaviors_S_transparent, display_name, 0)
-#define DT_N_S_behaviors_S_transparent_P_display_name_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_transparent, display_name, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_transparent_P_display_name_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_behaviors_S_transparent, display_name, 0, __VA_ARGS__)
-#define DT_N_S_behaviors_S_transparent_P_display_name_LEN 1
-#define DT_N_S_behaviors_S_transparent_P_display_name_EXISTS 1
-
-/*
  * Devicetree node: /keymap/mouse_layer
  *
  * Node identifier: DT_N_S_keymap_S_mouse_layer
@@ -9090,16 +10318,16 @@
 #define DT_N_S_keymap_S_mouse_layer_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_keymap_S_mouse_layer_ORD 76
-#define DT_N_S_keymap_S_mouse_layer_ORD_STR_SORTABLE 00076
+#define DT_N_S_keymap_S_mouse_layer_ORD 79
+#define DT_N_S_keymap_S_mouse_layer_ORD_STR_SORTABLE 00079
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_keymap_S_mouse_layer_REQUIRES_ORDS \
 	15, /* /behaviors/mouse_key_press */ \
 	17, /* /behaviors/mouse_move */ \
 	19, /* /behaviors/mouse_scroll */ \
-	66, /* /keymap */ \
-	75, /* /behaviors/transparent */
+	64, /* /keymap */ \
+	67, /* /behaviors/transparent */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_keymap_S_mouse_layer_SUPPORTS_ORDS /* nothing */
@@ -9379,16 +10607,17 @@
 #define DT_N_S_keymap_S_nav_layer_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_keymap_S_nav_layer_ORD 77
-#define DT_N_S_keymap_S_nav_layer_ORD_STR_SORTABLE 00077
+#define DT_N_S_keymap_S_nav_layer_ORD 80
+#define DT_N_S_keymap_S_nav_layer_ORD_STR_SORTABLE 00080
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_keymap_S_nav_layer_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	66, /* /keymap */ \
-	70, /* /behaviors/hml */ \
-	73, /* /behaviors/layer_tap */ \
-	75, /* /behaviors/transparent */
+	25, /* /behaviors/key_press */ \
+	64, /* /keymap */ \
+	66, /* /behaviors/cal_l */ \
+	67, /* /behaviors/transparent */ \
+	72, /* /behaviors/hml */ \
+	77, /* /behaviors/layer_tap */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_keymap_S_nav_layer_SUPPORTS_ORDS /* nothing */
@@ -9450,9 +10679,17 @@
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_9_VAL_param1 458822
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_9_VAL_param1_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_10_EXISTS 1
-#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_10_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_10_PH DT_N_S_behaviors_S_cal_l
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_10_VAL_param1 458979
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_10_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_10_VAL_param2 458979
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_10_VAL_param2_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_11_EXISTS 1
-#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_11_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_11_PH DT_N_S_behaviors_S_cal_l
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_11_VAL_param1 458982
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_11_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_11_VAL_param2 458982
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_11_VAL_param2_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_12_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_12_PH DT_N_S_behaviors_S_hml
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_12_VAL_param1 458976
@@ -9460,7 +10697,11 @@
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_12_VAL_param2 458793
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_12_VAL_param2_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_13_EXISTS 1
-#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_13_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_13_PH DT_N_S_behaviors_S_cal_l
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_13_VAL_param1 458977
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_13_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_13_VAL_param2 458977
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_13_VAL_param2_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_14_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_14_PH DT_N_S_behaviors_S_transparent
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_15_EXISTS 1
@@ -9496,11 +10737,15 @@
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_25_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_25_PH DT_N_S_behaviors_S_transparent
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_26_EXISTS 1
-#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_26_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_26_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_26_VAL_param1 458769
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_26_VAL_param1_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_27_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_27_PH DT_N_S_behaviors_S_transparent
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_28_EXISTS 1
-#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_28_PH DT_N_S_behaviors_S_transparent
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_28_PH DT_N_S_behaviors_S_key_press
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_28_VAL_param1 458808
+#define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_28_VAL_param1_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_29_EXISTS 1
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_29_PH DT_N_S_behaviors_S_transparent
 #define DT_N_S_keymap_S_nav_layer_P_bindings_IDX_30_EXISTS 1
@@ -9686,18 +10931,18 @@
 #define DT_N_S_keymap_S_num_layer_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_keymap_S_num_layer_ORD 78
-#define DT_N_S_keymap_S_num_layer_ORD_STR_SORTABLE 00078
+#define DT_N_S_keymap_S_num_layer_ORD 81
+#define DT_N_S_keymap_S_num_layer_ORD_STR_SORTABLE 00081
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_keymap_S_num_layer_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	66, /* /keymap */ \
-	68, /* /behaviors/f_hml */ \
-	69, /* /behaviors/f_hmr */ \
-	70, /* /behaviors/hml */ \
-	71, /* /behaviors/hmr */ \
-	75, /* /behaviors/transparent */
+	25, /* /behaviors/key_press */ \
+	64, /* /keymap */ \
+	67, /* /behaviors/transparent */ \
+	71, /* /behaviors/f_hml */ \
+	72, /* /behaviors/hml */ \
+	74, /* /behaviors/f_hmr */ \
+	75, /* /behaviors/hmr */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_keymap_S_num_layer_SUPPORTS_ORDS /* nothing */
@@ -10031,15 +11276,15 @@
 #define DT_N_S_keymap_S_sym_layer_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_keymap_S_sym_layer_ORD 79
-#define DT_N_S_keymap_S_sym_layer_ORD_STR_SORTABLE 00079
+#define DT_N_S_keymap_S_sym_layer_ORD 82
+#define DT_N_S_keymap_S_sym_layer_ORD_STR_SORTABLE 00082
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_keymap_S_sym_layer_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	45, /* /behaviors/bluetooth */ \
-	66, /* /keymap */ \
-	75, /* /behaviors/transparent */
+	25, /* /behaviors/key_press */ \
+	46, /* /behaviors/bluetooth */ \
+	64, /* /keymap */ \
+	67, /* /behaviors/transparent */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_keymap_S_sym_layer_SUPPORTS_ORDS /* nothing */
@@ -10338,8 +11583,8 @@
 #define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_leds_S_led_0, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_leds_ORD 80
-#define DT_N_S_leds_ORD_STR_SORTABLE 00080
+#define DT_N_S_leds_ORD 83
+#define DT_N_S_leds_ORD_STR_SORTABLE 00083
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_leds_REQUIRES_ORDS \
@@ -10347,7 +11592,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_leds_SUPPORTS_ORDS \
-	81, /* /leds/led_0 */
+	84, /* /leds/led_0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_leds_EXISTS 1
@@ -10410,13 +11655,13 @@
 #define DT_N_S_leds_S_led_0_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_leds_S_led_0_ORD 81
-#define DT_N_S_leds_S_led_0_ORD_STR_SORTABLE 00081
+#define DT_N_S_leds_S_led_0_ORD 84
+#define DT_N_S_leds_S_led_0_ORD_STR_SORTABLE 00084
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_leds_S_led_0_REQUIRES_ORDS \
 	2, /* /soc/gpio@50000000 */ \
-	80, /* /leds */
+	83, /* /leds */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_leds_S_led_0_SUPPORTS_ORDS /* nothing */
@@ -10484,13 +11729,13 @@
 #define DT_N_S_macros_S_vim_change_window_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_macros_S_vim_change_window_ORD 82
-#define DT_N_S_macros_S_vim_change_window_ORD_STR_SORTABLE 00082
+#define DT_N_S_macros_S_vim_change_window_ORD 85
+#define DT_N_S_macros_S_vim_change_window_ORD_STR_SORTABLE 00085
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_macros_S_vim_change_window_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	28, /* /macros */
+	25, /* /behaviors/key_press */ \
+	29, /* /macros */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_macros_S_vim_change_window_SUPPORTS_ORDS /* nothing */
@@ -10582,13 +11827,13 @@
 #define DT_N_S_macros_S_closed_angle_quote_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_macros_S_closed_angle_quote_ORD 83
-#define DT_N_S_macros_S_closed_angle_quote_ORD_STR_SORTABLE 00083
+#define DT_N_S_macros_S_closed_angle_quote_ORD 86
+#define DT_N_S_macros_S_closed_angle_quote_ORD_STR_SORTABLE 00086
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_macros_S_closed_angle_quote_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	28, /* /macros */
+	25, /* /behaviors/key_press */ \
+	29, /* /macros */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_macros_S_closed_angle_quote_SUPPORTS_ORDS /* nothing */
@@ -10680,13 +11925,13 @@
 #define DT_N_S_macros_S_vim_decrease_y_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_macros_S_vim_decrease_y_ORD 84
-#define DT_N_S_macros_S_vim_decrease_y_ORD_STR_SORTABLE 00084
+#define DT_N_S_macros_S_vim_decrease_y_ORD 87
+#define DT_N_S_macros_S_vim_decrease_y_ORD_STR_SORTABLE 00087
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_macros_S_vim_decrease_y_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	28, /* /macros */
+	25, /* /behaviors/key_press */ \
+	29, /* /macros */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_macros_S_vim_decrease_y_SUPPORTS_ORDS /* nothing */
@@ -10778,13 +12023,13 @@
 #define DT_N_S_macros_S_vim_increase_x_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_macros_S_vim_increase_x_ORD 85
-#define DT_N_S_macros_S_vim_increase_x_ORD_STR_SORTABLE 00085
+#define DT_N_S_macros_S_vim_increase_x_ORD 88
+#define DT_N_S_macros_S_vim_increase_x_ORD_STR_SORTABLE 00088
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_macros_S_vim_increase_x_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	28, /* /macros */
+	25, /* /behaviors/key_press */ \
+	29, /* /macros */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_macros_S_vim_increase_x_SUPPORTS_ORDS /* nothing */
@@ -10876,13 +12121,13 @@
 #define DT_N_S_macros_S_vim_increase_y_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_macros_S_vim_increase_y_ORD 86
-#define DT_N_S_macros_S_vim_increase_y_ORD_STR_SORTABLE 00086
+#define DT_N_S_macros_S_vim_increase_y_ORD 89
+#define DT_N_S_macros_S_vim_increase_y_ORD_STR_SORTABLE 00089
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_macros_S_vim_increase_y_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	28, /* /macros */
+	25, /* /behaviors/key_press */ \
+	29, /* /macros */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_macros_S_vim_increase_y_SUPPORTS_ORDS /* nothing */
@@ -10974,13 +12219,13 @@
 #define DT_N_S_macros_S_vim_reduce_x_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_macros_S_vim_reduce_x_ORD 87
-#define DT_N_S_macros_S_vim_reduce_x_ORD_STR_SORTABLE 00087
+#define DT_N_S_macros_S_vim_reduce_x_ORD 90
+#define DT_N_S_macros_S_vim_reduce_x_ORD_STR_SORTABLE 00090
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_macros_S_vim_reduce_x_REQUIRES_ORDS \
-	27, /* /behaviors/key_press */ \
-	28, /* /macros */
+	25, /* /behaviors/key_press */ \
+	29, /* /macros */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_macros_S_vim_reduce_x_SUPPORTS_ORDS /* nothing */
@@ -11072,8 +12317,8 @@
 #define DT_N_S_pin_controller_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_pin_controller_S_uart0_default, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_pin_controller_S_uart0_sleep, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_pin_controller_S_i2c0_default, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_pin_controller_S_i2c0_sleep, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_pin_controller_S_spi1_default, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_pin_controller_S_spi1_sleep, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_ORD 88
-#define DT_N_S_pin_controller_ORD_STR_SORTABLE 00088
+#define DT_N_S_pin_controller_ORD 91
+#define DT_N_S_pin_controller_ORD_STR_SORTABLE 00091
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_REQUIRES_ORDS \
@@ -11081,12 +12326,12 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_SUPPORTS_ORDS \
-	89, /* /pin-controller/i2c0_default */ \
-	91, /* /pin-controller/i2c0_sleep */ \
-	93, /* /pin-controller/spi1_default */ \
-	95, /* /pin-controller/spi1_sleep */ \
-	97, /* /pin-controller/uart0_default */ \
-	100, /* /pin-controller/uart0_sleep */
+	92, /* /pin-controller/i2c0_default */ \
+	94, /* /pin-controller/i2c0_sleep */ \
+	96, /* /pin-controller/spi1_default */ \
+	98, /* /pin-controller/spi1_sleep */ \
+	100, /* /pin-controller/uart0_default */ \
+	103, /* /pin-controller/uart0_sleep */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_EXISTS 1
@@ -11158,17 +12403,17 @@
 #define DT_N_S_pin_controller_S_i2c0_default_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c0_default_ORD 89
-#define DT_N_S_pin_controller_S_i2c0_default_ORD_STR_SORTABLE 00089
+#define DT_N_S_pin_controller_S_i2c0_default_ORD 92
+#define DT_N_S_pin_controller_S_i2c0_default_ORD_STR_SORTABLE 00092
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c0_default_REQUIRES_ORDS \
-	88, /* /pin-controller */
+	91, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c0_default_SUPPORTS_ORDS \
-	90, /* /pin-controller/i2c0_default/group1 */ \
-	117, /* /soc/i2c@40003000 */
+	93, /* /pin-controller/i2c0_default/group1 */ \
+	120, /* /soc/i2c@40003000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_i2c0_default_EXISTS 1
@@ -11218,12 +12463,12 @@
 #define DT_N_S_pin_controller_S_i2c0_default_S_group1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c0_default_S_group1_ORD 90
-#define DT_N_S_pin_controller_S_i2c0_default_S_group1_ORD_STR_SORTABLE 00090
+#define DT_N_S_pin_controller_S_i2c0_default_S_group1_ORD 93
+#define DT_N_S_pin_controller_S_i2c0_default_S_group1_ORD_STR_SORTABLE 00093
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c0_default_S_group1_REQUIRES_ORDS \
-	89, /* /pin-controller/i2c0_default */
+	92, /* /pin-controller/i2c0_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c0_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -11302,17 +12547,17 @@
 #define DT_N_S_pin_controller_S_i2c0_sleep_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_pin_controller_S_i2c0_sleep_S_group1, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c0_sleep_ORD 91
-#define DT_N_S_pin_controller_S_i2c0_sleep_ORD_STR_SORTABLE 00091
+#define DT_N_S_pin_controller_S_i2c0_sleep_ORD 94
+#define DT_N_S_pin_controller_S_i2c0_sleep_ORD_STR_SORTABLE 00094
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c0_sleep_REQUIRES_ORDS \
-	88, /* /pin-controller */
+	91, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c0_sleep_SUPPORTS_ORDS \
-	92, /* /pin-controller/i2c0_sleep/group1 */ \
-	117, /* /soc/i2c@40003000 */
+	95, /* /pin-controller/i2c0_sleep/group1 */ \
+	120, /* /soc/i2c@40003000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_i2c0_sleep_EXISTS 1
@@ -11362,12 +12607,12 @@
 #define DT_N_S_pin_controller_S_i2c0_sleep_S_group1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_i2c0_sleep_S_group1_ORD 92
-#define DT_N_S_pin_controller_S_i2c0_sleep_S_group1_ORD_STR_SORTABLE 00092
+#define DT_N_S_pin_controller_S_i2c0_sleep_S_group1_ORD 95
+#define DT_N_S_pin_controller_S_i2c0_sleep_S_group1_ORD_STR_SORTABLE 00095
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_i2c0_sleep_S_group1_REQUIRES_ORDS \
-	91, /* /pin-controller/i2c0_sleep */
+	94, /* /pin-controller/i2c0_sleep */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_i2c0_sleep_S_group1_SUPPORTS_ORDS /* nothing */
@@ -11446,17 +12691,17 @@
 #define DT_N_S_pin_controller_S_spi1_default_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_pin_controller_S_spi1_default_S_group1, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spi1_default_ORD 93
-#define DT_N_S_pin_controller_S_spi1_default_ORD_STR_SORTABLE 00093
+#define DT_N_S_pin_controller_S_spi1_default_ORD 96
+#define DT_N_S_pin_controller_S_spi1_default_ORD_STR_SORTABLE 00096
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spi1_default_REQUIRES_ORDS \
-	88, /* /pin-controller */
+	91, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spi1_default_SUPPORTS_ORDS \
-	94, /* /pin-controller/spi1_default/group1 */ \
-	136, /* /soc/spi@40004000 */
+	97, /* /pin-controller/spi1_default/group1 */ \
+	139, /* /soc/spi@40004000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_spi1_default_EXISTS 1
@@ -11506,12 +12751,12 @@
 #define DT_N_S_pin_controller_S_spi1_default_S_group1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spi1_default_S_group1_ORD 94
-#define DT_N_S_pin_controller_S_spi1_default_S_group1_ORD_STR_SORTABLE 00094
+#define DT_N_S_pin_controller_S_spi1_default_S_group1_ORD 97
+#define DT_N_S_pin_controller_S_spi1_default_S_group1_ORD_STR_SORTABLE 00097
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spi1_default_S_group1_REQUIRES_ORDS \
-	93, /* /pin-controller/spi1_default */
+	96, /* /pin-controller/spi1_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spi1_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -11596,17 +12841,17 @@
 #define DT_N_S_pin_controller_S_spi1_sleep_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_pin_controller_S_spi1_sleep_S_group1, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spi1_sleep_ORD 95
-#define DT_N_S_pin_controller_S_spi1_sleep_ORD_STR_SORTABLE 00095
+#define DT_N_S_pin_controller_S_spi1_sleep_ORD 98
+#define DT_N_S_pin_controller_S_spi1_sleep_ORD_STR_SORTABLE 00098
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spi1_sleep_REQUIRES_ORDS \
-	88, /* /pin-controller */
+	91, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spi1_sleep_SUPPORTS_ORDS \
-	96, /* /pin-controller/spi1_sleep/group1 */ \
-	136, /* /soc/spi@40004000 */
+	99, /* /pin-controller/spi1_sleep/group1 */ \
+	139, /* /soc/spi@40004000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_spi1_sleep_EXISTS 1
@@ -11656,12 +12901,12 @@
 #define DT_N_S_pin_controller_S_spi1_sleep_S_group1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_spi1_sleep_S_group1_ORD 96
-#define DT_N_S_pin_controller_S_spi1_sleep_S_group1_ORD_STR_SORTABLE 00096
+#define DT_N_S_pin_controller_S_spi1_sleep_S_group1_ORD 99
+#define DT_N_S_pin_controller_S_spi1_sleep_S_group1_ORD_STR_SORTABLE 00099
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_spi1_sleep_S_group1_REQUIRES_ORDS \
-	95, /* /pin-controller/spi1_sleep */
+	98, /* /pin-controller/spi1_sleep */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_spi1_sleep_S_group1_SUPPORTS_ORDS /* nothing */
@@ -11746,18 +12991,18 @@
 #define DT_N_S_pin_controller_S_uart0_default_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_pin_controller_S_uart0_default_S_group1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_pin_controller_S_uart0_default_S_group2, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart0_default_ORD 97
-#define DT_N_S_pin_controller_S_uart0_default_ORD_STR_SORTABLE 00097
+#define DT_N_S_pin_controller_S_uart0_default_ORD 100
+#define DT_N_S_pin_controller_S_uart0_default_ORD_STR_SORTABLE 00100
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart0_default_REQUIRES_ORDS \
-	88, /* /pin-controller */
+	91, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart0_default_SUPPORTS_ORDS \
-	98, /* /pin-controller/uart0_default/group1 */ \
-	99, /* /pin-controller/uart0_default/group2 */ \
-	145, /* /soc/uart@40002000 */
+	101, /* /pin-controller/uart0_default/group1 */ \
+	102, /* /pin-controller/uart0_default/group2 */ \
+	148, /* /soc/uart@40002000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_uart0_default_EXISTS 1
@@ -11807,12 +13052,12 @@
 #define DT_N_S_pin_controller_S_uart0_default_S_group1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart0_default_S_group1_ORD 98
-#define DT_N_S_pin_controller_S_uart0_default_S_group1_ORD_STR_SORTABLE 00098
+#define DT_N_S_pin_controller_S_uart0_default_S_group1_ORD 101
+#define DT_N_S_pin_controller_S_uart0_default_S_group1_ORD_STR_SORTABLE 00101
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart0_default_S_group1_REQUIRES_ORDS \
-	97, /* /pin-controller/uart0_default */
+	100, /* /pin-controller/uart0_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart0_default_S_group1_SUPPORTS_ORDS /* nothing */
@@ -11885,12 +13130,12 @@
 #define DT_N_S_pin_controller_S_uart0_default_S_group2_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart0_default_S_group2_ORD 99
-#define DT_N_S_pin_controller_S_uart0_default_S_group2_ORD_STR_SORTABLE 00099
+#define DT_N_S_pin_controller_S_uart0_default_S_group2_ORD 102
+#define DT_N_S_pin_controller_S_uart0_default_S_group2_ORD_STR_SORTABLE 00102
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart0_default_S_group2_REQUIRES_ORDS \
-	97, /* /pin-controller/uart0_default */
+	100, /* /pin-controller/uart0_default */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart0_default_S_group2_SUPPORTS_ORDS /* nothing */
@@ -11963,17 +13208,17 @@
 #define DT_N_S_pin_controller_S_uart0_sleep_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_pin_controller_S_uart0_sleep_S_group1, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart0_sleep_ORD 100
-#define DT_N_S_pin_controller_S_uart0_sleep_ORD_STR_SORTABLE 00100
+#define DT_N_S_pin_controller_S_uart0_sleep_ORD 103
+#define DT_N_S_pin_controller_S_uart0_sleep_ORD_STR_SORTABLE 00103
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart0_sleep_REQUIRES_ORDS \
-	88, /* /pin-controller */
+	91, /* /pin-controller */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart0_sleep_SUPPORTS_ORDS \
-	101, /* /pin-controller/uart0_sleep/group1 */ \
-	145, /* /soc/uart@40002000 */
+	104, /* /pin-controller/uart0_sleep/group1 */ \
+	148, /* /soc/uart@40002000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_pin_controller_S_uart0_sleep_EXISTS 1
@@ -12023,12 +13268,12 @@
 #define DT_N_S_pin_controller_S_uart0_sleep_S_group1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_pin_controller_S_uart0_sleep_S_group1_ORD 101
-#define DT_N_S_pin_controller_S_uart0_sleep_S_group1_ORD_STR_SORTABLE 00101
+#define DT_N_S_pin_controller_S_uart0_sleep_S_group1_ORD 104
+#define DT_N_S_pin_controller_S_uart0_sleep_S_group1_ORD_STR_SORTABLE 00104
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_pin_controller_S_uart0_sleep_S_group1_REQUIRES_ORDS \
-	100, /* /pin-controller/uart0_sleep */
+	103, /* /pin-controller/uart0_sleep */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_pin_controller_S_uart0_sleep_S_group1_SUPPORTS_ORDS /* nothing */
@@ -12110,8 +13355,8 @@
 #define DT_N_S_soc_S_acl_4001e000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_acl_4001e000_ORD 102
-#define DT_N_S_soc_S_acl_4001e000_ORD_STR_SORTABLE 00102
+#define DT_N_S_soc_S_acl_4001e000_ORD 105
+#define DT_N_S_soc_S_acl_4001e000_ORD_STR_SORTABLE 00105
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_acl_4001e000_REQUIRES_ORDS \
@@ -12218,8 +13463,8 @@
 #define DT_N_S_soc_S_adc_40007000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_adc_40007000_ORD 103
-#define DT_N_S_soc_S_adc_40007000_ORD_STR_SORTABLE 00103
+#define DT_N_S_soc_S_adc_40007000_ORD 106
+#define DT_N_S_soc_S_adc_40007000_ORD_STR_SORTABLE 00106
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_adc_40007000_REQUIRES_ORDS \
@@ -12339,8 +13584,8 @@
 #define DT_N_S_soc_S_ccm_4000f000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_ccm_4000f000_ORD 104
-#define DT_N_S_soc_S_ccm_4000f000_ORD_STR_SORTABLE 00104
+#define DT_N_S_soc_S_ccm_4000f000_ORD 107
+#define DT_N_S_soc_S_ccm_4000f000_ORD_STR_SORTABLE 00107
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_ccm_4000f000_REQUIRES_ORDS \
@@ -12464,8 +13709,8 @@
 #define DT_N_S_soc_S_clock_40000000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_clock_40000000_ORD 105
-#define DT_N_S_soc_S_clock_40000000_ORD_STR_SORTABLE 00105
+#define DT_N_S_soc_S_clock_40000000_ORD 108
+#define DT_N_S_soc_S_clock_40000000_ORD_STR_SORTABLE 00108
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_clock_40000000_REQUIRES_ORDS \
@@ -12585,8 +13830,8 @@
 #define DT_N_S_soc_S_comparator_40013000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_comparator_40013000_ORD 106
-#define DT_N_S_soc_S_comparator_40013000_ORD_STR_SORTABLE 00106
+#define DT_N_S_soc_S_comparator_40013000_ORD 109
+#define DT_N_S_soc_S_comparator_40013000_ORD_STR_SORTABLE 00109
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_comparator_40013000_REQUIRES_ORDS \
@@ -12706,8 +13951,8 @@
 #define DT_N_S_soc_S_crypto_5002a000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_crypto_5002a000_ORD 107
-#define DT_N_S_soc_S_crypto_5002a000_ORD_STR_SORTABLE 00107
+#define DT_N_S_soc_S_crypto_5002a000_ORD 110
+#define DT_N_S_soc_S_crypto_5002a000_ORD_STR_SORTABLE 00110
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_crypto_5002a000_REQUIRES_ORDS \
@@ -12874,8 +14119,8 @@
 #define DT_N_S_soc_S_ecb_4000e000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_ecb_4000e000_ORD 108
-#define DT_N_S_soc_S_ecb_4000e000_ORD_STR_SORTABLE 00108
+#define DT_N_S_soc_S_ecb_4000e000_ORD 111
+#define DT_N_S_soc_S_ecb_4000e000_ORD_STR_SORTABLE 00111
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_ecb_4000e000_REQUIRES_ORDS \
@@ -12995,8 +14240,8 @@
 #define DT_N_S_soc_S_egu_40014000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40014000_ORD 109
-#define DT_N_S_soc_S_egu_40014000_ORD_STR_SORTABLE 00109
+#define DT_N_S_soc_S_egu_40014000_ORD 112
+#define DT_N_S_soc_S_egu_40014000_ORD_STR_SORTABLE 00112
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40014000_REQUIRES_ORDS \
@@ -13132,8 +14377,8 @@
 #define DT_N_S_soc_S_egu_40015000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40015000_ORD 110
-#define DT_N_S_soc_S_egu_40015000_ORD_STR_SORTABLE 00110
+#define DT_N_S_soc_S_egu_40015000_ORD 113
+#define DT_N_S_soc_S_egu_40015000_ORD_STR_SORTABLE 00113
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40015000_REQUIRES_ORDS \
@@ -13269,8 +14514,8 @@
 #define DT_N_S_soc_S_egu_40016000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40016000_ORD 111
-#define DT_N_S_soc_S_egu_40016000_ORD_STR_SORTABLE 00111
+#define DT_N_S_soc_S_egu_40016000_ORD 114
+#define DT_N_S_soc_S_egu_40016000_ORD_STR_SORTABLE 00114
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40016000_REQUIRES_ORDS \
@@ -13406,8 +14651,8 @@
 #define DT_N_S_soc_S_egu_40017000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40017000_ORD 112
-#define DT_N_S_soc_S_egu_40017000_ORD_STR_SORTABLE 00112
+#define DT_N_S_soc_S_egu_40017000_ORD 115
+#define DT_N_S_soc_S_egu_40017000_ORD_STR_SORTABLE 00115
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40017000_REQUIRES_ORDS \
@@ -13543,8 +14788,8 @@
 #define DT_N_S_soc_S_egu_40018000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40018000_ORD 113
-#define DT_N_S_soc_S_egu_40018000_ORD_STR_SORTABLE 00113
+#define DT_N_S_soc_S_egu_40018000_ORD 116
+#define DT_N_S_soc_S_egu_40018000_ORD_STR_SORTABLE 00116
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40018000_REQUIRES_ORDS \
@@ -13680,8 +14925,8 @@
 #define DT_N_S_soc_S_egu_40019000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40019000_ORD 114
-#define DT_N_S_soc_S_egu_40019000_ORD_STR_SORTABLE 00114
+#define DT_N_S_soc_S_egu_40019000_ORD 117
+#define DT_N_S_soc_S_egu_40019000_ORD_STR_SORTABLE 00117
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40019000_REQUIRES_ORDS \
@@ -13817,8 +15062,8 @@
 #define DT_N_S_soc_S_ficr_10000000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_ficr_10000000_ORD 115
-#define DT_N_S_soc_S_ficr_10000000_ORD_STR_SORTABLE 00115
+#define DT_N_S_soc_S_ficr_10000000_ORD 118
+#define DT_N_S_soc_S_ficr_10000000_ORD_STR_SORTABLE 00118
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_ficr_10000000_REQUIRES_ORDS \
@@ -13925,8 +15170,8 @@
 #define DT_N_S_soc_S_gpiote_40006000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_gpiote_40006000_ORD 116
-#define DT_N_S_soc_S_gpiote_40006000_ORD_STR_SORTABLE 00116
+#define DT_N_S_soc_S_gpiote_40006000_ORD 119
+#define DT_N_S_soc_S_gpiote_40006000_ORD_STR_SORTABLE 00119
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_gpiote_40006000_REQUIRES_ORDS \
@@ -14046,15 +15291,15 @@
 #define DT_N_S_soc_S_i2c_40003000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2c_40003000_ORD 117
-#define DT_N_S_soc_S_i2c_40003000_ORD_STR_SORTABLE 00117
+#define DT_N_S_soc_S_i2c_40003000_ORD 120
+#define DT_N_S_soc_S_i2c_40003000_ORD_STR_SORTABLE 00120
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2c_40003000_REQUIRES_ORDS \
 	1, /* /soc */ \
 	21, /* /soc/interrupt-controller@e000e100 */ \
-	89, /* /pin-controller/i2c0_default */ \
-	91, /* /pin-controller/i2c0_sleep */
+	92, /* /pin-controller/i2c0_default */ \
+	94, /* /pin-controller/i2c0_sleep */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_i2c_40003000_SUPPORTS_ORDS /* nothing */
@@ -14225,8 +15470,8 @@
 #define DT_N_S_soc_S_i2c_40004000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2c_40004000_ORD 118
-#define DT_N_S_soc_S_i2c_40004000_ORD_STR_SORTABLE 00118
+#define DT_N_S_soc_S_i2c_40004000_ORD 121
+#define DT_N_S_soc_S_i2c_40004000_ORD_STR_SORTABLE 00121
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2c_40004000_REQUIRES_ORDS \
@@ -14354,8 +15599,8 @@
 #define DT_N_S_soc_S_i2s_40025000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2s_40025000_ORD 119
-#define DT_N_S_soc_S_i2s_40025000_ORD_STR_SORTABLE 00119
+#define DT_N_S_soc_S_i2s_40025000_ORD 122
+#define DT_N_S_soc_S_i2s_40025000_ORD_STR_SORTABLE 00122
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2s_40025000_REQUIRES_ORDS \
@@ -14491,8 +15736,8 @@
 #define DT_N_S_soc_S_memory_20000000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_memory_20000000_ORD 120
-#define DT_N_S_soc_S_memory_20000000_ORD_STR_SORTABLE 00120
+#define DT_N_S_soc_S_memory_20000000_ORD 123
+#define DT_N_S_soc_S_memory_20000000_ORD_STR_SORTABLE 00123
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_memory_20000000_REQUIRES_ORDS \
@@ -14579,8 +15824,8 @@
 #define DT_N_S_soc_S_mwu_40020000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_mwu_40020000_ORD 121
-#define DT_N_S_soc_S_mwu_40020000_ORD_STR_SORTABLE 00121
+#define DT_N_S_soc_S_mwu_40020000_ORD 124
+#define DT_N_S_soc_S_mwu_40020000_ORD_STR_SORTABLE 00124
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_mwu_40020000_REQUIRES_ORDS \
@@ -14687,8 +15932,8 @@
 #define DT_N_S_soc_S_nfct_40005000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_nfct_40005000_ORD 122
-#define DT_N_S_soc_S_nfct_40005000_ORD_STR_SORTABLE 00122
+#define DT_N_S_soc_S_nfct_40005000_ORD 125
+#define DT_N_S_soc_S_nfct_40005000_ORD_STR_SORTABLE 00125
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_nfct_40005000_REQUIRES_ORDS \
@@ -14808,8 +16053,8 @@
 #define DT_N_S_soc_S_pdm_4001d000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pdm_4001d000_ORD 123
-#define DT_N_S_soc_S_pdm_4001d000_ORD_STR_SORTABLE 00123
+#define DT_N_S_soc_S_pdm_4001d000_ORD 126
+#define DT_N_S_soc_S_pdm_4001d000_ORD_STR_SORTABLE 00126
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pdm_4001d000_REQUIRES_ORDS \
@@ -14947,8 +16192,8 @@
 #define DT_N_S_soc_S_ppi_4001f000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_ppi_4001f000_ORD 124
-#define DT_N_S_soc_S_ppi_4001f000_ORD_STR_SORTABLE 00124
+#define DT_N_S_soc_S_ppi_4001f000_ORD 127
+#define DT_N_S_soc_S_ppi_4001f000_ORD_STR_SORTABLE 00127
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_ppi_4001f000_REQUIRES_ORDS \
@@ -15055,8 +16300,8 @@
 #define DT_N_S_soc_S_pwm_4001c000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pwm_4001c000_ORD 125
-#define DT_N_S_soc_S_pwm_4001c000_ORD_STR_SORTABLE 00125
+#define DT_N_S_soc_S_pwm_4001c000_ORD 128
+#define DT_N_S_soc_S_pwm_4001c000_ORD_STR_SORTABLE 00128
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pwm_4001c000_REQUIRES_ORDS \
@@ -15178,8 +16423,8 @@
 #define DT_N_S_soc_S_pwm_40021000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pwm_40021000_ORD 126
-#define DT_N_S_soc_S_pwm_40021000_ORD_STR_SORTABLE 00126
+#define DT_N_S_soc_S_pwm_40021000_ORD 129
+#define DT_N_S_soc_S_pwm_40021000_ORD_STR_SORTABLE 00129
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pwm_40021000_REQUIRES_ORDS \
@@ -15301,8 +16546,8 @@
 #define DT_N_S_soc_S_pwm_40022000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pwm_40022000_ORD 127
-#define DT_N_S_soc_S_pwm_40022000_ORD_STR_SORTABLE 00127
+#define DT_N_S_soc_S_pwm_40022000_ORD 130
+#define DT_N_S_soc_S_pwm_40022000_ORD_STR_SORTABLE 00130
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pwm_40022000_REQUIRES_ORDS \
@@ -15424,8 +16669,8 @@
 #define DT_N_S_soc_S_pwm_4002d000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pwm_4002d000_ORD 128
-#define DT_N_S_soc_S_pwm_4002d000_ORD_STR_SORTABLE 00128
+#define DT_N_S_soc_S_pwm_4002d000_ORD 131
+#define DT_N_S_soc_S_pwm_4002d000_ORD_STR_SORTABLE 00131
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pwm_4002d000_REQUIRES_ORDS \
@@ -15547,8 +16792,8 @@
 #define DT_N_S_soc_S_qdec_40012000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_qdec_40012000_ORD 129
-#define DT_N_S_soc_S_qdec_40012000_ORD_STR_SORTABLE 00129
+#define DT_N_S_soc_S_qdec_40012000_ORD 132
+#define DT_N_S_soc_S_qdec_40012000_ORD_STR_SORTABLE 00132
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_qdec_40012000_REQUIRES_ORDS \
@@ -15669,8 +16914,8 @@
 #define DT_N_S_soc_S_qspi_40029000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_qspi_40029000_ORD 130
-#define DT_N_S_soc_S_qspi_40029000_ORD_STR_SORTABLE 00130
+#define DT_N_S_soc_S_qspi_40029000_ORD 133
+#define DT_N_S_soc_S_qspi_40029000_ORD_STR_SORTABLE 00133
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_qspi_40029000_REQUIRES_ORDS \
@@ -15822,8 +17067,8 @@
 #define DT_N_S_soc_S_random_4000d000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_random_4000d000_ORD 131
-#define DT_N_S_soc_S_random_4000d000_ORD_STR_SORTABLE 00131
+#define DT_N_S_soc_S_random_4000d000_ORD 134
+#define DT_N_S_soc_S_random_4000d000_ORD_STR_SORTABLE 00134
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_random_4000d000_REQUIRES_ORDS \
@@ -15943,8 +17188,8 @@
 #define DT_N_S_soc_S_rtc_4000b000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_rtc_4000b000_ORD 132
-#define DT_N_S_soc_S_rtc_4000b000_ORD_STR_SORTABLE 00132
+#define DT_N_S_soc_S_rtc_4000b000_ORD 135
+#define DT_N_S_soc_S_rtc_4000b000_ORD_STR_SORTABLE 00135
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_rtc_4000b000_REQUIRES_ORDS \
@@ -16076,8 +17321,8 @@
 #define DT_N_S_soc_S_rtc_40011000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_rtc_40011000_ORD 133
-#define DT_N_S_soc_S_rtc_40011000_ORD_STR_SORTABLE 00133
+#define DT_N_S_soc_S_rtc_40011000_ORD 136
+#define DT_N_S_soc_S_rtc_40011000_ORD_STR_SORTABLE 00136
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_rtc_40011000_REQUIRES_ORDS \
@@ -16209,8 +17454,8 @@
 #define DT_N_S_soc_S_rtc_40024000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_rtc_40024000_ORD 134
-#define DT_N_S_soc_S_rtc_40024000_ORD_STR_SORTABLE 00134
+#define DT_N_S_soc_S_rtc_40024000_ORD 137
+#define DT_N_S_soc_S_rtc_40024000_ORD_STR_SORTABLE 00137
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_rtc_40024000_REQUIRES_ORDS \
@@ -16342,8 +17587,8 @@
 #define DT_N_S_soc_S_spi_40003000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40003000_ORD 135
-#define DT_N_S_soc_S_spi_40003000_ORD_STR_SORTABLE 00135
+#define DT_N_S_soc_S_spi_40003000_ORD 138
+#define DT_N_S_soc_S_spi_40003000_ORD_STR_SORTABLE 00138
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40003000_REQUIRES_ORDS \
@@ -16473,15 +17718,15 @@
 #define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40004000_ORD 136
-#define DT_N_S_soc_S_spi_40004000_ORD_STR_SORTABLE 00136
+#define DT_N_S_soc_S_spi_40004000_ORD 139
+#define DT_N_S_soc_S_spi_40004000_ORD_STR_SORTABLE 00139
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40004000_REQUIRES_ORDS \
 	1, /* /soc */ \
 	21, /* /soc/interrupt-controller@e000e100 */ \
-	93, /* /pin-controller/spi1_default */ \
-	95, /* /pin-controller/spi1_sleep */
+	96, /* /pin-controller/spi1_default */ \
+	98, /* /pin-controller/spi1_sleep */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_spi_40004000_SUPPORTS_ORDS /* nothing */
@@ -16658,8 +17903,8 @@
 #define DT_N_S_soc_S_spi_40023000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40023000_ORD 137
-#define DT_N_S_soc_S_spi_40023000_ORD_STR_SORTABLE 00137
+#define DT_N_S_soc_S_spi_40023000_ORD 140
+#define DT_N_S_soc_S_spi_40023000_ORD_STR_SORTABLE 00140
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40023000_REQUIRES_ORDS \
@@ -16789,8 +18034,8 @@
 #define DT_N_S_soc_S_spi_4002f000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_4002f000_ORD 138
-#define DT_N_S_soc_S_spi_4002f000_ORD_STR_SORTABLE 00138
+#define DT_N_S_soc_S_spi_4002f000_ORD 141
+#define DT_N_S_soc_S_spi_4002f000_ORD_STR_SORTABLE 00141
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_4002f000_REQUIRES_ORDS \
@@ -16924,8 +18169,8 @@
 #define DT_N_S_soc_S_temp_4000c000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_temp_4000c000_ORD 139
-#define DT_N_S_soc_S_temp_4000c000_ORD_STR_SORTABLE 00139
+#define DT_N_S_soc_S_temp_4000c000_ORD 142
+#define DT_N_S_soc_S_temp_4000c000_ORD_STR_SORTABLE 00142
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_temp_4000c000_REQUIRES_ORDS \
@@ -17045,8 +18290,8 @@
 #define DT_N_S_soc_S_timer_40008000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_40008000_ORD 140
-#define DT_N_S_soc_S_timer_40008000_ORD_STR_SORTABLE 00140
+#define DT_N_S_soc_S_timer_40008000_ORD 143
+#define DT_N_S_soc_S_timer_40008000_ORD_STR_SORTABLE 00143
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_40008000_REQUIRES_ORDS \
@@ -17174,8 +18419,8 @@
 #define DT_N_S_soc_S_timer_4000a000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_4000a000_ORD 141
-#define DT_N_S_soc_S_timer_4000a000_ORD_STR_SORTABLE 00141
+#define DT_N_S_soc_S_timer_4000a000_ORD 144
+#define DT_N_S_soc_S_timer_4000a000_ORD_STR_SORTABLE 00144
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_4000a000_REQUIRES_ORDS \
@@ -17303,8 +18548,8 @@
 #define DT_N_S_soc_S_timer_4001a000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_4001a000_ORD 142
-#define DT_N_S_soc_S_timer_4001a000_ORD_STR_SORTABLE 00142
+#define DT_N_S_soc_S_timer_4001a000_ORD 145
+#define DT_N_S_soc_S_timer_4001a000_ORD_STR_SORTABLE 00145
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_4001a000_REQUIRES_ORDS \
@@ -17432,8 +18677,8 @@
 #define DT_N_S_soc_S_timer_4001b000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_4001b000_ORD 143
-#define DT_N_S_soc_S_timer_4001b000_ORD_STR_SORTABLE 00143
+#define DT_N_S_soc_S_timer_4001b000_ORD 146
+#define DT_N_S_soc_S_timer_4001b000_ORD_STR_SORTABLE 00146
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_4001b000_REQUIRES_ORDS \
@@ -17561,8 +18806,8 @@
 #define DT_N_S_soc_S_timer_e000e010_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_e000e010_ORD 144
-#define DT_N_S_soc_S_timer_e000e010_ORD_STR_SORTABLE 00144
+#define DT_N_S_soc_S_timer_e000e010_ORD 147
+#define DT_N_S_soc_S_timer_e000e010_ORD_STR_SORTABLE 00147
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_e000e010_REQUIRES_ORDS \
@@ -17669,15 +18914,15 @@
 #define DT_N_S_soc_S_uart_40002000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uart_40002000_ORD 145
-#define DT_N_S_soc_S_uart_40002000_ORD_STR_SORTABLE 00145
+#define DT_N_S_soc_S_uart_40002000_ORD 148
+#define DT_N_S_soc_S_uart_40002000_ORD_STR_SORTABLE 00148
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uart_40002000_REQUIRES_ORDS \
 	1, /* /soc */ \
 	21, /* /soc/interrupt-controller@e000e100 */ \
-	97, /* /pin-controller/uart0_default */ \
-	100, /* /pin-controller/uart0_sleep */
+	100, /* /pin-controller/uart0_default */ \
+	103, /* /pin-controller/uart0_sleep */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_uart_40002000_SUPPORTS_ORDS /* nothing */
@@ -17852,8 +19097,8 @@
 #define DT_N_S_soc_S_uart_40028000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uart_40028000_ORD 146
-#define DT_N_S_soc_S_uart_40028000_ORD_STR_SORTABLE 00146
+#define DT_N_S_soc_S_uart_40028000_ORD 149
+#define DT_N_S_soc_S_uart_40028000_ORD_STR_SORTABLE 00149
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uart_40028000_REQUIRES_ORDS \
@@ -17977,8 +19222,8 @@
 #define DT_N_S_soc_S_uicr_10001000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uicr_10001000_ORD 147
-#define DT_N_S_soc_S_uicr_10001000_ORD_STR_SORTABLE 00147
+#define DT_N_S_soc_S_uicr_10001000_ORD 150
+#define DT_N_S_soc_S_uicr_10001000_ORD_STR_SORTABLE 00150
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uicr_10001000_REQUIRES_ORDS \
@@ -18089,8 +19334,8 @@
 #define DT_N_S_soc_S_usbd_40027000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_usbd_40027000_ORD 148
-#define DT_N_S_soc_S_usbd_40027000_ORD_STR_SORTABLE 00148
+#define DT_N_S_soc_S_usbd_40027000_ORD 151
+#define DT_N_S_soc_S_usbd_40027000_ORD_STR_SORTABLE 00151
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_usbd_40027000_REQUIRES_ORDS \
@@ -18221,8 +19466,8 @@
 #define DT_N_S_soc_S_watchdog_40010000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_watchdog_40010000_ORD 149
-#define DT_N_S_soc_S_watchdog_40010000_ORD_STR_SORTABLE 00149
+#define DT_N_S_soc_S_watchdog_40010000_ORD 152
+#define DT_N_S_soc_S_watchdog_40010000_ORD_STR_SORTABLE 00152
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_watchdog_40010000_REQUIRES_ORDS \
@@ -18343,8 +19588,8 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_ORD 150
-#define DT_N_S_soc_S_flash_controller_4001e000_ORD_STR_SORTABLE 00150
+#define DT_N_S_soc_S_flash_controller_4001e000_ORD 153
+#define DT_N_S_soc_S_flash_controller_4001e000_ORD_STR_SORTABLE 00153
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_REQUIRES_ORDS \
@@ -18352,7 +19597,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_SUPPORTS_ORDS \
-	151, /* /soc/flash-controller@4001e000/flash@0 */
+	154, /* /soc/flash-controller@4001e000/flash@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_4001e000_EXISTS 1
@@ -18438,16 +19683,16 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_ORD 151
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_ORD_STR_SORTABLE 00151
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_ORD 154
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_ORD_STR_SORTABLE 00154
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_REQUIRES_ORDS \
-	150, /* /soc/flash-controller@4001e000 */
+	153, /* /soc/flash-controller@4001e000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_SUPPORTS_ORDS \
-	152, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	155, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_EXISTS 1
@@ -18531,19 +19776,19 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_ORD 152
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_ORD_STR_SORTABLE 00152
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_ORD 155
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_ORD_STR_SORTABLE 00155
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_REQUIRES_ORDS \
-	151, /* /soc/flash-controller@4001e000/flash@0 */
+	154, /* /soc/flash-controller@4001e000/flash@0 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_SUPPORTS_ORDS \
-	153, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@0 */ \
-	154, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@26000 */ \
-	155, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@ec000 */ \
-	156, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@f4000 */
+	156, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@0 */ \
+	157, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@26000 */ \
+	158, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@ec000 */ \
+	159, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@f4000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_EXISTS 1
@@ -18594,12 +19839,12 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_ORD 153
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_ORD_STR_SORTABLE 00153
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_ORD 156
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_ORD_STR_SORTABLE 00156
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_REQUIRES_ORDS \
-	152, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	155, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_SUPPORTS_ORDS /* nothing */
@@ -18666,12 +19911,12 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_ORD 154
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_ORD_STR_SORTABLE 00154
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_ORD 157
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_ORD_STR_SORTABLE 00157
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_REQUIRES_ORDS \
-	152, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	155, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_SUPPORTS_ORDS /* nothing */
@@ -18738,12 +19983,12 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_ORD 155
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_ORD_STR_SORTABLE 00155
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_ORD 158
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_ORD_STR_SORTABLE 00158
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_REQUIRES_ORDS \
-	152, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	155, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_SUPPORTS_ORDS /* nothing */
@@ -18810,12 +20055,12 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_ORD 156
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_ORD_STR_SORTABLE 00156
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_ORD 159
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_ORD_STR_SORTABLE 00159
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_REQUIRES_ORDS \
-	152, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	155, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_SUPPORTS_ORDS /* nothing */
@@ -18885,8 +20130,8 @@
 #define DT_N_S_soc_S_power_40000000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_power_40000000_S_gpregret2_40000520, __VA_ARGS__)
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_power_40000000_ORD 157
-#define DT_N_S_soc_S_power_40000000_ORD_STR_SORTABLE 00157
+#define DT_N_S_soc_S_power_40000000_ORD 160
+#define DT_N_S_soc_S_power_40000000_ORD_STR_SORTABLE 00160
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_power_40000000_REQUIRES_ORDS \
@@ -18895,8 +20140,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_power_40000000_SUPPORTS_ORDS \
-	158, /* /soc/power@40000000/gpregret1@4000051c */ \
-	159, /* /soc/power@40000000/gpregret2@40000520 */
+	161, /* /soc/power@40000000/gpregret1@4000051c */ \
+	162, /* /soc/power@40000000/gpregret2@40000520 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_power_40000000_EXISTS 1
@@ -19008,12 +20253,12 @@
 #define DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c_ORD 158
-#define DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c_ORD_STR_SORTABLE 00158
+#define DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c_ORD 161
+#define DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c_ORD_STR_SORTABLE 00161
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c_REQUIRES_ORDS \
-	157, /* /soc/power@40000000 */
+	160, /* /soc/power@40000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c_SUPPORTS_ORDS /* nothing */
@@ -19116,12 +20361,12 @@
 #define DT_N_S_soc_S_power_40000000_S_gpregret2_40000520_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_power_40000000_S_gpregret2_40000520_ORD 159
-#define DT_N_S_soc_S_power_40000000_S_gpregret2_40000520_ORD_STR_SORTABLE 00159
+#define DT_N_S_soc_S_power_40000000_S_gpregret2_40000520_ORD 162
+#define DT_N_S_soc_S_power_40000000_S_gpregret2_40000520_ORD_STR_SORTABLE 00162
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_power_40000000_S_gpregret2_40000520_REQUIRES_ORDS \
-	157, /* /soc/power@40000000 */
+	160, /* /soc/power@40000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_power_40000000_S_gpregret2_40000520_SUPPORTS_ORDS /* nothing */
@@ -19224,8 +20469,8 @@
 #define DT_N_S_soc_S_radio_40001000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_radio_40001000_ORD 160
-#define DT_N_S_soc_S_radio_40001000_ORD_STR_SORTABLE 00160
+#define DT_N_S_soc_S_radio_40001000_ORD 163
+#define DT_N_S_soc_S_radio_40001000_ORD_STR_SORTABLE 00163
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_radio_40001000_REQUIRES_ORDS \
@@ -19234,7 +20479,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_radio_40001000_SUPPORTS_ORDS \
-	161, /* /soc/radio@40001000/ieee802154 */
+	164, /* /soc/radio@40001000/ieee802154 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_radio_40001000_EXISTS 1
@@ -19356,12 +20601,12 @@
 #define DT_N_S_soc_S_radio_40001000_S_ieee802154_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_radio_40001000_S_ieee802154_ORD 161
-#define DT_N_S_soc_S_radio_40001000_S_ieee802154_ORD_STR_SORTABLE 00161
+#define DT_N_S_soc_S_radio_40001000_S_ieee802154_ORD 164
+#define DT_N_S_soc_S_radio_40001000_S_ieee802154_ORD_STR_SORTABLE 00164
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_radio_40001000_S_ieee802154_REQUIRES_ORDS \
-	160, /* /soc/radio@40001000 */
+	163, /* /soc/radio@40001000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_radio_40001000_S_ieee802154_SUPPORTS_ORDS /* nothing */
@@ -19439,10 +20684,10 @@
 #define DT_CHOSEN_zmk_kscan_EXISTS               1
 
 /* Macros for iterating over all nodes and enabled nodes */
-#define DT_FOREACH_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_interrupt_controller_e000e100) fn(DT_N_S_soc_S_timer_e000e010) fn(DT_N_S_soc_S_ficr_10000000) fn(DT_N_S_soc_S_uicr_10001000) fn(DT_N_S_soc_S_memory_20000000) fn(DT_N_S_soc_S_clock_40000000) fn(DT_N_S_soc_S_power_40000000) fn(DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c) fn(DT_N_S_soc_S_power_40000000_S_gpregret2_40000520) fn(DT_N_S_soc_S_radio_40001000) fn(DT_N_S_soc_S_radio_40001000_S_ieee802154) fn(DT_N_S_soc_S_uart_40002000) fn(DT_N_S_soc_S_i2c_40003000) fn(DT_N_S_soc_S_spi_40003000) fn(DT_N_S_soc_S_i2c_40004000) fn(DT_N_S_soc_S_spi_40004000) fn(DT_N_S_soc_S_nfct_40005000) fn(DT_N_S_soc_S_gpiote_40006000) fn(DT_N_S_soc_S_adc_40007000) fn(DT_N_S_soc_S_timer_40008000) fn(DT_N_S_soc_S_timer_40009000) fn(DT_N_S_soc_S_timer_4000a000) fn(DT_N_S_soc_S_rtc_4000b000) fn(DT_N_S_soc_S_temp_4000c000) fn(DT_N_S_soc_S_random_4000d000) fn(DT_N_S_soc_S_ecb_4000e000) fn(DT_N_S_soc_S_ccm_4000f000) fn(DT_N_S_soc_S_watchdog_40010000) fn(DT_N_S_soc_S_rtc_40011000) fn(DT_N_S_soc_S_qdec_40012000) fn(DT_N_S_soc_S_comparator_40013000) fn(DT_N_S_soc_S_egu_40014000) fn(DT_N_S_soc_S_egu_40015000) fn(DT_N_S_soc_S_egu_40016000) fn(DT_N_S_soc_S_egu_40017000) fn(DT_N_S_soc_S_egu_40018000) fn(DT_N_S_soc_S_egu_40019000) fn(DT_N_S_soc_S_timer_4001a000) fn(DT_N_S_soc_S_timer_4001b000) fn(DT_N_S_soc_S_pwm_4001c000) fn(DT_N_S_soc_S_pdm_4001d000) fn(DT_N_S_soc_S_acl_4001e000) fn(DT_N_S_soc_S_flash_controller_4001e000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000) fn(DT_N_S_soc_S_ppi_4001f000) fn(DT_N_S_soc_S_mwu_40020000) fn(DT_N_S_soc_S_pwm_40021000) fn(DT_N_S_soc_S_pwm_40022000) fn(DT_N_S_soc_S_spi_40023000) fn(DT_N_S_soc_S_rtc_40024000) fn(DT_N_S_soc_S_i2s_40025000) fn(DT_N_S_soc_S_usbd_40027000) fn(DT_N_S_soc_S_uart_40028000) fn(DT_N_S_soc_S_qspi_40029000) fn(DT_N_S_soc_S_pwm_4002d000) fn(DT_N_S_soc_S_spi_4002f000) fn(DT_N_S_soc_S_gpio_50000000) fn(DT_N_S_soc_S_gpio_50000300) fn(DT_N_S_soc_S_crypto_5002a000) fn(DT_N_S_pin_controller) fn(DT_N_S_pin_controller_S_uart0_default) fn(DT_N_S_pin_controller_S_uart0_default_S_group1) fn(DT_N_S_pin_controller_S_uart0_default_S_group2) fn(DT_N_S_pin_controller_S_uart0_sleep) fn(DT_N_S_pin_controller_S_uart0_sleep_S_group1) fn(DT_N_S_pin_controller_S_i2c0_default) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1) fn(DT_N_S_pin_controller_S_i2c0_sleep) fn(DT_N_S_pin_controller_S_i2c0_sleep_S_group1) fn(DT_N_S_pin_controller_S_spi1_default) fn(DT_N_S_pin_controller_S_spi1_default_S_group1) fn(DT_N_S_pin_controller_S_spi1_sleep) fn(DT_N_S_pin_controller_S_spi1_sleep_S_group1) fn(DT_N_S_entropy_bt_hci) fn(DT_N_S_sw_pwm) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_0_S_itm_e0000000) fn(DT_N_S_connector) fn(DT_N_S_connector_a) fn(DT_N_S_leds) fn(DT_N_S_leds_S_led_0) fn(DT_N_S_ext_power) fn(DT_N_S_vbatt) fn(DT_N_S_key_physical_attrs) fn(DT_N_S_cuddlykeyboards_ferris_layout) fn(DT_N_S_keymap_transform_0) fn(DT_N_S_kscan) fn(DT_N_S_behaviors) fn(DT_N_S_behaviors_S_key_press) fn(DT_N_S_behaviors_S_transparent) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_sticky_key) fn(DT_N_S_behaviors_S_momentary_layer) fn(DT_N_S_behaviors_S_sysreset) fn(DT_N_S_behaviors_S_bootload) fn(DT_N_S_behaviors_S_rgb_ug) fn(DT_N_S_behaviors_S_bluetooth) fn(DT_N_S_behaviors_S_extpower) fn(DT_N_S_behaviors_S_caps_word) fn(DT_N_S_behaviors_S_macro_tap) fn(DT_N_S_behaviors_S_macro_press) fn(DT_N_S_behaviors_S_macro_release) fn(DT_N_S_behaviors_S_macro_tap_time) fn(DT_N_S_behaviors_S_macro_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_macro_param_1to1) fn(DT_N_S_behaviors_S_macro_param_1to2) fn(DT_N_S_behaviors_S_macro_param_2to1) fn(DT_N_S_behaviors_S_macro_param_2to2) fn(DT_N_S_behaviors_S_studio_unlock) fn(DT_N_S_behaviors_S_mouse_key_press) fn(DT_N_S_behaviors_S_mouse_move) fn(DT_N_S_behaviors_S_mouse_scroll) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr) fn(DT_N_S_behaviors_S_y_capslock) fn(DT_N_S_mkp_input_listener) fn(DT_N_S_mmv_input_listener) fn(DT_N_S_msc_input_listener) fn(DT_N_S_combos) fn(DT_N_S_combos_S_esc) fn(DT_N_S_combos_S_del) fn(DT_N_S_combos_S_media) fn(DT_N_S_combos_S_ralt) fn(DT_N_S_combos_S_clrblutooth) fn(DT_N_S_combos_S_fast_esc) fn(DT_N_S_combos_S_fast_tab) fn(DT_N_S_combos_S_fast_bksp) fn(DT_N_S_combos_S_fast_enter) fn(DT_N_S_combos_S_oneshotshiftleft) fn(DT_N_S_combos_S_oneshotshiftright) fn(DT_N_S_macros) fn(DT_N_S_macros_S_open_angle_quote) fn(DT_N_S_macros_S_closed_angle_quote) fn(DT_N_S_macros_S_vim_change_window) fn(DT_N_S_macros_S_vim_reduce_x) fn(DT_N_S_macros_S_vim_increase_x) fn(DT_N_S_macros_S_vim_decrease_y) fn(DT_N_S_macros_S_vim_increase_y) fn(DT_N_S_keymap) fn(DT_N_S_keymap_S_default_layer) fn(DT_N_S_keymap_S_nav_layer) fn(DT_N_S_keymap_S_num_layer) fn(DT_N_S_keymap_S_sym_layer) fn(DT_N_S_keymap_S_mouse_layer) fn(DT_N_S_conditional_layers) fn(DT_N_S_conditional_layers_S_medialayer)
-#define DT_FOREACH_OKAY_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_interrupt_controller_e000e100) fn(DT_N_S_soc_S_ficr_10000000) fn(DT_N_S_soc_S_uicr_10001000) fn(DT_N_S_soc_S_memory_20000000) fn(DT_N_S_soc_S_clock_40000000) fn(DT_N_S_soc_S_power_40000000) fn(DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c) fn(DT_N_S_soc_S_power_40000000_S_gpregret2_40000520) fn(DT_N_S_soc_S_radio_40001000) fn(DT_N_S_soc_S_nfct_40005000) fn(DT_N_S_soc_S_gpiote_40006000) fn(DT_N_S_soc_S_adc_40007000) fn(DT_N_S_soc_S_temp_4000c000) fn(DT_N_S_soc_S_random_4000d000) fn(DT_N_S_soc_S_ecb_4000e000) fn(DT_N_S_soc_S_ccm_4000f000) fn(DT_N_S_soc_S_watchdog_40010000) fn(DT_N_S_soc_S_egu_40014000) fn(DT_N_S_soc_S_egu_40015000) fn(DT_N_S_soc_S_egu_40016000) fn(DT_N_S_soc_S_egu_40017000) fn(DT_N_S_soc_S_egu_40018000) fn(DT_N_S_soc_S_egu_40019000) fn(DT_N_S_soc_S_acl_4001e000) fn(DT_N_S_soc_S_flash_controller_4001e000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000) fn(DT_N_S_soc_S_ppi_4001f000) fn(DT_N_S_soc_S_mwu_40020000) fn(DT_N_S_soc_S_usbd_40027000) fn(DT_N_S_soc_S_gpio_50000000) fn(DT_N_S_soc_S_gpio_50000300) fn(DT_N_S_pin_controller) fn(DT_N_S_pin_controller_S_uart0_default) fn(DT_N_S_pin_controller_S_uart0_default_S_group1) fn(DT_N_S_pin_controller_S_uart0_default_S_group2) fn(DT_N_S_pin_controller_S_uart0_sleep) fn(DT_N_S_pin_controller_S_uart0_sleep_S_group1) fn(DT_N_S_pin_controller_S_i2c0_default) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1) fn(DT_N_S_pin_controller_S_i2c0_sleep) fn(DT_N_S_pin_controller_S_i2c0_sleep_S_group1) fn(DT_N_S_pin_controller_S_spi1_default) fn(DT_N_S_pin_controller_S_spi1_default_S_group1) fn(DT_N_S_pin_controller_S_spi1_sleep) fn(DT_N_S_pin_controller_S_spi1_sleep_S_group1) fn(DT_N_S_entropy_bt_hci) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_0_S_itm_e0000000) fn(DT_N_S_connector) fn(DT_N_S_connector_a) fn(DT_N_S_leds) fn(DT_N_S_leds_S_led_0) fn(DT_N_S_ext_power) fn(DT_N_S_vbatt) fn(DT_N_S_key_physical_attrs) fn(DT_N_S_cuddlykeyboards_ferris_layout) fn(DT_N_S_keymap_transform_0) fn(DT_N_S_kscan) fn(DT_N_S_behaviors) fn(DT_N_S_behaviors_S_key_press) fn(DT_N_S_behaviors_S_transparent) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_sticky_key) fn(DT_N_S_behaviors_S_momentary_layer) fn(DT_N_S_behaviors_S_sysreset) fn(DT_N_S_behaviors_S_bootload) fn(DT_N_S_behaviors_S_rgb_ug) fn(DT_N_S_behaviors_S_bluetooth) fn(DT_N_S_behaviors_S_extpower) fn(DT_N_S_behaviors_S_caps_word) fn(DT_N_S_behaviors_S_macro_tap) fn(DT_N_S_behaviors_S_macro_press) fn(DT_N_S_behaviors_S_macro_release) fn(DT_N_S_behaviors_S_macro_tap_time) fn(DT_N_S_behaviors_S_macro_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_macro_param_1to1) fn(DT_N_S_behaviors_S_macro_param_1to2) fn(DT_N_S_behaviors_S_macro_param_2to1) fn(DT_N_S_behaviors_S_macro_param_2to2) fn(DT_N_S_behaviors_S_studio_unlock) fn(DT_N_S_behaviors_S_mouse_key_press) fn(DT_N_S_behaviors_S_mouse_move) fn(DT_N_S_behaviors_S_mouse_scroll) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr) fn(DT_N_S_behaviors_S_y_capslock) fn(DT_N_S_mkp_input_listener) fn(DT_N_S_mmv_input_listener) fn(DT_N_S_msc_input_listener) fn(DT_N_S_combos) fn(DT_N_S_combos_S_esc) fn(DT_N_S_combos_S_del) fn(DT_N_S_combos_S_media) fn(DT_N_S_combos_S_ralt) fn(DT_N_S_combos_S_clrblutooth) fn(DT_N_S_combos_S_fast_esc) fn(DT_N_S_combos_S_fast_tab) fn(DT_N_S_combos_S_fast_bksp) fn(DT_N_S_combos_S_fast_enter) fn(DT_N_S_combos_S_oneshotshiftleft) fn(DT_N_S_combos_S_oneshotshiftright) fn(DT_N_S_macros) fn(DT_N_S_macros_S_open_angle_quote) fn(DT_N_S_macros_S_closed_angle_quote) fn(DT_N_S_macros_S_vim_change_window) fn(DT_N_S_macros_S_vim_reduce_x) fn(DT_N_S_macros_S_vim_increase_x) fn(DT_N_S_macros_S_vim_decrease_y) fn(DT_N_S_macros_S_vim_increase_y) fn(DT_N_S_keymap) fn(DT_N_S_keymap_S_default_layer) fn(DT_N_S_keymap_S_nav_layer) fn(DT_N_S_keymap_S_num_layer) fn(DT_N_S_keymap_S_sym_layer) fn(DT_N_S_keymap_S_mouse_layer) fn(DT_N_S_conditional_layers) fn(DT_N_S_conditional_layers_S_medialayer)
-#define DT_FOREACH_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_e000e100, __VA_ARGS__) fn(DT_N_S_soc_S_timer_e000e010, __VA_ARGS__) fn(DT_N_S_soc_S_ficr_10000000, __VA_ARGS__) fn(DT_N_S_soc_S_uicr_10001000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_20000000, __VA_ARGS__) fn(DT_N_S_soc_S_clock_40000000, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000_S_gpregret2_40000520, __VA_ARGS__) fn(DT_N_S_soc_S_radio_40001000, __VA_ARGS__) fn(DT_N_S_soc_S_radio_40001000_S_ieee802154, __VA_ARGS__) fn(DT_N_S_soc_S_uart_40002000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_40003000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_40003000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_40004000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_40004000, __VA_ARGS__) fn(DT_N_S_soc_S_nfct_40005000, __VA_ARGS__) fn(DT_N_S_soc_S_gpiote_40006000, __VA_ARGS__) fn(DT_N_S_soc_S_adc_40007000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_40008000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_40009000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_4000a000, __VA_ARGS__) fn(DT_N_S_soc_S_rtc_4000b000, __VA_ARGS__) fn(DT_N_S_soc_S_temp_4000c000, __VA_ARGS__) fn(DT_N_S_soc_S_random_4000d000, __VA_ARGS__) fn(DT_N_S_soc_S_ecb_4000e000, __VA_ARGS__) fn(DT_N_S_soc_S_ccm_4000f000, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_40010000, __VA_ARGS__) fn(DT_N_S_soc_S_rtc_40011000, __VA_ARGS__) fn(DT_N_S_soc_S_qdec_40012000, __VA_ARGS__) fn(DT_N_S_soc_S_comparator_40013000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40014000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40015000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40016000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40017000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40018000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40019000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_4001a000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_4001b000, __VA_ARGS__) fn(DT_N_S_soc_S_pwm_4001c000, __VA_ARGS__) fn(DT_N_S_soc_S_pdm_4001d000, __VA_ARGS__) fn(DT_N_S_soc_S_acl_4001e000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000, __VA_ARGS__) fn(DT_N_S_soc_S_ppi_4001f000, __VA_ARGS__) fn(DT_N_S_soc_S_mwu_40020000, __VA_ARGS__) fn(DT_N_S_soc_S_pwm_40021000, __VA_ARGS__) fn(DT_N_S_soc_S_pwm_40022000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_40023000, __VA_ARGS__) fn(DT_N_S_soc_S_rtc_40024000, __VA_ARGS__) fn(DT_N_S_soc_S_i2s_40025000, __VA_ARGS__) fn(DT_N_S_soc_S_usbd_40027000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_40028000, __VA_ARGS__) fn(DT_N_S_soc_S_qspi_40029000, __VA_ARGS__) fn(DT_N_S_soc_S_pwm_4002d000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_4002f000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_50000000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_50000300, __VA_ARGS__) fn(DT_N_S_soc_S_crypto_5002a000, __VA_ARGS__) fn(DT_N_S_pin_controller, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_entropy_bt_hci, __VA_ARGS__) fn(DT_N_S_sw_pwm, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0_S_itm_e0000000, __VA_ARGS__) fn(DT_N_S_connector, __VA_ARGS__) fn(DT_N_S_connector_a, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_led_0, __VA_ARGS__) fn(DT_N_S_ext_power, __VA_ARGS__) fn(DT_N_S_vbatt, __VA_ARGS__) fn(DT_N_S_key_physical_attrs, __VA_ARGS__) fn(DT_N_S_cuddlykeyboards_ferris_layout, __VA_ARGS__) fn(DT_N_S_keymap_transform_0, __VA_ARGS__) fn(DT_N_S_kscan, __VA_ARGS__) fn(DT_N_S_behaviors, __VA_ARGS__) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__) fn(DT_N_S_mkp_input_listener, __VA_ARGS__) fn(DT_N_S_mmv_input_listener, __VA_ARGS__) fn(DT_N_S_msc_input_listener, __VA_ARGS__) fn(DT_N_S_combos, __VA_ARGS__) fn(DT_N_S_combos_S_esc, __VA_ARGS__) fn(DT_N_S_combos_S_del, __VA_ARGS__) fn(DT_N_S_combos_S_media, __VA_ARGS__) fn(DT_N_S_combos_S_ralt, __VA_ARGS__) fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__) fn(DT_N_S_combos_S_oneshotshiftleft, __VA_ARGS__) fn(DT_N_S_combos_S_oneshotshiftright, __VA_ARGS__) fn(DT_N_S_macros, __VA_ARGS__) fn(DT_N_S_macros_S_open_angle_quote, __VA_ARGS__) fn(DT_N_S_macros_S_closed_angle_quote, __VA_ARGS__) fn(DT_N_S_macros_S_vim_change_window, __VA_ARGS__) fn(DT_N_S_macros_S_vim_reduce_x, __VA_ARGS__) fn(DT_N_S_macros_S_vim_increase_x, __VA_ARGS__) fn(DT_N_S_macros_S_vim_decrease_y, __VA_ARGS__) fn(DT_N_S_macros_S_vim_increase_y, __VA_ARGS__) fn(DT_N_S_keymap, __VA_ARGS__) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__) fn(DT_N_S_conditional_layers, __VA_ARGS__) fn(DT_N_S_conditional_layers_S_medialayer, __VA_ARGS__)
-#define DT_FOREACH_OKAY_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_e000e100, __VA_ARGS__) fn(DT_N_S_soc_S_ficr_10000000, __VA_ARGS__) fn(DT_N_S_soc_S_uicr_10001000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_20000000, __VA_ARGS__) fn(DT_N_S_soc_S_clock_40000000, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000_S_gpregret2_40000520, __VA_ARGS__) fn(DT_N_S_soc_S_radio_40001000, __VA_ARGS__) fn(DT_N_S_soc_S_nfct_40005000, __VA_ARGS__) fn(DT_N_S_soc_S_gpiote_40006000, __VA_ARGS__) fn(DT_N_S_soc_S_adc_40007000, __VA_ARGS__) fn(DT_N_S_soc_S_temp_4000c000, __VA_ARGS__) fn(DT_N_S_soc_S_random_4000d000, __VA_ARGS__) fn(DT_N_S_soc_S_ecb_4000e000, __VA_ARGS__) fn(DT_N_S_soc_S_ccm_4000f000, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_40010000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40014000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40015000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40016000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40017000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40018000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40019000, __VA_ARGS__) fn(DT_N_S_soc_S_acl_4001e000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000, __VA_ARGS__) fn(DT_N_S_soc_S_ppi_4001f000, __VA_ARGS__) fn(DT_N_S_soc_S_mwu_40020000, __VA_ARGS__) fn(DT_N_S_soc_S_usbd_40027000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_50000000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_50000300, __VA_ARGS__) fn(DT_N_S_pin_controller, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_entropy_bt_hci, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0_S_itm_e0000000, __VA_ARGS__) fn(DT_N_S_connector, __VA_ARGS__) fn(DT_N_S_connector_a, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_led_0, __VA_ARGS__) fn(DT_N_S_ext_power, __VA_ARGS__) fn(DT_N_S_vbatt, __VA_ARGS__) fn(DT_N_S_key_physical_attrs, __VA_ARGS__) fn(DT_N_S_cuddlykeyboards_ferris_layout, __VA_ARGS__) fn(DT_N_S_keymap_transform_0, __VA_ARGS__) fn(DT_N_S_kscan, __VA_ARGS__) fn(DT_N_S_behaviors, __VA_ARGS__) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__) fn(DT_N_S_mkp_input_listener, __VA_ARGS__) fn(DT_N_S_mmv_input_listener, __VA_ARGS__) fn(DT_N_S_msc_input_listener, __VA_ARGS__) fn(DT_N_S_combos, __VA_ARGS__) fn(DT_N_S_combos_S_esc, __VA_ARGS__) fn(DT_N_S_combos_S_del, __VA_ARGS__) fn(DT_N_S_combos_S_media, __VA_ARGS__) fn(DT_N_S_combos_S_ralt, __VA_ARGS__) fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__) fn(DT_N_S_combos_S_oneshotshiftleft, __VA_ARGS__) fn(DT_N_S_combos_S_oneshotshiftright, __VA_ARGS__) fn(DT_N_S_macros, __VA_ARGS__) fn(DT_N_S_macros_S_open_angle_quote, __VA_ARGS__) fn(DT_N_S_macros_S_closed_angle_quote, __VA_ARGS__) fn(DT_N_S_macros_S_vim_change_window, __VA_ARGS__) fn(DT_N_S_macros_S_vim_reduce_x, __VA_ARGS__) fn(DT_N_S_macros_S_vim_increase_x, __VA_ARGS__) fn(DT_N_S_macros_S_vim_decrease_y, __VA_ARGS__) fn(DT_N_S_macros_S_vim_increase_y, __VA_ARGS__) fn(DT_N_S_keymap, __VA_ARGS__) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__) fn(DT_N_S_conditional_layers, __VA_ARGS__) fn(DT_N_S_conditional_layers_S_medialayer, __VA_ARGS__)
+#define DT_FOREACH_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_interrupt_controller_e000e100) fn(DT_N_S_soc_S_timer_e000e010) fn(DT_N_S_soc_S_ficr_10000000) fn(DT_N_S_soc_S_uicr_10001000) fn(DT_N_S_soc_S_memory_20000000) fn(DT_N_S_soc_S_clock_40000000) fn(DT_N_S_soc_S_power_40000000) fn(DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c) fn(DT_N_S_soc_S_power_40000000_S_gpregret2_40000520) fn(DT_N_S_soc_S_radio_40001000) fn(DT_N_S_soc_S_radio_40001000_S_ieee802154) fn(DT_N_S_soc_S_uart_40002000) fn(DT_N_S_soc_S_i2c_40003000) fn(DT_N_S_soc_S_spi_40003000) fn(DT_N_S_soc_S_i2c_40004000) fn(DT_N_S_soc_S_spi_40004000) fn(DT_N_S_soc_S_nfct_40005000) fn(DT_N_S_soc_S_gpiote_40006000) fn(DT_N_S_soc_S_adc_40007000) fn(DT_N_S_soc_S_timer_40008000) fn(DT_N_S_soc_S_timer_40009000) fn(DT_N_S_soc_S_timer_4000a000) fn(DT_N_S_soc_S_rtc_4000b000) fn(DT_N_S_soc_S_temp_4000c000) fn(DT_N_S_soc_S_random_4000d000) fn(DT_N_S_soc_S_ecb_4000e000) fn(DT_N_S_soc_S_ccm_4000f000) fn(DT_N_S_soc_S_watchdog_40010000) fn(DT_N_S_soc_S_rtc_40011000) fn(DT_N_S_soc_S_qdec_40012000) fn(DT_N_S_soc_S_comparator_40013000) fn(DT_N_S_soc_S_egu_40014000) fn(DT_N_S_soc_S_egu_40015000) fn(DT_N_S_soc_S_egu_40016000) fn(DT_N_S_soc_S_egu_40017000) fn(DT_N_S_soc_S_egu_40018000) fn(DT_N_S_soc_S_egu_40019000) fn(DT_N_S_soc_S_timer_4001a000) fn(DT_N_S_soc_S_timer_4001b000) fn(DT_N_S_soc_S_pwm_4001c000) fn(DT_N_S_soc_S_pdm_4001d000) fn(DT_N_S_soc_S_acl_4001e000) fn(DT_N_S_soc_S_flash_controller_4001e000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000) fn(DT_N_S_soc_S_ppi_4001f000) fn(DT_N_S_soc_S_mwu_40020000) fn(DT_N_S_soc_S_pwm_40021000) fn(DT_N_S_soc_S_pwm_40022000) fn(DT_N_S_soc_S_spi_40023000) fn(DT_N_S_soc_S_rtc_40024000) fn(DT_N_S_soc_S_i2s_40025000) fn(DT_N_S_soc_S_usbd_40027000) fn(DT_N_S_soc_S_uart_40028000) fn(DT_N_S_soc_S_qspi_40029000) fn(DT_N_S_soc_S_pwm_4002d000) fn(DT_N_S_soc_S_spi_4002f000) fn(DT_N_S_soc_S_gpio_50000000) fn(DT_N_S_soc_S_gpio_50000300) fn(DT_N_S_soc_S_crypto_5002a000) fn(DT_N_S_pin_controller) fn(DT_N_S_pin_controller_S_uart0_default) fn(DT_N_S_pin_controller_S_uart0_default_S_group1) fn(DT_N_S_pin_controller_S_uart0_default_S_group2) fn(DT_N_S_pin_controller_S_uart0_sleep) fn(DT_N_S_pin_controller_S_uart0_sleep_S_group1) fn(DT_N_S_pin_controller_S_i2c0_default) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1) fn(DT_N_S_pin_controller_S_i2c0_sleep) fn(DT_N_S_pin_controller_S_i2c0_sleep_S_group1) fn(DT_N_S_pin_controller_S_spi1_default) fn(DT_N_S_pin_controller_S_spi1_default_S_group1) fn(DT_N_S_pin_controller_S_spi1_sleep) fn(DT_N_S_pin_controller_S_spi1_sleep_S_group1) fn(DT_N_S_entropy_bt_hci) fn(DT_N_S_sw_pwm) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_0_S_itm_e0000000) fn(DT_N_S_connector) fn(DT_N_S_connector_a) fn(DT_N_S_leds) fn(DT_N_S_leds_S_led_0) fn(DT_N_S_ext_power) fn(DT_N_S_vbatt) fn(DT_N_S_key_physical_attrs) fn(DT_N_S_cuddlykeyboards_ferris_layout) fn(DT_N_S_keymap_transform_0) fn(DT_N_S_kscan) fn(DT_N_S_behaviors) fn(DT_N_S_behaviors_S_key_press) fn(DT_N_S_behaviors_S_transparent) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_sticky_key) fn(DT_N_S_behaviors_S_momentary_layer) fn(DT_N_S_behaviors_S_sysreset) fn(DT_N_S_behaviors_S_bootload) fn(DT_N_S_behaviors_S_rgb_ug) fn(DT_N_S_behaviors_S_bluetooth) fn(DT_N_S_behaviors_S_extpower) fn(DT_N_S_behaviors_S_caps_word) fn(DT_N_S_behaviors_S_macro_tap) fn(DT_N_S_behaviors_S_macro_press) fn(DT_N_S_behaviors_S_macro_release) fn(DT_N_S_behaviors_S_macro_tap_time) fn(DT_N_S_behaviors_S_macro_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_macro_param_1to1) fn(DT_N_S_behaviors_S_macro_param_1to2) fn(DT_N_S_behaviors_S_macro_param_2to1) fn(DT_N_S_behaviors_S_macro_param_2to2) fn(DT_N_S_behaviors_S_studio_unlock) fn(DT_N_S_behaviors_S_mouse_key_press) fn(DT_N_S_behaviors_S_mouse_move) fn(DT_N_S_behaviors_S_mouse_scroll) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr) fn(DT_N_S_behaviors_S_y_capslock) fn(DT_N_S_behaviors_S_cal_l) fn(DT_N_S_behaviors_S_cal_r) fn(DT_N_S_mkp_input_listener) fn(DT_N_S_mmv_input_listener) fn(DT_N_S_msc_input_listener) fn(DT_N_S_combos) fn(DT_N_S_combos_S_esc) fn(DT_N_S_combos_S_del) fn(DT_N_S_combos_S_media) fn(DT_N_S_combos_S_ralt) fn(DT_N_S_combos_S_clrblutooth) fn(DT_N_S_combos_S_fast_esc) fn(DT_N_S_combos_S_fast_tab) fn(DT_N_S_combos_S_fast_bksp) fn(DT_N_S_combos_S_fast_enter) fn(DT_N_S_macros) fn(DT_N_S_macros_S_open_angle_quote) fn(DT_N_S_macros_S_closed_angle_quote) fn(DT_N_S_macros_S_vim_change_window) fn(DT_N_S_macros_S_vim_reduce_x) fn(DT_N_S_macros_S_vim_increase_x) fn(DT_N_S_macros_S_vim_decrease_y) fn(DT_N_S_macros_S_vim_increase_y) fn(DT_N_S_keymap) fn(DT_N_S_keymap_S_default_layer) fn(DT_N_S_keymap_S_nav_layer) fn(DT_N_S_keymap_S_num_layer) fn(DT_N_S_keymap_S_sym_layer) fn(DT_N_S_keymap_S_mouse_layer) fn(DT_N_S_keymap_S_numsquare) fn(DT_N_S_keymap_S_callumright) fn(DT_N_S_keymap_S_callumleft) fn(DT_N_S_conditional_layers) fn(DT_N_S_conditional_layers_S_medialayer)
+#define DT_FOREACH_OKAY_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_interrupt_controller_e000e100) fn(DT_N_S_soc_S_ficr_10000000) fn(DT_N_S_soc_S_uicr_10001000) fn(DT_N_S_soc_S_memory_20000000) fn(DT_N_S_soc_S_clock_40000000) fn(DT_N_S_soc_S_power_40000000) fn(DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c) fn(DT_N_S_soc_S_power_40000000_S_gpregret2_40000520) fn(DT_N_S_soc_S_radio_40001000) fn(DT_N_S_soc_S_nfct_40005000) fn(DT_N_S_soc_S_gpiote_40006000) fn(DT_N_S_soc_S_adc_40007000) fn(DT_N_S_soc_S_temp_4000c000) fn(DT_N_S_soc_S_random_4000d000) fn(DT_N_S_soc_S_ecb_4000e000) fn(DT_N_S_soc_S_ccm_4000f000) fn(DT_N_S_soc_S_watchdog_40010000) fn(DT_N_S_soc_S_egu_40014000) fn(DT_N_S_soc_S_egu_40015000) fn(DT_N_S_soc_S_egu_40016000) fn(DT_N_S_soc_S_egu_40017000) fn(DT_N_S_soc_S_egu_40018000) fn(DT_N_S_soc_S_egu_40019000) fn(DT_N_S_soc_S_acl_4001e000) fn(DT_N_S_soc_S_flash_controller_4001e000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000) fn(DT_N_S_soc_S_ppi_4001f000) fn(DT_N_S_soc_S_mwu_40020000) fn(DT_N_S_soc_S_usbd_40027000) fn(DT_N_S_soc_S_gpio_50000000) fn(DT_N_S_soc_S_gpio_50000300) fn(DT_N_S_pin_controller) fn(DT_N_S_pin_controller_S_uart0_default) fn(DT_N_S_pin_controller_S_uart0_default_S_group1) fn(DT_N_S_pin_controller_S_uart0_default_S_group2) fn(DT_N_S_pin_controller_S_uart0_sleep) fn(DT_N_S_pin_controller_S_uart0_sleep_S_group1) fn(DT_N_S_pin_controller_S_i2c0_default) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1) fn(DT_N_S_pin_controller_S_i2c0_sleep) fn(DT_N_S_pin_controller_S_i2c0_sleep_S_group1) fn(DT_N_S_pin_controller_S_spi1_default) fn(DT_N_S_pin_controller_S_spi1_default_S_group1) fn(DT_N_S_pin_controller_S_spi1_sleep) fn(DT_N_S_pin_controller_S_spi1_sleep_S_group1) fn(DT_N_S_entropy_bt_hci) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_0_S_itm_e0000000) fn(DT_N_S_connector) fn(DT_N_S_connector_a) fn(DT_N_S_leds) fn(DT_N_S_leds_S_led_0) fn(DT_N_S_ext_power) fn(DT_N_S_vbatt) fn(DT_N_S_key_physical_attrs) fn(DT_N_S_cuddlykeyboards_ferris_layout) fn(DT_N_S_keymap_transform_0) fn(DT_N_S_kscan) fn(DT_N_S_behaviors) fn(DT_N_S_behaviors_S_key_press) fn(DT_N_S_behaviors_S_transparent) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_sticky_key) fn(DT_N_S_behaviors_S_momentary_layer) fn(DT_N_S_behaviors_S_sysreset) fn(DT_N_S_behaviors_S_bootload) fn(DT_N_S_behaviors_S_rgb_ug) fn(DT_N_S_behaviors_S_bluetooth) fn(DT_N_S_behaviors_S_extpower) fn(DT_N_S_behaviors_S_caps_word) fn(DT_N_S_behaviors_S_macro_tap) fn(DT_N_S_behaviors_S_macro_press) fn(DT_N_S_behaviors_S_macro_release) fn(DT_N_S_behaviors_S_macro_tap_time) fn(DT_N_S_behaviors_S_macro_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_macro_param_1to1) fn(DT_N_S_behaviors_S_macro_param_1to2) fn(DT_N_S_behaviors_S_macro_param_2to1) fn(DT_N_S_behaviors_S_macro_param_2to2) fn(DT_N_S_behaviors_S_studio_unlock) fn(DT_N_S_behaviors_S_mouse_key_press) fn(DT_N_S_behaviors_S_mouse_move) fn(DT_N_S_behaviors_S_mouse_scroll) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr) fn(DT_N_S_behaviors_S_y_capslock) fn(DT_N_S_behaviors_S_cal_l) fn(DT_N_S_behaviors_S_cal_r) fn(DT_N_S_mkp_input_listener) fn(DT_N_S_mmv_input_listener) fn(DT_N_S_msc_input_listener) fn(DT_N_S_combos) fn(DT_N_S_combos_S_esc) fn(DT_N_S_combos_S_del) fn(DT_N_S_combos_S_media) fn(DT_N_S_combos_S_ralt) fn(DT_N_S_combos_S_clrblutooth) fn(DT_N_S_combos_S_fast_esc) fn(DT_N_S_combos_S_fast_tab) fn(DT_N_S_combos_S_fast_bksp) fn(DT_N_S_combos_S_fast_enter) fn(DT_N_S_macros) fn(DT_N_S_macros_S_open_angle_quote) fn(DT_N_S_macros_S_closed_angle_quote) fn(DT_N_S_macros_S_vim_change_window) fn(DT_N_S_macros_S_vim_reduce_x) fn(DT_N_S_macros_S_vim_increase_x) fn(DT_N_S_macros_S_vim_decrease_y) fn(DT_N_S_macros_S_vim_increase_y) fn(DT_N_S_keymap) fn(DT_N_S_keymap_S_default_layer) fn(DT_N_S_keymap_S_nav_layer) fn(DT_N_S_keymap_S_num_layer) fn(DT_N_S_keymap_S_sym_layer) fn(DT_N_S_keymap_S_mouse_layer) fn(DT_N_S_keymap_S_numsquare) fn(DT_N_S_keymap_S_callumright) fn(DT_N_S_keymap_S_callumleft) fn(DT_N_S_conditional_layers) fn(DT_N_S_conditional_layers_S_medialayer)
+#define DT_FOREACH_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_e000e100, __VA_ARGS__) fn(DT_N_S_soc_S_timer_e000e010, __VA_ARGS__) fn(DT_N_S_soc_S_ficr_10000000, __VA_ARGS__) fn(DT_N_S_soc_S_uicr_10001000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_20000000, __VA_ARGS__) fn(DT_N_S_soc_S_clock_40000000, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000_S_gpregret2_40000520, __VA_ARGS__) fn(DT_N_S_soc_S_radio_40001000, __VA_ARGS__) fn(DT_N_S_soc_S_radio_40001000_S_ieee802154, __VA_ARGS__) fn(DT_N_S_soc_S_uart_40002000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_40003000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_40003000, __VA_ARGS__) fn(DT_N_S_soc_S_i2c_40004000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_40004000, __VA_ARGS__) fn(DT_N_S_soc_S_nfct_40005000, __VA_ARGS__) fn(DT_N_S_soc_S_gpiote_40006000, __VA_ARGS__) fn(DT_N_S_soc_S_adc_40007000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_40008000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_40009000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_4000a000, __VA_ARGS__) fn(DT_N_S_soc_S_rtc_4000b000, __VA_ARGS__) fn(DT_N_S_soc_S_temp_4000c000, __VA_ARGS__) fn(DT_N_S_soc_S_random_4000d000, __VA_ARGS__) fn(DT_N_S_soc_S_ecb_4000e000, __VA_ARGS__) fn(DT_N_S_soc_S_ccm_4000f000, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_40010000, __VA_ARGS__) fn(DT_N_S_soc_S_rtc_40011000, __VA_ARGS__) fn(DT_N_S_soc_S_qdec_40012000, __VA_ARGS__) fn(DT_N_S_soc_S_comparator_40013000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40014000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40015000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40016000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40017000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40018000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40019000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_4001a000, __VA_ARGS__) fn(DT_N_S_soc_S_timer_4001b000, __VA_ARGS__) fn(DT_N_S_soc_S_pwm_4001c000, __VA_ARGS__) fn(DT_N_S_soc_S_pdm_4001d000, __VA_ARGS__) fn(DT_N_S_soc_S_acl_4001e000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000, __VA_ARGS__) fn(DT_N_S_soc_S_ppi_4001f000, __VA_ARGS__) fn(DT_N_S_soc_S_mwu_40020000, __VA_ARGS__) fn(DT_N_S_soc_S_pwm_40021000, __VA_ARGS__) fn(DT_N_S_soc_S_pwm_40022000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_40023000, __VA_ARGS__) fn(DT_N_S_soc_S_rtc_40024000, __VA_ARGS__) fn(DT_N_S_soc_S_i2s_40025000, __VA_ARGS__) fn(DT_N_S_soc_S_usbd_40027000, __VA_ARGS__) fn(DT_N_S_soc_S_uart_40028000, __VA_ARGS__) fn(DT_N_S_soc_S_qspi_40029000, __VA_ARGS__) fn(DT_N_S_soc_S_pwm_4002d000, __VA_ARGS__) fn(DT_N_S_soc_S_spi_4002f000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_50000000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_50000300, __VA_ARGS__) fn(DT_N_S_soc_S_crypto_5002a000, __VA_ARGS__) fn(DT_N_S_pin_controller, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_entropy_bt_hci, __VA_ARGS__) fn(DT_N_S_sw_pwm, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0_S_itm_e0000000, __VA_ARGS__) fn(DT_N_S_connector, __VA_ARGS__) fn(DT_N_S_connector_a, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_led_0, __VA_ARGS__) fn(DT_N_S_ext_power, __VA_ARGS__) fn(DT_N_S_vbatt, __VA_ARGS__) fn(DT_N_S_key_physical_attrs, __VA_ARGS__) fn(DT_N_S_cuddlykeyboards_ferris_layout, __VA_ARGS__) fn(DT_N_S_keymap_transform_0, __VA_ARGS__) fn(DT_N_S_kscan, __VA_ARGS__) fn(DT_N_S_behaviors, __VA_ARGS__) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_l, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_r, __VA_ARGS__) fn(DT_N_S_mkp_input_listener, __VA_ARGS__) fn(DT_N_S_mmv_input_listener, __VA_ARGS__) fn(DT_N_S_msc_input_listener, __VA_ARGS__) fn(DT_N_S_combos, __VA_ARGS__) fn(DT_N_S_combos_S_esc, __VA_ARGS__) fn(DT_N_S_combos_S_del, __VA_ARGS__) fn(DT_N_S_combos_S_media, __VA_ARGS__) fn(DT_N_S_combos_S_ralt, __VA_ARGS__) fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__) fn(DT_N_S_macros, __VA_ARGS__) fn(DT_N_S_macros_S_open_angle_quote, __VA_ARGS__) fn(DT_N_S_macros_S_closed_angle_quote, __VA_ARGS__) fn(DT_N_S_macros_S_vim_change_window, __VA_ARGS__) fn(DT_N_S_macros_S_vim_reduce_x, __VA_ARGS__) fn(DT_N_S_macros_S_vim_increase_x, __VA_ARGS__) fn(DT_N_S_macros_S_vim_decrease_y, __VA_ARGS__) fn(DT_N_S_macros_S_vim_increase_y, __VA_ARGS__) fn(DT_N_S_keymap, __VA_ARGS__) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_numsquare, __VA_ARGS__) fn(DT_N_S_keymap_S_callumright, __VA_ARGS__) fn(DT_N_S_keymap_S_callumleft, __VA_ARGS__) fn(DT_N_S_conditional_layers, __VA_ARGS__) fn(DT_N_S_conditional_layers_S_medialayer, __VA_ARGS__)
+#define DT_FOREACH_OKAY_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_e000e100, __VA_ARGS__) fn(DT_N_S_soc_S_ficr_10000000, __VA_ARGS__) fn(DT_N_S_soc_S_uicr_10001000, __VA_ARGS__) fn(DT_N_S_soc_S_memory_20000000, __VA_ARGS__) fn(DT_N_S_soc_S_clock_40000000, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000_S_gpregret1_4000051c, __VA_ARGS__) fn(DT_N_S_soc_S_power_40000000_S_gpregret2_40000520, __VA_ARGS__) fn(DT_N_S_soc_S_radio_40001000, __VA_ARGS__) fn(DT_N_S_soc_S_nfct_40005000, __VA_ARGS__) fn(DT_N_S_soc_S_gpiote_40006000, __VA_ARGS__) fn(DT_N_S_soc_S_adc_40007000, __VA_ARGS__) fn(DT_N_S_soc_S_temp_4000c000, __VA_ARGS__) fn(DT_N_S_soc_S_random_4000d000, __VA_ARGS__) fn(DT_N_S_soc_S_ecb_4000e000, __VA_ARGS__) fn(DT_N_S_soc_S_ccm_4000f000, __VA_ARGS__) fn(DT_N_S_soc_S_watchdog_40010000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40014000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40015000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40016000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40017000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40018000, __VA_ARGS__) fn(DT_N_S_soc_S_egu_40019000, __VA_ARGS__) fn(DT_N_S_soc_S_acl_4001e000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000, __VA_ARGS__) fn(DT_N_S_soc_S_ppi_4001f000, __VA_ARGS__) fn(DT_N_S_soc_S_mwu_40020000, __VA_ARGS__) fn(DT_N_S_soc_S_usbd_40027000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_50000000, __VA_ARGS__) fn(DT_N_S_soc_S_gpio_50000300, __VA_ARGS__) fn(DT_N_S_pin_controller, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_default_S_group2, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_uart0_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_i2c0_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_default, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_default_S_group1, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_sleep, __VA_ARGS__) fn(DT_N_S_pin_controller_S_spi1_sleep_S_group1, __VA_ARGS__) fn(DT_N_S_entropy_bt_hci, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0_S_itm_e0000000, __VA_ARGS__) fn(DT_N_S_connector, __VA_ARGS__) fn(DT_N_S_connector_a, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_led_0, __VA_ARGS__) fn(DT_N_S_ext_power, __VA_ARGS__) fn(DT_N_S_vbatt, __VA_ARGS__) fn(DT_N_S_key_physical_attrs, __VA_ARGS__) fn(DT_N_S_cuddlykeyboards_ferris_layout, __VA_ARGS__) fn(DT_N_S_keymap_transform_0, __VA_ARGS__) fn(DT_N_S_kscan, __VA_ARGS__) fn(DT_N_S_behaviors, __VA_ARGS__) fn(DT_N_S_behaviors_S_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__) fn(DT_N_S_behaviors_S_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_sysreset, __VA_ARGS__) fn(DT_N_S_behaviors_S_bootload, __VA_ARGS__) fn(DT_N_S_behaviors_S_rgb_ug, __VA_ARGS__) fn(DT_N_S_behaviors_S_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_extpower, __VA_ARGS__) fn(DT_N_S_behaviors_S_caps_word, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_1to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to1, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_param_2to2, __VA_ARGS__) fn(DT_N_S_behaviors_S_studio_unlock, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_move, __VA_ARGS__) fn(DT_N_S_behaviors_S_mouse_scroll, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_y_capslock, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_l, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_r, __VA_ARGS__) fn(DT_N_S_mkp_input_listener, __VA_ARGS__) fn(DT_N_S_mmv_input_listener, __VA_ARGS__) fn(DT_N_S_msc_input_listener, __VA_ARGS__) fn(DT_N_S_combos, __VA_ARGS__) fn(DT_N_S_combos_S_esc, __VA_ARGS__) fn(DT_N_S_combos_S_del, __VA_ARGS__) fn(DT_N_S_combos_S_media, __VA_ARGS__) fn(DT_N_S_combos_S_ralt, __VA_ARGS__) fn(DT_N_S_combos_S_clrblutooth, __VA_ARGS__) fn(DT_N_S_combos_S_fast_esc, __VA_ARGS__) fn(DT_N_S_combos_S_fast_tab, __VA_ARGS__) fn(DT_N_S_combos_S_fast_bksp, __VA_ARGS__) fn(DT_N_S_combos_S_fast_enter, __VA_ARGS__) fn(DT_N_S_macros, __VA_ARGS__) fn(DT_N_S_macros_S_open_angle_quote, __VA_ARGS__) fn(DT_N_S_macros_S_closed_angle_quote, __VA_ARGS__) fn(DT_N_S_macros_S_vim_change_window, __VA_ARGS__) fn(DT_N_S_macros_S_vim_reduce_x, __VA_ARGS__) fn(DT_N_S_macros_S_vim_increase_x, __VA_ARGS__) fn(DT_N_S_macros_S_vim_decrease_y, __VA_ARGS__) fn(DT_N_S_macros_S_vim_increase_y, __VA_ARGS__) fn(DT_N_S_keymap, __VA_ARGS__) fn(DT_N_S_keymap_S_default_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_nav_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_num_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_sym_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_mouse_layer, __VA_ARGS__) fn(DT_N_S_keymap_S_numsquare, __VA_ARGS__) fn(DT_N_S_keymap_S_callumright, __VA_ARGS__) fn(DT_N_S_keymap_S_callumleft, __VA_ARGS__) fn(DT_N_S_conditional_layers, __VA_ARGS__) fn(DT_N_S_conditional_layers_S_medialayer, __VA_ARGS__)
 
 /*
  * Macros for compatibles with status "okay" nodes
@@ -19568,7 +20813,7 @@
 #define DT_N_INST_zmk_kscan_gpio_direct_NUM_OKAY 1
 #define DT_N_INST_zmk_behavior_key_press_NUM_OKAY 1
 #define DT_N_INST_zmk_behavior_transparent_NUM_OKAY 1
-#define DT_N_INST_zmk_behavior_hold_tap_NUM_OKAY 8
+#define DT_N_INST_zmk_behavior_hold_tap_NUM_OKAY 10
 #define DT_N_INST_zmk_behavior_sticky_key_NUM_OKAY 1
 #define DT_N_INST_zmk_behavior_momentary_layer_NUM_OKAY 1
 #define DT_N_INST_zmk_behavior_reset_NUM_OKAY 2
@@ -19775,10 +21020,10 @@
 #define DT_FOREACH_OKAY_VARGS_zmk_behavior_transparent(fn, ...) fn(DT_N_S_behaviors_S_transparent, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_zmk_behavior_transparent(fn) fn(0)
 #define DT_FOREACH_OKAY_INST_VARGS_zmk_behavior_transparent(fn, ...) fn(0, __VA_ARGS__)
-#define DT_FOREACH_OKAY_zmk_behavior_hold_tap(fn) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr)
-#define DT_FOREACH_OKAY_VARGS_zmk_behavior_hold_tap(fn, ...) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__)
-#define DT_FOREACH_OKAY_INST_zmk_behavior_hold_tap(fn) fn(0) fn(1) fn(2) fn(3) fn(4) fn(5) fn(6) fn(7)
-#define DT_FOREACH_OKAY_INST_VARGS_zmk_behavior_hold_tap(fn, ...) fn(0, __VA_ARGS__) fn(1, __VA_ARGS__) fn(2, __VA_ARGS__) fn(3, __VA_ARGS__) fn(4, __VA_ARGS__) fn(5, __VA_ARGS__) fn(6, __VA_ARGS__) fn(7, __VA_ARGS__)
+#define DT_FOREACH_OKAY_zmk_behavior_hold_tap(fn) fn(DT_N_S_behaviors_S_mod_tap) fn(DT_N_S_behaviors_S_layer_tap) fn(DT_N_S_behaviors_S_hml) fn(DT_N_S_behaviors_S_hmr) fn(DT_N_S_behaviors_S_hroa) fn(DT_N_S_behaviors_S_hrl) fn(DT_N_S_behaviors_S_f_hml) fn(DT_N_S_behaviors_S_f_hmr) fn(DT_N_S_behaviors_S_cal_l) fn(DT_N_S_behaviors_S_cal_r)
+#define DT_FOREACH_OKAY_VARGS_zmk_behavior_hold_tap(fn, ...) fn(DT_N_S_behaviors_S_mod_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_layer_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_hroa, __VA_ARGS__) fn(DT_N_S_behaviors_S_hrl, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hml, __VA_ARGS__) fn(DT_N_S_behaviors_S_f_hmr, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_l, __VA_ARGS__) fn(DT_N_S_behaviors_S_cal_r, __VA_ARGS__)
+#define DT_FOREACH_OKAY_INST_zmk_behavior_hold_tap(fn) fn(0) fn(1) fn(2) fn(3) fn(4) fn(5) fn(6) fn(7) fn(8) fn(9)
+#define DT_FOREACH_OKAY_INST_VARGS_zmk_behavior_hold_tap(fn, ...) fn(0, __VA_ARGS__) fn(1, __VA_ARGS__) fn(2, __VA_ARGS__) fn(3, __VA_ARGS__) fn(4, __VA_ARGS__) fn(5, __VA_ARGS__) fn(6, __VA_ARGS__) fn(7, __VA_ARGS__) fn(8, __VA_ARGS__) fn(9, __VA_ARGS__)
 #define DT_FOREACH_OKAY_zmk_behavior_sticky_key(fn) fn(DT_N_S_behaviors_S_sticky_key)
 #define DT_FOREACH_OKAY_VARGS_zmk_behavior_sticky_key(fn, ...) fn(DT_N_S_behaviors_S_sticky_key, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_zmk_behavior_sticky_key(fn) fn(0)

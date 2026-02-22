@@ -10,7 +10,7 @@ ELF Header:
   Version:                           0x1
   Entry point address:               0x2abd9
   Start of program headers:          52 (bytes into file)
-  Start of section headers:          4891144 (bytes into file)
+  Start of section headers:          4891176 (bytes into file)
   Flags:                             0x5000400, Version5 EABI, hard-float ABI
   Size of this header:               52 (bytes)
   Size of program headers:           32 (bytes)
@@ -55,13 +55,13 @@ Section Headers:
   [31] .debug_line       PROGBITS        00000000 321f12 077029 00      0   0  1
   [32] .debug_frame      PROGBITS        00000000 398f3c 010278 00      0   0  4
   [33] .debug_str        PROGBITS        00000000 3a91b4 0280a2 01  MS  0   0  1
-  [34] .debug_loc        PROGBITS        00000000 3d1256 0944ed 00      0   0  1
-  [35] .debug_ranges     PROGBITS        00000000 465748 016908 00      0   0  8
-  [36] .ARM.attributes   ARM_ATTRIBUTES  00000000 47c050 000038 00      0   0  1
+  [34] .debug_loc        PROGBITS        00000000 3d1256 09450b 00      0   0  1
+  [35] .debug_ranges     PROGBITS        00000000 465768 016908 00      0   0  8
+  [36] .ARM.attributes   ARM_ATTRIBUTES  00000000 47c070 000038 00      0   0  1
   [37] .last_section     PROGBITS        0004fa28 029b28 000004 00   A  0   0  1
-  [38] .symtab           SYMTAB          00000000 47c088 01cd90 10     39 5222  4
-  [39] .strtab           STRTAB          00000000 498e18 0111e0 00      0   0  1
-  [40] .shstrtab         STRTAB          00000000 4a9ff8 00020f 00      0   0  1
+  [38] .symtab           SYMTAB          00000000 47c0a8 01cd90 10     39 5222  4
+  [39] .strtab           STRTAB          00000000 498e38 0111e0 00      0   0  1
+  [40] .shstrtab         STRTAB          00000000 4aa018 00020f 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
   L (link order), O (extra OS processing required), G (group), T (TLS),
