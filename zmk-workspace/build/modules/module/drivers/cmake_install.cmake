@@ -42,6 +42,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/workspace/build/modules/module/drivers/gpio/cmake_install.cmake")
   include("/workspace/build/modules/module/drivers/kscan/cmake_install.cmake")
   include("/workspace/build/modules/module/drivers/sensor/cmake_install.cmake")
+  include("/workspace/build/modules/module/drivers/input/cmake_install.cmake")
 
 endif()
 

@@ -60,6 +60,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/workspace/build/zephyr/subsys/tracing/cmake_install.cmake")
   include("/workspace/build/zephyr/subsys/usb/cmake_install.cmake")
   include("/workspace/build/zephyr/subsys/bluetooth/cmake_install.cmake")
+  include("/workspace/build/zephyr/subsys/input/cmake_install.cmake")
   include("/workspace/build/zephyr/subsys/net/cmake_install.cmake")
   include("/workspace/build/zephyr/subsys/settings/cmake_install.cmake")
 

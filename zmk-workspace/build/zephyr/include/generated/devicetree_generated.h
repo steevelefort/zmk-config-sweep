@@ -9765,7 +9765,7 @@
 	fn(DT_N_S_behaviors_S_hrl, hold_trigger_key_positions, 18, __VA_ARGS__)
 #define DT_N_S_behaviors_S_hrl_P_hold_trigger_key_positions_LEN 19
 #define DT_N_S_behaviors_S_hrl_P_hold_trigger_key_positions_EXISTS 1
-#define DT_N_S_behaviors_S_hrl_P_hold_trigger_on_release 1
+#define DT_N_S_behaviors_S_hrl_P_hold_trigger_on_release 0
 #define DT_N_S_behaviors_S_hrl_P_hold_trigger_on_release_EXISTS 1
 #define DT_N_S_behaviors_S_hrl_P_label "HRL"
 #define DT_N_S_behaviors_S_hrl_P_label_STRING_UNQUOTED HRL

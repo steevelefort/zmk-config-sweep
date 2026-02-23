@@ -1272,7 +1272,7 @@ set_target_properties(devicetree_target PROPERTIES "DT_PROP|/behaviors/hrl|hold-
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/behaviors/hrl|hold-while-undecided-linger" "False")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/behaviors/hrl|retro-tap" "False")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/behaviors/hrl|hold-trigger-key-positions" "5;6;7;8;9;15;16;17;18;19;25;26;27;28;29;32;33;30;31;")
-set_target_properties(devicetree_target PROPERTIES "DT_PROP|/behaviors/hrl|hold-trigger-on-release" "True")
+set_target_properties(devicetree_target PROPERTIES "DT_PROP|/behaviors/hrl|hold-trigger-on-release" "False")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/behaviors/hrl|label" "HRL")
 set_target_properties(devicetree_target PROPERTIES "DT_REG|/behaviors/hrl|NUM" "0")
 set_target_properties(devicetree_target PROPERTIES "DT_REG|/behaviors/hrl|ADDR" "")
