@@ -162,11 +162,6 @@
             key-positions = <31 32>;
         };
 
-        Ralt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <30 33>;
-        };
-
         // Combos du hummingbird adaptés
 
         ClrBlutooth {
@@ -175,42 +170,11 @@
             layers = <3>;
         };
 
-        fast_esc {
-            bindings = <&kp ESC>;
-            key-positions = <11 12>;
-            timeout-ms = <15>;
-            require-prior-idle-ms = <125>;
-        };
-
-        fast_tab {
-            bindings = <&kp TAB>;
-            key-positions = <12 13>;
-            timeout-ms = <15>;
-            require-prior-idle-ms = <125>;
-        };
-
-        fast_bksp {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <17 16>;
-            timeout-ms = <15>;
-            require-prior-idle-ms = <125>;
-        };
-
         fast_enter {
             bindings = <&kp ENTER>;
             key-positions = <17 18>;
             timeout-ms = <15>;
             require-prior-idle-ms = <125>;
-        };
-
-        OneShotShiftLeft {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <1 2>;
-        };
-
-        OneShotShiftRight {
-            bindings = <&sk RIGHT_SHIFT>;
-            key-positions = <8 7>;
         };
 
         // Combos pour lettres spécifiques du hummingbird
@@ -283,10 +247,10 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-&trans  &trans                      &trans             &trans                        &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp PRINTSCREEN
-&trans  &cal_l RIGHT_ALT RIGHT_ALT  &hml LCTRL ESCAPE  &cal_l LEFT_SHIFT LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPS
-&trans  &trans                      &trans             &trans                        &trans    &trans    &kp N          &trans        &kp SLASH  &trans
-                                                       &trans                        &trans    &trans    &lt 2 DELETE
+&trans  &trans  &trans             &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp PRINTSCREEN
+&trans  &trans  &hml LCTRL ESCAPE  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPS
+&trans  &trans  &trans             &trans  &trans    &trans    &kp N          &trans        &kp SLASH  &trans
+                                   &trans  &trans    &trans    &lt 2 DELETE
             >;
         };
 
@@ -300,7 +264,7 @@
             >;
         };
 
-        sym_layer {
+        Media_layer {
             display-name = "Media";
             bindings = <
 &trans        &trans        &trans        &trans        &trans          &trans  &trans             &trans      &trans           &trans
@@ -319,21 +283,12 @@
             >;
         };
 
-        NumSquare {
+        NumSquare_layer {
             bindings = <
 &trans        &kp F7        &kp F8            &kp F9                &kp F10    &kp KP_PLUS   &kp N7        &kp N8  &kp N9        &kp KP_MULTIPLY
 &hml LGUI N1  &hml RALT F4  &hml LCTRL F5     &f_hml LEFT_SHIFT F6  &kp F11    &kp KP_MINUS  &kp NUMBER_4  &kp N5  &kp N6        &kp KP_DIVIDE
 &trans        &kp F1        &hml LEFT_ALT F2  &kp F3                &kp F12    &kp KP_EQUAL  &kp NUMBER_1  &kp N2  &kp NUMBER_3  &kp PERCENT
                                               &trans                &trans     &kp KP_DOT    &kp N0
-            >;
-        };
-
-        CallumRight {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans                            &trans                      &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &cal_r LEFT_SHIFT LEFT_SHIFT  &cal_r LEFT_CONTROL LEFT_CONTROL  &cal_r RIGHT_ALT RIGHT_ALT  &cal_r LEFT_GUI LEFT_GUI
-&trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans                            &trans                      &trans
-                        &trans  &trans    &trans  &trans
             >;
         };
     };
