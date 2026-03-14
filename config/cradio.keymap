@@ -74,7 +74,9 @@
 
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33 30 31>;
             require-prior-idle-ms = <150>;
+
             // hold-trigger-on-release;
+
             label = "HRL";
         };
 
@@ -263,10 +265,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W        &kp E         &kp R           &kp T        &kp Y        &kp U           &kp I            &kp O        &kp P
-&hml LGUI A  &hml RALT S  &hml LCTRL D  &f_hml LSHFT F  &kp G        &kp H        &f_hmr RSHFT J  &hmr RCTRL K     &hmr RALT L  &hmr RGUI SEMICOLON
-&kp Z        &kp X        &hml LALT C   &hrl 4 V        &kp B        &kp N        &kp M           &hmr LALT COMMA  &kp DOT      &kp FSLH
-                                        &lt 1 SPACE     &lt 7 TAB    &lt 6 ENTER  &lt 2 BSPC
+&kp Q        &kp W        &kp E         &kp R           &kp T                 &kp Y                &kp U           &kp I            &kp O        &kp P
+&hml LGUI A  &hml RALT S  &hml LCTRL D  &f_hml LSHFT F  &kp G                 &kp H                &f_hmr RSHFT J  &hmr RCTRL K     &hmr RALT L  &hmr RGUI SEMICOLON
+&kp Z        &kp X        &hml LALT C   &hrl 4 V        &kp B                 &kp N                &kp M           &hmr LALT COMMA  &kp DOT      &kp FSLH
+                                        &lt 1 SPACE     &mt LEFT_SHIFT TAB    &mt RIGHT_ALT ENTER  &lt 2 BSPC
             >;
         };
 
