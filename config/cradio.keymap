@@ -265,30 +265,30 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W        &kp E         &kp R           &kp T                 &kp Y                &kp U           &kp I            &kp O        &kp P
-&hml LGUI A  &hml RALT S  &hml LCTRL D  &f_hml LSHFT F  &kp G                 &kp H                &f_hmr RSHFT J  &hmr RCTRL K     &hmr RALT L  &hmr RGUI SEMICOLON
-&kp Z        &kp X        &hml LALT C   &hrl 4 V        &kp B                 &kp N                &kp M           &hmr LALT COMMA  &kp DOT      &kp FSLH
-                                        &lt 1 SPACE     &mt LEFT_SHIFT TAB    &mt RIGHT_ALT ENTER  &lt 2 BSPC
+&kp Q        &kp W        &kp E         &kp R            &kp T                 &kp Y                &kp U           &kp I            &kp O        &kp P
+&hml LGUI A  &hml RALT S  &hml LCTRL D  &f_hml LSHFT F   &kp G                 &kp H                &f_hmr RSHFT J  &hmr RCTRL K     &hmr RALT L  &hmr RGUI SEMICOLON
+&kp Z        &kp X        &hml LALT C   &hrl 4 V         &kp B                 &kp N                &kp M           &hmr LALT COMMA  &kp DOT      &kp FSLH
+                                        &lt 1 BACKSPACE  &mt LEFT_SHIFT TAB    &mt RIGHT_ALT ENTER  &lt 2 SPACE
             >;
         };
 
         nav_layer {
             display-name = "Nav";
             bindings = <
-&trans                    &trans                      &trans             &trans                        &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp PRINTSCREEN
-&cal_l LEFT_GUI LEFT_GUI  &cal_l RIGHT_ALT RIGHT_ALT  &hml LCTRL ESCAPE  &cal_l LEFT_SHIFT LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPS
-&trans                    &trans                      &trans             &trans                        &trans    &trans    &kp N          &trans        &kp SLASH  &trans
-                                                                         &trans                        &trans    &trans    &lt 2 DELETE
+&trans                  &trans                  &trans             &trans               &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp PRINTSCREEN
+&hml LEFT_GUI LEFT_GUI  &hml RIGHT_ALT LS(TAB)  &hml LCTRL ESCAPE  &hml LEFT_SHIFT TAB  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPS
+&trans                  &trans                  &trans             &trans               &trans    &trans    &kp N          &trans        &kp SLASH  &trans
+                                                                   &trans               &trans    &trans    &kp LS(SPACE)
             >;
         };
 
         num_layer {
             display-name = "NUMERIC";
             bindings = <
-&kp F1        &kp F2        &kp F3         &kp F4                &kp F5    &kp F6  &kp F7                 &kp F8         &kp F9             &kp F10
-&hml LGUI N1  &hml RALT N2  &hml LCTRL N3  &f_hml LEFT_SHIFT N4  &kp N5    &kp N6  &f_hmr RIGHT_SHIFT N7  &hmr RCTRL N8  &hmr RIGHT_ALT N9  &hmr RIGHT_GUI N0
-&trans        &kp Z         &trans         &kp B                 &trans    &trans  &kp F11                &trans         &kp F12            &trans
-                                           &trans                &trans    &trans  &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)    &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)       &kp LS(NUMBER_8)  &kp F11            &kp F12
+&hml LGUI N1      &hml RALT N2      &hml LCTRL N3     &hml LEFT_SHIFT N4  &kp N5              &kp N6            &f_hmr RIGHT_SHIFT N7  &hmr RCTRL N8     &hmr RIGHT_ALT N9  &hmr RIGHT_GUI N0
+&kp F1            &kp F2            &kp F3            &kp F4              &kp F5              &kp F6            &kp F7                 &kp F8            &kp F9             &kp F10
+                                                      &kp DELETE          &trans              &trans            &trans
             >;
         };
 
