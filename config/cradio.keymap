@@ -149,23 +149,8 @@
 
         // Combos du cradio conservés
 
-        Esc {
-            bindings = <&caps_word>;
-            key-positions = <31 30>;
-        };
-
-        Del {
-            bindings = <&mt RIGHT_ALT DELETE>;
-            key-positions = <33 32>;
-        };
-
         Media {
             bindings = <&mo 3>; // Layer SYM_L (Media)
-            key-positions = <31 32>;
-        };
-
-        Ralt {
-            bindings = <&kp RIGHT_ALT>;
             key-positions = <30 33>;
         };
 
@@ -175,34 +160,6 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <11 12 13>;
             layers = <3>;
-        };
-
-        fast_esc {
-            bindings = <&kp ESC>;
-            key-positions = <11 12>;
-            timeout-ms = <15>;
-            require-prior-idle-ms = <125>;
-        };
-
-        fast_tab {
-            bindings = <&kp TAB>;
-            key-positions = <12 13>;
-            timeout-ms = <15>;
-            require-prior-idle-ms = <125>;
-        };
-
-        fast_bksp {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <17 16>;
-            timeout-ms = <15>;
-            require-prior-idle-ms = <125>;
-        };
-
-        fast_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <17 18>;
-            timeout-ms = <15>;
-            require-prior-idle-ms = <125>;
         };
 
         // Combos pour lettres spécifiques du hummingbird
@@ -277,7 +234,7 @@
             bindings = <
 &trans                  &trans                  &trans             &trans               &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp PRINTSCREEN
 &hml LEFT_GUI LEFT_GUI  &hml RIGHT_ALT LS(TAB)  &hml LCTRL ESCAPE  &hml LEFT_SHIFT TAB  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPS
-&trans                  &trans                  &trans             &trans               &trans    &trans    &kp N          &trans        &kp SLASH  &trans
+&trans                  &trans                  &trans             &trans               &trans    &trans    &trans         &trans        &trans     &trans
                                                                    &trans               &trans    &trans    &kp LS(SPACE)
             >;
         };
@@ -304,37 +261,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans          &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans           &trans
-&trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &mkp MCLK
-&trans  &trans  &trans  &trans  &trans    &trans          &msc SCRL_DOWN  &msc SCRL_UP     &trans           &trans
-                        &trans  &trans    &mkp RCLK       &mkp LCLK
-            >;
-        };
-
-        NumSquare {
-            bindings = <
-&trans        &kp F7        &kp F8            &kp F9                &kp F10    &kp KP_PLUS   &kp N7        &kp N8  &kp N9        &kp KP_MULTIPLY
-&hml LGUI N1  &hml RALT F4  &hml LCTRL F5     &f_hml LEFT_SHIFT F6  &kp F11    &kp KP_MINUS  &kp NUMBER_4  &kp N5  &kp N6        &kp KP_DIVIDE
-&trans        &kp F1        &hml LEFT_ALT F2  &kp F3                &kp F12    &kp KP_EQUAL  &kp NUMBER_1  &kp N2  &kp NUMBER_3  &kp PERCENT
-                                              &trans                &trans     &kp KP_DOT    &kp N0
-            >;
-        };
-
-        CallumRight {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans                            &trans                      &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &cal_r LEFT_SHIFT LEFT_SHIFT  &cal_r LEFT_CONTROL LEFT_CONTROL  &cal_r RIGHT_ALT RIGHT_ALT  &cal_r LEFT_GUI LEFT_GUI
-&trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans                            &trans                      &trans
-                        &trans  &trans    &trans  &trans
-            >;
-        };
-
-        CallumLeft {
-            bindings = <
-&trans                    &trans                      &trans                     &trans                        &trans    &trans  &trans  &trans  &trans  &trans
-&cal_l LEFT_GUI LEFT_GUI  &cal_l RIGHT_ALT RIGHT_ALT  &cal_l LCTRL LEFT_CONTROL  &cal_l LEFT_SHIFT LEFT_SHIFT  &trans    &trans  &trans  &trans  &trans  &trans
-&trans                    &trans                      &trans                     &trans                        &trans    &trans  &trans  &trans  &trans  &trans
-                                                                                 &trans                        &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-100)  &mmv MOVE_Y(100)  &mmv MOVE_Y(-100)  &mmv MOVE_X(100)  &trans
+&trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &mkp MCLK
+&trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &trans
+                        &trans  &trans    &mkp RCLK          &mkp LCLK
             >;
         };
     };
