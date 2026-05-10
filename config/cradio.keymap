@@ -162,6 +162,20 @@
             layers = <3>;
         };
 
+        FastESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <12 11>;
+            timeout-ms = <15>;
+            require-prior-idle-ms = <150>;
+        };
+
+        FastTab {
+            bindings = <&kp TAB>;
+            key-positions = <12 13>;
+            timeout-ms = <15>;
+            require-prior-idle-ms = <150>;
+        };
+
         // Combos pour lettres spécifiques du hummingbird
         // Conserve les BestB et BestDot du cradio
     };
