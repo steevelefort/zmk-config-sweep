@@ -256,20 +256,20 @@
         num_layer {
             display-name = "NUMERIC";
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)    &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)       &kp LS(NUMBER_8)  &kp F11            &kp F12
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)    &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)       &kp LS(NUMBER_8)  &kp LS(NUMBER_9)   &kp LS(NUMBER_0)
 &hml LGUI N1      &hml RALT N2      &hml LCTRL N3     &hml LEFT_SHIFT N4  &kp N5              &kp N6            &f_hmr RIGHT_SHIFT N7  &hmr RCTRL N8     &hmr RIGHT_ALT N9  &hmr RIGHT_GUI N0
-&kp F1            &kp F2            &kp F3            &kp F4              &kp F5              &kp F6            &kp F7                 &kp F8            &kp F9             &kp F10
+&trans            &trans            &trans            &trans              &trans              &kp F6            &kp F7                 &kp F8            &kp F9             &kp F10
                                                       &kp DELETE          &trans              &trans            &trans
             >;
         };
 
-        sym_layer {
+        Media_layer {
             display-name = "Media";
             bindings = <
-&trans        &trans        &trans        &trans        &trans          &trans  &trans             &trans      &trans           &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &trans
-&trans        &trans        &trans        &trans        &trans          &trans  &trans             &trans      &trans           &trans
-                                          &trans        &trans          &trans  &trans
+&trans  &kp F7  &kp F8  &kp F9  &kp F10    &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4
+&trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans        &kp C_VOLUME_DOWN  &kp C_MUTE    &kp C_VOLUME_UP  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F12    &trans        &trans             &trans        &trans           &trans
+                        &trans  &trans     &trans        &trans
             >;
         };
 
