@@ -20,6 +20,30 @@
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
+// imported from Ækeynox
+#ifndef TAPPING_TERM
+#define TAPPING_TERM 300
+#endif
+
+#ifndef SHORT_TAPPING_TERM
+#define SHORT_TAPPING_TERM 150
+#endif
+
+#ifndef QUICK_TAP
+#define QUICK_TAP 200
+#endif
+
+&mt {
+  tapping-term-ms = <SHORT_TAPPING_TERM>;
+  quick-tap-ms = <QUICK_TAP>;
+};
+
+&lt {
+  tapping-term-ms = <TAPPING_TERM>;
+  quick-tap-ms = <QUICK_TAP>;
+};
+// end import from Ækeynox
+
 / {
     behaviors {
         hml: hml {
