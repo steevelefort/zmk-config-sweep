@@ -621,23 +621,31 @@
 			display-name = "Transparent";
 			phandle = < 0x1e >;
 		};
+		none: none {
+			compatible = "zmk,behavior-none";
+			#binding-cells = < 0x0 >;
+			display-name = "None";
+			phandle = < 0x1d >;
+		};
 		mt: mod_tap {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = < 0x2 >;
 			flavor = "hold-preferred";
-			tapping-term-ms = < 0xc8 >;
+			tapping-term-ms = < 0x96 >;
 			bindings = < &kp >, < &kp >;
 			display-name = "Mod-Tap";
-			phandle = < 0x16 >;
+			quick-tap-ms = < 0xc8 >;
+			phandle = < 0x1c >;
 		};
 		lt: layer_tap {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = < 0x2 >;
 			flavor = "tap-preferred";
-			tapping-term-ms = < 0xc8 >;
+			tapping-term-ms = < 0x12c >;
 			bindings = < &mo >, < &kp >;
 			display-name = "Layer-Tap";
-			phandle = < 0x1d >;
+			quick-tap-ms = < 0xc8 >;
+			phandle = < 0x1b >;
 		};
 		sk: sticky_key {
 			compatible = "zmk,behavior-sticky-key";
@@ -674,19 +682,12 @@
 			compatible = "zmk,behavior-bluetooth";
 			#binding-cells = < 0x2 >;
 			display-name = "Bluetooth";
-			phandle = < 0x17 >;
+			phandle = < 0x15 >;
 		};
 		ext_power: extpower {
 			compatible = "zmk,behavior-ext-power";
 			#binding-cells = < 0x1 >;
 			display-name = "External Power";
-		};
-		caps_word: caps_word {
-			compatible = "zmk,behavior-caps-word";
-			#binding-cells = < 0x0 >;
-			continue-list = < 0x207002d 0x7002a 0x7004c >;
-			display-name = "Caps Word";
-			phandle = < 0x15 >;
 		};
 		macro_tap: macro_tap {
 			compatible = "zmk,macro-control-mode-tap";
@@ -767,7 +768,7 @@
 			hold-trigger-key-positions = < 0x5 0x6 0x7 0x8 0x9 0xf 0x10 0x11 0x12 0x13 0x19 0x1a 0x1b 0x1c 0x1d 0x20 0x21 0x1e 0x1f >;
 			require-prior-idle-ms = < 0x96 >;
 			hold-trigger-on-release;
-			phandle = < 0x18 >;
+			phandle = < 0x16 >;
 		};
 		hmr: hmr {
 			compatible = "zmk,behavior-hold-tap";
@@ -779,7 +780,7 @@
 			hold-trigger-key-positions = < 0x0 0x1 0x2 0x3 0x4 0xa 0xb 0xc 0xd 0xe 0x14 0x15 0x16 0x17 0x18 0x1f 0x1e 0x20 0x21 >;
 			require-prior-idle-ms = < 0x96 >;
 			hold-trigger-on-release;
-			phandle = < 0x1b >;
+			phandle = < 0x19 >;
 		};
 		hroa: hroa {
 			compatible = "zmk,behavior-hold-tap";
@@ -787,7 +788,7 @@
 			tapping-term-ms = < 0xc8 >;
 			quick-tap-ms = < 0x96 >;
 			#binding-cells = < 0x2 >;
-			bindings = < &kp >, < &open_angle_quote >;
+			bindings = < &kp >, < &openQuote >;
 			hold-trigger-key-positions = < 0x5 0x6 0x7 0x8 0x9 0xf 0x10 0x11 0x12 0x13 0x19 0x1a 0x1b 0x1c 0x1d 0x20 0x21 0x1e 0x1f >;
 			require-prior-idle-ms = < 0x64 >;
 			hold-trigger-on-release;
@@ -802,9 +803,8 @@
 			bindings = < &mo >, < &kp >;
 			hold-trigger-key-positions = < 0x5 0x6 0x7 0x8 0x9 0xf 0x10 0x11 0x12 0x13 0x19 0x1a 0x1b 0x1c 0x1d 0x20 0x21 0x1e 0x1f >;
 			require-prior-idle-ms = < 0x96 >;
-			hold-trigger-on-release;
 			label = "HRL";
-			phandle = < 0x1c >;
+			phandle = < 0x1a >;
 		};
 		f_hml: f_hml {
 			compatible = "zmk,behavior-hold-tap";
@@ -817,7 +817,7 @@
 			require-prior-idle-ms = < 0x64 >;
 			hold-trigger-on-release;
 			label = "F_HML";
-			phandle = < 0x19 >;
+			phandle = < 0x17 >;
 		};
 		f_hmr: f_hmr {
 			compatible = "zmk,behavior-hold-tap";
@@ -830,7 +830,7 @@
 			require-prior-idle-ms = < 0x64 >;
 			hold-trigger-on-release;
 			label = "F_HMR";
-			phandle = < 0x1a >;
+			phandle = < 0x18 >;
 		};
 		Y_capslock: Y_capslock {
 			compatible = "zmk,behavior-tap-dance";
@@ -877,43 +877,42 @@
 	};
 	combos {
 		compatible = "zmk,combos";
-		Esc {
-			bindings = < &caps_word >;
-			key-positions = < 0x1f 0x1e >;
-		};
-		Del {
-			bindings = < &mt 0x700e6 0x7004c >;
-			key-positions = < 0x21 0x20 >;
-		};
 		Media {
 			bindings = < &mo 0x3 >;
-			key-positions = < 0x1f 0x20 >;
+			key-positions = < 0x1e 0x21 >;
 		};
 		ClrBlutooth {
 			bindings = < &bt 0x4 0x0 >;
 			key-positions = < 0xb 0xc 0xd >;
 			layers = < 0x3 >;
 		};
-		fast_enter {
-			bindings = < &kp 0x70028 >;
-			key-positions = < 0x11 0x12 >;
+		FastESC {
+			bindings = < &kp 0x70029 >;
+			key-positions = < 0xc 0xb >;
 			timeout-ms = < 0xf >;
-			require-prior-idle-ms = < 0x7d >;
+			require-prior-idle-ms = < 0x96 >;
+		};
+		FastTab {
+			bindings = < &kp 0x7002b >;
+			key-positions = < 0xc 0xd >;
+			timeout-ms = < 0xf >;
+			require-prior-idle-ms = < 0x96 >;
 		};
 	};
 	macros {
-		open_angle_quote: open_angle_quote {
+		openQuote: open_angle_quote {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = < 0x0 >;
 			bindings = < &kp 0x207001f &kp 0x207002c >;
 			label = "OPEN_ANGLE_QUOTE";
 			phandle = < 0x10 >;
 		};
-		closed_angle_quote: closed_angle_quote {
+		closeQuote: closed_angle_quote {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = < 0x0 >;
 			bindings = < &kp 0x207002c &kp 0x2070020 >;
 			label = "CLOSED_ANGLE_QUOTE";
+			phandle = < 0x1f >;
 		};
 		Vim_change_window: Vim_change_window {
 			compatible = "zmk,behavior-macro";
@@ -949,25 +948,22 @@
 	keymap {
 		compatible = "zmk,keymap";
 		default_layer {
-			bindings = < &kp 0x70014 &kp 0x7001a &kp 0x70008 &kp 0x70015 &kp 0x70017 &kp 0x7001c &kp 0x70018 &kp 0x7000c &kp 0x70012 &kp 0x70013 &hml 0x700e3 0x70004 &hml 0x700e6 0x70016 &hml 0x700e0 0x70007 &f_hml 0x700e1 0x70009 &kp 0x7000a &kp 0x7000b &f_hmr 0x700e5 0x7000d &hmr 0x700e4 0x7000e &hmr 0x700e6 0x7000f &hmr 0x700e7 0x70033 &kp 0x7001d &kp 0x7001b &hml 0x700e2 0x70006 &hrl 0x4 0x70019 &kp 0x70005 &kp 0x70011 &kp 0x70010 &hmr 0x700e2 0x70036 &kp 0x70037 &kp 0x70038 &lt 0x1 0x7002c &mt 0x700e1 0x7002b &mt 0x700e6 0x70028 &lt 0x2 0x7002a >;
+			bindings = < &kp 0x70014 &kp 0x7001a &kp 0x70008 &kp 0x70015 &kp 0x70017 &kp 0x7001c &kp 0x70018 &kp 0x7000c &kp 0x70012 &kp 0x70013 &hml 0x700e3 0x70004 &hml 0x700e6 0x70016 &hml 0x700e0 0x70007 &f_hml 0x700e1 0x70009 &kp 0x7000a &kp 0x7000b &f_hmr 0x700e5 0x7000d &hmr 0x700e4 0x7000e &hmr 0x700e6 0x7000f &hmr 0x700e7 0x70033 &kp 0x7001d &kp 0x7001b &hml 0x700e2 0x70006 &hrl 0x4 0x70019 &kp 0x70005 &kp 0x70011 &kp 0x70010 &hmr 0x700e2 0x70036 &kp 0x70037 &kp 0x70038 &lt 0x1 0x7002a &mt 0x700e1 0x7002b &mt 0x700e6 0x70028 &lt 0x2 0x7002c >;
 		};
 		nav_layer {
 			display-name = "Nav";
-			bindings = < &trans &trans &trans &trans &trans &kp 0x7004a &kp 0x7004e &kp 0x7004b &kp 0x7004d &kp 0x70046 &trans &trans &hml 0x700e0 0x70029 &trans &trans &kp 0x70050 &kp 0x70051 &kp 0x70052 &kp 0x7004f &kp 0x70039 &trans &trans &trans &trans &trans &trans &kp 0x70011 &trans &kp 0x70038 &trans &trans &trans &trans &lt 0x2 0x7004c >;
+			bindings = < &none &kp 0x10070017 &kp 0x4070050 &kp 0x407004f &none &kp 0x7004a &kp 0x7004e &kp 0x7004b &kp 0x7004d &kp 0x70046 &hml 0x700e3 0x700e3 &hml 0x700e6 0x207002b &hml 0x700e0 0x70029 &hml 0x700e1 0x7002b &trans &kp 0x70050 &kp 0x70051 &kp 0x70052 &kp 0x7004f &kp 0x70039 &kp 0x1007001d &kp 0x1007001b &kp 0x1007001a &kp 0x10070019 &kp 0x10070013 &trans &trans &trans &trans &trans &trans &trans &trans &trans >;
 		};
 		num_layer {
 			display-name = "NUMERIC";
-			bindings = < &kp 0x7003a &kp 0x7003b &kp 0x7003c &kp 0x7003d &kp 0x7003e &kp 0x7003f &kp 0x70040 &kp 0x70041 &kp 0x70042 &kp 0x70043 &hml 0x700e3 0x7001e &hml 0x700e6 0x7001f &hml 0x700e0 0x70020 &f_hml 0x700e1 0x70021 &kp 0x70022 &kp 0x70023 &f_hmr 0x700e5 0x70024 &hmr 0x700e4 0x70025 &hmr 0x700e6 0x70026 &hmr 0x700e7 0x70027 &trans &kp 0x7001d &trans &kp 0x70005 &trans &trans &kp 0x70044 &trans &kp 0x70045 &trans &trans &trans &trans &trans >;
+			bindings = < &kp 0x207001e &openQuote &closeQuote &kp 0x2070021 &kp 0x2070022 &kp 0x2070023 &kp 0x2070024 &kp 0x2070025 &kp 0x2070026 &kp 0x2070027 &hml 0x700e3 0x7001e &hml 0x700e6 0x7001f &hml 0x700e0 0x70020 &hml 0x700e1 0x70021 &kp 0x70022 &kp 0x70023 &f_hmr 0x700e5 0x70024 &hmr 0x700e4 0x70025 &hmr 0x700e6 0x70026 &hmr 0x700e7 0x70027 &trans &trans &trans &trans &trans &kp 0x4007000e &kp 0x70037 &kp 0x70011 &kp 0x40070037 &kp 0x4007000f &kp 0x7004c &trans &trans &trans >;
 		};
 		Media_layer {
 			display-name = "Media";
-			bindings = < &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &bt 0x3 0x0 &bt 0x3 0x1 &bt 0x3 0x2 &bt 0x3 0x3 &bt 0x3 0x4 &trans &kp 0xc00ea &kp 0xc00e2 &kp 0xc00e9 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans >;
+			bindings = < &kp 0x7003a &kp 0x7003b &kp 0x7003c &kp 0x7003d &kp 0x7003e &kp 0x7003f &kp 0x70040 &kp 0x70041 &kp 0x70042 &kp 0x70043 &trans &trans &trans &trans &trans &kp 0xc0070 &kp 0xc00ea &kp 0xc00e2 &kp 0xc00e9 &kp 0xc006f &bt 0x3 0x0 &bt 0x3 0x1 &bt 0x3 0x2 &bt 0x3 0x3 &bt 0x3 0x4 &trans &kp 0x70044 &kp 0x70045 &trans &trans &trans &trans &trans &trans >;
 		};
 		mouse_layer {
-			bindings = < &trans &trans &trans &trans &trans &trans &msc 0xfff60000 &msc 0xa0000 &trans &trans &trans &trans &trans &trans &trans &mmv 0xfce00000 &mmv 0x320 &mmv 0xfce0 &mmv 0x3200000 &mkp 0x4 &trans &trans &trans &trans &trans &trans &msc 0xfff6 &msc 0xa &trans &trans &trans &trans &mkp 0x2 &mkp 0x1 >;
-		};
-		NumSquare_layer {
-			bindings = < &trans &kp 0x70040 &kp 0x70041 &kp 0x70042 &kp 0x70043 &kp 0x70057 &kp 0x70024 &kp 0x70025 &kp 0x70026 &kp 0x70055 &hml 0x700e3 0x7001e &hml 0x700e6 0x7003d &hml 0x700e0 0x7003e &f_hml 0x700e1 0x7003f &kp 0x70044 &kp 0x70056 &kp 0x70021 &kp 0x70022 &kp 0x70023 &kp 0x70054 &trans &kp 0x7003a &hml 0x700e2 0x7003b &kp 0x7003c &kp 0x70045 &kp 0x70067 &kp 0x7001e &kp 0x7001f &kp 0x70020 &kp 0x2070022 &trans &trans &kp 0x70063 &kp 0x70027 >;
+			bindings = < &trans &trans &trans &trans &trans &mmv 0xff9c0000 &mmv 0x64 &mmv 0xff9c &mmv 0x640000 &trans &trans &trans &trans &trans &trans &mmv 0xfce00000 &mmv 0x320 &mmv 0xfce0 &mmv 0x3200000 &mkp 0x4 &trans &trans &trans &trans &trans &msc 0xfff60000 &msc 0xfff6 &msc 0xa &msc 0xa0000 &trans &trans &trans &mkp 0x2 &mkp 0x1 >;
 		};
 	};
 	conditional_layers {

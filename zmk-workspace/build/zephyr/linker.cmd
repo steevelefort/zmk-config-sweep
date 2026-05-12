@@ -133,6 +133,7 @@ ztest :
   KEEP(*(".dbg_thread_info"));
  } > FLASH
  settings_handler_static_area : SUBALIGN(4) { _settings_handler_static_list_start = .; KEEP(*(SORT_BY_NAME(._settings_handler_static.static.*))); _settings_handler_static_list_end = .; } > FLASH
+ input_listener_area : SUBALIGN(4) { _input_listener_list_start = .; KEEP(*(SORT_BY_NAME(._input_listener.static.*))); _input_listener_list_end = .; } > FLASH
  symbol_to_keep : ALIGN_WITH_INPUT
  {
   __symbol_to_keep_start = .;

@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/zmk/app/module/drivers
+# Install script for directory: /workspace/zephyr/drivers/input
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,18 +37,9 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/opt/zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/workspace/build/modules/module/drivers/gpio/cmake_install.cmake")
-  include("/workspace/build/modules/module/drivers/kscan/cmake_install.cmake")
-  include("/workspace/build/modules/module/drivers/sensor/cmake_install.cmake")
-  include("/workspace/build/modules/module/drivers/input/cmake_install.cmake")
-
-endif()
-
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/workspace/build/modules/module/drivers/install_local_manifest.txt"
+  file(WRITE "/workspace/build/zephyr/drivers/input/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

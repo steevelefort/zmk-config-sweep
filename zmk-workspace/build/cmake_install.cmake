@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/workspace/build/zephyr/cmake_install.cmake")
+  include("/workspace/build/src/pointing/cmake_install.cmake")
   include("/workspace/build/src/split/cmake_install.cmake")
   include("/workspace/build/src/display/cmake_install.cmake")
   include("/workspace/build/src/settings/cmake_install.cmake")

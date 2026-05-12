@@ -160,6 +160,9 @@
 /workspace/build/zephyr/subsys/bluetooth/controller/CMakeFiles/rebuild_cache.dir
 /workspace/build/zephyr/subsys/bluetooth/lib/CMakeFiles/edit_cache.dir
 /workspace/build/zephyr/subsys/bluetooth/lib/CMakeFiles/rebuild_cache.dir
+/workspace/build/zephyr/subsys/input/CMakeFiles/subsys__input.dir
+/workspace/build/zephyr/subsys/input/CMakeFiles/edit_cache.dir
+/workspace/build/zephyr/subsys/input/CMakeFiles/rebuild_cache.dir
 /workspace/build/zephyr/subsys/net/CMakeFiles/subsys__net.dir
 /workspace/build/zephyr/subsys/net/CMakeFiles/edit_cache.dir
 /workspace/build/zephyr/subsys/net/CMakeFiles/rebuild_cache.dir
@@ -207,6 +210,9 @@
 /workspace/build/zephyr/drivers/hwinfo/CMakeFiles/drivers__hwinfo.dir
 /workspace/build/zephyr/drivers/hwinfo/CMakeFiles/edit_cache.dir
 /workspace/build/zephyr/drivers/hwinfo/CMakeFiles/rebuild_cache.dir
+/workspace/build/zephyr/drivers/input/CMakeFiles/drivers__input.dir
+/workspace/build/zephyr/drivers/input/CMakeFiles/edit_cache.dir
+/workspace/build/zephyr/drivers/input/CMakeFiles/rebuild_cache.dir
 /workspace/build/zephyr/drivers/kscan/CMakeFiles/drivers__kscan.dir
 /workspace/build/zephyr/drivers/kscan/CMakeFiles/edit_cache.dir
 /workspace/build/zephyr/drivers/kscan/CMakeFiles/rebuild_cache.dir
@@ -326,6 +332,8 @@
 /workspace/build/modules/module/drivers/sensor/battery/CMakeFiles/..__zmk__app__module__drivers__sensor__battery.dir
 /workspace/build/modules/module/drivers/sensor/battery/CMakeFiles/edit_cache.dir
 /workspace/build/modules/module/drivers/sensor/battery/CMakeFiles/rebuild_cache.dir
+/workspace/build/modules/module/drivers/input/CMakeFiles/edit_cache.dir
+/workspace/build/modules/module/drivers/input/CMakeFiles/rebuild_cache.dir
 /workspace/build/modules/module/lib/CMakeFiles/edit_cache.dir
 /workspace/build/modules/module/lib/CMakeFiles/rebuild_cache.dir
 /workspace/build/modules/module/lib/zmk_debounce/CMakeFiles/..__zmk__app__module__lib__zmk_debounce.dir
@@ -348,6 +356,8 @@
 /workspace/build/zephyr/cmake/reports/CMakeFiles/footprint.dir
 /workspace/build/zephyr/cmake/reports/CMakeFiles/edit_cache.dir
 /workspace/build/zephyr/cmake/reports/CMakeFiles/rebuild_cache.dir
+/workspace/build/src/pointing/CMakeFiles/edit_cache.dir
+/workspace/build/src/pointing/CMakeFiles/rebuild_cache.dir
 /workspace/build/src/split/CMakeFiles/edit_cache.dir
 /workspace/build/src/split/CMakeFiles/rebuild_cache.dir
 /workspace/build/src/split/bluetooth/CMakeFiles/edit_cache.dir
