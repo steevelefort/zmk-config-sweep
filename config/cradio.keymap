@@ -56,7 +56,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             #binding-cells = <2>;
-            bindings = <&kp>, <&open_angle_quote>;
+            bindings = <&kp>, <&openQuote>;
 
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33 30 31>;
             require-prior-idle-ms = <100>;
@@ -181,14 +181,14 @@
     };
 
     macros {
-        open_angle_quote: open_angle_quote {
+        openQuote: open_angle_quote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_2) &kp LS(SPACE)>;
             label = "OPEN_ANGLE_QUOTE";
         };
 
-        closed_angle_quote: closed_angle_quote {
+        closeQuote: closed_angle_quote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(SPACE) &kp LS(NUMBER_3)>;
@@ -249,26 +249,26 @@
 &trans                  &trans                  &trans             &trans               &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp PRINTSCREEN
 &hml LEFT_GUI LEFT_GUI  &hml RIGHT_ALT LS(TAB)  &hml LCTRL ESCAPE  &hml LEFT_SHIFT TAB  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPS
 &trans                  &trans                  &trans             &trans               &trans    &trans    &trans         &trans        &trans     &trans
-                                                                   &trans               &trans    &trans    &kp LS(SPACE)
+                                                                   &trans               &trans    &trans    &trans
             >;
         };
 
         num_layer {
             display-name = "NUMERIC";
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)    &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)       &kp LS(NUMBER_8)  &kp LS(NUMBER_9)   &kp LS(NUMBER_0)
-&hml LGUI N1      &hml RALT N2      &hml LCTRL N3     &hml LEFT_SHIFT N4  &kp N5              &kp N6            &f_hmr RIGHT_SHIFT N7  &hmr RCTRL N8     &hmr RIGHT_ALT N9  &hmr RIGHT_GUI N0
-&trans            &trans            &trans            &trans              &trans              &kp RA(K)         &kp PERIOD             &kp N             &kp RA(PERIOD)     &kp RA(L)
-                                                      &kp DELETE          &trans              &trans            &trans
+&kp LS(NUMBER_1)  &openQuote    &closeQuote    &kp LS(NUMBER_4)    &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)       &kp LS(NUMBER_8)  &kp LS(NUMBER_9)   &kp LS(NUMBER_0)
+&hml LGUI N1      &hml RALT N2  &hml LCTRL N3  &hml LEFT_SHIFT N4  &kp N5              &kp N6            &f_hmr RIGHT_SHIFT N7  &hmr RCTRL N8     &hmr RIGHT_ALT N9  &hmr RIGHT_GUI N0
+&trans            &trans        &trans         &trans              &trans              &kp RA(K)         &kp PERIOD             &kp N             &kp RA(PERIOD)     &kp RA(L)
+                                               &kp DELETE          &trans              &trans            &trans
             >;
         };
 
         Media_layer {
             display-name = "Media";
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &kp F7             &kp F8        &kp F9           &kp F10
-&trans        &trans        &trans        &trans        &trans          &kp C_BRI_DN  &kp C_VOLUME_DOWN  &kp C_MUTE    &kp C_VOLUME_UP  &kp C_BRI_UP
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans        &kp F11            &kp F12       &trans           &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &kp F7             &kp F8      &kp F9           &kp F10
+&trans        &trans        &trans        &trans        &trans          &kp C_BRI_DN  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &kp C_BRI_UP
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans        &kp F11            &kp F12     &trans           &trans
                                           &trans        &trans          &trans        &trans
             >;
         };
