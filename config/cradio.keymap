@@ -19,29 +19,36 @@
 #define MOUSE_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-
 // imported from Ækeynox
+
 #ifndef TAPPING_TERM
+
 #define TAPPING_TERM 300
+
 #endif
 
 #ifndef SHORT_TAPPING_TERM
+
 #define SHORT_TAPPING_TERM 150
+
 #endif
 
 #ifndef QUICK_TAP
+
 #define QUICK_TAP 200
+
 #endif
 
 &mt {
-  tapping-term-ms = <SHORT_TAPPING_TERM>;
-  quick-tap-ms = <QUICK_TAP>;
+    tapping-term-ms = <SHORT_TAPPING_TERM>;
+    quick-tap-ms = <QUICK_TAP>;
 };
 
 &lt {
-  tapping-term-ms = <TAPPING_TERM>;
-  quick-tap-ms = <QUICK_TAP>;
+    tapping-term-ms = <TAPPING_TERM>;
+    quick-tap-ms = <QUICK_TAP>;
 };
+
 // end import from Ækeynox
 
 / {
@@ -226,32 +233,88 @@
             label = "VIM_CHANGE_WINDOW";
         };
 
-        vim_reduce_x: vim_reduce_x {
+        vim_dec_x: vim_reduce_x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(T) &kp RA(W)>;
             label = "VIM_REDUCE_X";
         };
 
-        vim_increase_x: vim_increase_x {
+        vim_inc_x: vim_increase_x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(T) &kp RA(E)>;
             label = "VIM_INCREASE_X";
         };
 
-        vim_decrease_y: vim_decrease_y {
+        vim_dec_y: vim_decrease_y {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(T) &kp RA(K)>;
             label = "VIM_DECREASE_Y";
         };
 
-        vim_increase_y: vim_increase_y {
+        vim_inc_y: vim_increase_y {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(T) &kp RA(J)>;
             label = "VIM_INCREASE_Y";
+        };
+
+        vim_equal: vim_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T) &kp RA(G)>;
+            label = "VIM_EQUAL";
+        };
+
+        vim_kill: vim_kill {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T) &kp Q>;
+            label = "VIM_KILL";
+        };
+
+        vim_sh: vim_sh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T) &kp S>;
+            label = "VIM_SH";
+        };
+
+        vim_sv: vim_sv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T) &kp V>;
+            label = "VIM_SV";
+        };
+
+        vim_left: vim_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T) &kp LEFT>;
+            label = "VIM_LEFT";
+        };
+
+        vim_right: vim_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T) &kp RIGHT>;
+            label = "VIM_RIGHT";
+        };
+
+        vim_up: vim_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T) &kp UP_ARROW>;
+            label = "VIM_UP";
+        };
+
+        vim_down: vim_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T) &kp DOWN>;
+            label = "VIM_DOWN";
         };
     };
 
@@ -262,7 +325,7 @@
             bindings = <
 &kp Q        &kp W        &kp E         &kp R            &kp T                 &kp Y                &kp U           &kp I            &kp O        &kp P
 &hml LGUI A  &hml RALT S  &hml LCTRL D  &f_hml LSHFT F   &kp G                 &kp H                &f_hmr RSHFT J  &hmr RCTRL K     &hmr RALT L  &hmr RGUI SEMICOLON
-&kp Z        &kp X        &hml LALT C   &hrl 4 V         &kp B                 &kp N                &kp M           &hmr LALT COMMA  &kp DOT      &kp FSLH
+&kp Z        &hrl 5 X     &hml LALT C   &hrl 4 V         &kp B                 &kp N                &kp M           &hmr LALT COMMA  &kp DOT      &kp FSLH
                                         &lt 1 BACKSPACE  &mt LEFT_SHIFT TAB    &mt RIGHT_ALT ENTER  &lt 2 SPACE
             >;
         };
@@ -270,10 +333,10 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-&none                   &kp RC(T)               &kp LA(LEFT)       &kp LA(RIGHT)        &none     &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp PRINTSCREEN
-&hml LEFT_GUI LEFT_GUI  &hml RIGHT_ALT LS(TAB)  &hml LCTRL ESCAPE  &hml LEFT_SHIFT TAB  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPS
-&kp RC(Z)               &kp RC(X)               &kp RC(W)          &kp RC(V)            &kp RC(P) &trans    &trans         &trans        &trans     &trans
-                                                                   &trans               &trans    &trans    &trans
+&none                   &kp RC(T)               &kp LA(LEFT)       &kp LA(RIGHT)        &none        &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp PRINTSCREEN
+&hml LEFT_GUI LEFT_GUI  &hml RIGHT_ALT LS(TAB)  &hml LCTRL ESCAPE  &hml LEFT_SHIFT TAB  &trans       &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPS
+&kp RC(Z)               &kp RC(X)               &kp RC(W)          &kp RC(V)            &kp RC(P)    &trans    &trans         &trans        &trans     &trans
+                                                                   &trans               &trans       &trans    &trans
             >;
         };
 
@@ -303,6 +366,15 @@
 &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &mkp MCLK
 &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &trans
                         &trans  &trans    &mkp RCLK          &mkp LCLK
+            >;
+        };
+
+        Vim_win {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &vim_kill  &trans     &vim_inc_y  &trans      &vim_equal
+&trans  &trans  &trans  &trans  &trans    &vim_left  &vim_down  &vim_up     &vim_right  &vim_sh
+&trans  &trans  &trans  &trans  &trans    &trans     &trans     &vim_dec_y  &trans      &vim_sv
+                        &trans  &trans    &trans     &trans
             >;
         };
     };
