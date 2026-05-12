@@ -371,9 +371,9 @@
 
         Vim_win {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &vim_kill  &trans     &vim_inc_y  &trans      &vim_equal
-&trans  &trans  &trans  &trans  &trans    &vim_left  &vim_down  &vim_up     &vim_right  &vim_sh
-&trans  &trans  &trans  &trans  &trans    &trans     &trans     &vim_dec_y  &trans      &vim_sv
+&trans  &trans  &trans  &trans  &trans    &vim_kill  &vim_dec_x  &vim_inc_y  &vim_inc_x  &vim_equal
+&trans  &trans  &trans  &trans  &trans    &vim_left  &vim_down   &vim_up     &vim_right  &vim_sv
+&trans  &trans  &trans  &trans  &trans    &trans     &trans      &vim_dec_y  &trans      &vim_sh
                         &trans  &trans    &trans     &trans
             >;
         };
