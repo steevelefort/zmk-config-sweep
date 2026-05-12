@@ -2,6 +2,3 @@
 path = config
 file = west.yml
 
-[zephyr]
-base = zephyr
-
